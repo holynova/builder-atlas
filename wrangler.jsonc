@@ -9,8 +9,8 @@
   },
   "routes": [
     {
-      "pattern": "builder-atlas.xiaosang.cc",
-      "custom_domain": true
+      "pattern": "builder-atlas.xiaosang.cc/*",
+      "zone_name": "xiaosang.cc"
     }
   ]
 }

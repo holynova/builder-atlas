@@ -30,8 +30,10 @@ npm run deploy:check
 npm run deploy
 ```
 
-Cloudflare Workers · Custom Domain: `builder-atlas.xiaosang.cc`
+Cloudflare Workers · Worker Route: `builder-atlas.xiaosang.cc`
 
 Version: **1.0.0**. Source and deployment configuration use the same `main` branch. Deploy manually from that commit; no Cloudflare release branch or deployment workflow.
 
 页面包含统一 Umami 统计。原文版权属于各作者；此项目提供原创中文转述与来源链接。
+
+DNS prerequisite: proxied A record `builder-atlas` → `192.0.2.1` in the `xiaosang.cc` zone. The Worker handles requests; this reserved address is a placeholder, not a live origin. Worker Route preserves the same HTTPS Demo when Custom Domains reach the zone limit.
