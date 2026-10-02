@@ -1655,5 +1655,179 @@ const BUILDERS = [
     ],
     "note": "论坛中关于生产力 J 曲线的论述主要来自 Erik，不能直接算作 Kevin 的观点。",
     "origin": "原对话补充"
+  },
+  {
+    "id": "matt-pocock",
+    "name": "Matt Pocock",
+    "short": "AI Hero · 工程反馈循环",
+    "category": "Agent 与模型",
+    "origin": "用户补充",
+    "role": "AI Hero、Total TypeScript 作者；工程教育者；曾任 Vercel 开发者倡导者",
+    "home": "https://www.mattpocock.com/",
+    "x": "https://x.com/mattpocockuk",
+    "tags": [
+      "AI Hero",
+      "TypeScript",
+      "反馈循环",
+      "AGENTS.md"
+    ],
+    "thesis": "AI 编程速度越快，工程纪律、反馈和代码质量越重要。",
+    "summary": "Matt 的教学从 TypeScript 延伸到 AI 工程与编码 Agent。他一方面讲怎样构建可靠的 LLM 应用，另一方面把传统软件方法重新应用到 Agent：定义成功、减少上下文噪声、用小而完整的功能验证假设，再逐步扩大自主执行。",
+    "ideas": [
+      {
+        "title": "先定义成功，再用真实数据迭代",
+        "text": "LLM 应用不是只在几个例子上看起来可用就能上线。明确任务的成功标准、收集真实使用与失败案例，才能判断一次修改是改善还是退步。",
+        "source": 0
+      },
+      {
+        "title": "先跑通一个完整的小功能",
+        "text": "Tracer Bullets 主张先做贯穿系统各层的最小功能，立即验证关键路径。避免先生成大量独立层次的代码，最后才发现基础连接或假设有误。",
+        "source": 1
+      },
+      {
+        "title": "给 Agent 精简、按需获取的上下文",
+        "text": "AGENTS.md 应聚焦普遍必要的信息，把领域规则放进可导航的文档。不断追加规则、矛盾指令和过期路径，会让上下文成为负担。",
+        "source": 2
+      },
+      {
+        "title": "自主循环也需要明确边界与反馈",
+        "text": "Ralph 文章建议先观察并调整有人参与的执行，再尝试无人值守；定义完成条件、限制迭代，并用类型检查、测试与进度记录反馈结果。",
+        "source": 3
+      }
+    ],
+    "works": [
+      {
+        "title": "The AI Engineer Mindset",
+        "type": "个人署名文章",
+        "date": "更新于 2025-03-24",
+        "author": "Matt Pocock",
+        "url": "https://www.aihero.dev/the-ai-engineer-mindset",
+        "summary": "解释 LLM 应用为何需要明确成功标准、系统评估和真实用户数据驱动的改进。",
+        "why": "先理解可靠 AI 应用的工作方式，再学习具体工具。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      },
+      {
+        "title": "Tracer Bullets: Keeping AI Slop Under Control",
+        "type": "个人署名文章",
+        "date": "更新于 2026-01-22",
+        "author": "Matt Pocock",
+        "url": "https://www.aihero.dev/tracer-bullets",
+        "summary": "把《The Pragmatic Programmer》的小型端到端功能方法用于控制 AI 生成代码的质量。",
+        "why": "可直接用于改进 Agent 的任务拆分与早期验证。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      },
+      {
+        "title": "A Complete Guide To AGENTS.md",
+        "type": "个人署名文章",
+        "date": "更新于 2026-01-18",
+        "author": "Matt Pocock",
+        "url": "https://www.aihero.dev/a-complete-guide-to-agents-md",
+        "summary": "讨论指令膨胀、过期信息、渐进披露，以及根目录和局部文档如何分工。",
+        "why": "检查自己的 Agent 指令是否重复、矛盾或不再适用。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      },
+      {
+        "title": "11 Tips For AI Coding With Ralph Wiggum",
+        "type": "个人署名文章",
+        "date": "更新于 2026-01-08",
+        "author": "Matt Pocock",
+        "url": "https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum",
+        "summary": "从任务范围、进度文件、反馈循环、小步执行与隔离环境讨论长时间运行的编码 Agent。",
+        "why": "理解持续执行的工程条件，避免把“自动循环”当作可靠性的保证。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      }
+    ],
+    "note": "推荐顺序：Mindset → Tracer Bullets → AGENTS.md → Ralph。文章中的具体工具行为以发表语境为准；工程原则比某个脚本或固定指令数量更值得借鉴。"
+  },
+  {
+    "id": "emil-kowalski",
+    "name": "Emil Kowalski",
+    "short": "设计工程 · 有品味的 Agent",
+    "category": "产品与设计",
+    "origin": "用户补充",
+    "role": "Linear Web 团队设计工程师；Sonner、Vaul 与 animations.dev 创建者；曾在 Vercel 设计团队工作",
+    "home": "https://emilkowal.ski/",
+    "x": "https://x.com/emilkowalski_",
+    "tags": [
+      "设计工程",
+      "Taste",
+      "动效",
+      "Sonner"
+    ],
+    "thesis": "把好体验的原因说清楚，设计品味就能训练，也能传递给 Agent。",
+    "summary": "Emil 的文章把视觉判断、动效和组件实现连接起来。他既讨论如何训练品味，也用 Sonner 等作品展示细节如何成为体验的一部分；在 AI 协作上，他尝试把经验写成具体的设计规则。",
+    "ideas": [
+      {
+        "title": "品味是一种可以训练的判断",
+        "text": "Developing Taste 建议接触优秀作品、分析为什么某个决定更好，再通过制作与有质量的批评校准判断。只收藏好看的参考图还不够。",
+        "source": 1
+      },
+      {
+        "title": "把品味转成有理由的规则",
+        "text": "Agents with Taste 用起始缩放、缓动和时长等例子，说明怎样把设计经验写成按场景适用的规则，让 Agent 少猜测。创作方向和新的判断仍需要人参与。",
+        "source": 0
+      },
+      {
+        "title": "动效先服务目的和使用频率",
+        "text": "动画可以解释关系、提供反馈或带来愉悦，也可能拖慢高频操作。判断是否添加动画时，要看用户目标、出现频率与响应速度。",
+        "source": 2
+      },
+      {
+        "title": "组件质量同时来自体验与易用接口",
+        "text": "Sonner 的文章连接可中断动效、手势、不可见页面的计时处理与简洁 API；交互示例和清楚文档也属于产品体验。",
+        "source": 3
+      }
+    ],
+    "works": [
+      {
+        "title": "Agents with Taste",
+        "type": "个人署名文章",
+        "date": "页面未标明确日期 · 核验于 2026-10-02",
+        "author": "Emil Kowalski",
+        "url": "https://emilkowal.ski/ui/agents-with-taste",
+        "summary": "演示如何把设计决定背后的理由、动效准则和排版经验封装成 Agent 可使用的规则。",
+        "why": "理解“让 AI 有品味”需要哪些可表达的知识。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      },
+      {
+        "title": "Developing Taste",
+        "type": "个人署名文章",
+        "date": "页面未标明确日期 · 核验于 2026-10-02",
+        "author": "Emil Kowalski",
+        "url": "https://emilkowal.ski/ui/developing-taste",
+        "summary": "从优秀作品、分析选择、实践和批评讨论如何训练设计判断。",
+        "why": "为 Agent 写规则之前，先建立自己的判断来源。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      },
+      {
+        "title": "You Don't Need Animations",
+        "type": "个人署名文章",
+        "date": "页面未标明确日期 · 核验于 2026-10-02",
+        "author": "Emil Kowalski",
+        "url": "https://emilkowal.ski/ui/you-dont-need-animations",
+        "summary": "通过交互示例讨论动效目的、使用频率与速度，解释何时不加动画更合适。",
+        "why": "避免把精致界面简单等同于更多动效。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      },
+      {
+        "title": "Building a Toast Component",
+        "type": "个人署名文章",
+        "date": "页面未标明确日期 · 文中回顾 2023 年创建项目",
+        "author": "Emil Kowalski",
+        "url": "https://emilkowal.ski/ui/building-a-toast-component",
+        "summary": "拆解 Sonner 的堆叠、手势、计时、API 和文档，展示组件细节怎样形成整体体验。",
+        "why": "把抽象的品味和具体代码、交互决定对照阅读。",
+        "access": "已读取作者网站公开原文。",
+        "evidence": ""
+      }
+    ],
+    "note": "推荐顺序：Developing Taste → Agents with Taste → 动效文章 → Sonner。规则是作者在具体界面中的经验；套用后仍应观察自己的用户、设备与交互反馈。"
   }
 ];
