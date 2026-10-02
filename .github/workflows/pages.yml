@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Check JavaScript
-        run: node --check dist/app.js && node --check dist/data.js
+        run: node --check dist/app.js && node --check dist/data.js && node --check dist/learning.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
