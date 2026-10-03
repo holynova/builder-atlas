@@ -33,7 +33,7 @@ npm run deploy
 
 Cloudflare Workers · Worker Route: `builder-atlas.xiaosang.cc`
 
-Version: **1.2.0**. Source and deployment configuration use the same `main` branch. Deploy manually from that commit; no Cloudflare release branch or deployment workflow.
+Version: **1.2.1**. Source and deployment configuration use the same `main` branch. Deploy manually from that commit; no Cloudflare release branch or deployment workflow.
 
 页面包含统一 Umami 统计。原文版权属于各作者；此项目提供原创中文转述与来源链接。
 
