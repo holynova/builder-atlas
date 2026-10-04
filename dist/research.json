@@ -3,7 +3,7 @@
   "snapshot": "2026-10-04",
   "scope": "28 people and 2 official accounts",
   "rosterSource": "https://github.com/zarazhangrui/follow-builders",
-  "methodology": "限定范围的本人材料主题研究；4 人已复核、26 人 TODO。每条观点绑定具体章节、代表性判断和阅读边界。旧稿保留为线索，不作为已复核结论。",
+  "methodology": "30 份档案均有来源绑定的当前主题：4 份专题复核，26 份初步整理。本人表达、节目方摘要和团队文件区分归属；只对明示阅读范围负责，不声称完整近期 X 或全作品覆盖。",
   "builders": [
     {
       "id": "karpathy",
@@ -325,48 +325,102 @@
       "name": "Swyx / Shawn Wang",
       "short": "AI Engineer · 公开学习",
       "category": "学习与创作",
-      "role": "Latent Space 与 AI Engineer 的建设者；开发者、作者与社区组织者",
+      "role": "Latent Space 与 AI Engineer 的建设者；开发者、作者与社区组织者（按引用材料语境）",
       "home": "https://swyx.io",
       "x": "https://x.com/swyx",
       "tags": [
-        "AI Engineer",
-        "Learn in Public",
-        "开发者社区"
+        "AI Engineer 要承担产品化工作",
+        "公开学习，让产出和纠错积累",
+        "内容增长也要守住质量"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的两条主线相互连接：AI Engineer 讨论如何把模型产品化，Learn in Public 则讨论如何通过公开笔记和作品建立学习反馈。重点是实际产出，而不只是积累资料。",
-      "ideas": [],
+      "thesis": "把模型能力做成产品，同时把学习过程公开，让反馈持续进入工作。",
+      "summary": "长期主线是 Learn in Public 与 AI Engineer 的职业实践；近期内容业务是另一条探索，不能混成同一套因果结论。",
+      "ideas": [
+        {
+          "title": "AI Engineer 要承担产品化工作",
+          "text": "他的 AI Engineer 定义不止调用模型，还包括产品数据、评估、工具与代码编排。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人定义职业方向的专题文章。",
+          "boundary": "职业增长预测、人数和薪资不是本轮验证的当前市场事实。"
+        },
+        {
+          "title": "公开学习，让产出和纠错积累",
+          "text": "为过去的自己写教程、做项目和持续知识库；把纠错与协作当成学习的一部分。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "本人长期方法文章，主题明确。",
+          "boundary": "公开不等于追逐流量；这里未证明它适用于所有学习者。"
+        },
+        {
+          "title": "内容增长也要守住质量",
+          "text": "近期内容策略强调扩大 Latent Space 等内容业务，但希望避免低质量堆量。",
+          "source": 2,
+          "sourceIndices": [
+            2
+          ],
+          "representativeness": "本人近期策略回顾，单条探索。",
+          "boundary": "个人增长数据未独立审计，不把这条推文升级为完整媒体战略。"
+        }
+      ],
       "works": [
         {
           "title": "The Rise of the AI Engineer",
-          "type": "个人文章",
-          "date": "2023-06-30",
-          "author": "Swyx · Latent Space",
           "url": "https://www.latent.space/p/ai-engineer",
-          "summary": "提出 AI Engineer 这一应用层角色，讨论基础模型的可用性如何改变开发者的工作边界。",
-          "why": "理解研究、模型工程和应用工程各自解决什么问题。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2023-06-30",
+          "locator": "开头、AI vs ML Engineer、Why AI Engineers are Emerging Now",
+          "summary": "区分模型研究与模型应用，强调产品专属数据、评估及软件编排。",
+          "access": "已读开头至软件架构讨论的公开正文；岗位比例与薪资属于 2023 年语境。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
-          "title": "Learn in Public",
-          "type": "个人文章",
-          "date": "2018（长期维护）",
-          "author": "Swyx",
+          "title": "Learn In Public",
           "url": "https://swyx.io/learn-in-public",
-          "summary": "通过持续发布小型学习成果获得反馈，建立知识、作品与同行关系。",
-          "why": "可立即实践的学习方法，也解释他为何建设社区。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2018-06-19",
+          "locator": "learning exhaust、持续知识库、公开纠错与导师反馈",
+          "summary": "把学习产生的笔记、教程和试验公开，用反馈改进理解。",
+          "access": "已读公开正文中学习产出、反馈与导师相关段落；未概括其他站内文章。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Scaling without Slop：内容策略回顾",
+          "url": "https://x.com/swyx/status/2103361254433993165",
+          "date": "Fri Sep 25 05:49:36 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "他描述自己近期希望扩大内容产出，同时保持质量。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@swyx",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "先读 AI Engineer，再用 Learn in Public 做一个小项目的公开复盘。它不是要求你每天追新闻。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 3,
+        "scope": "本轮依据 3 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "长期主线是 Learn in Public 与 AI Engineer 的职业实践；近期内容业务是另一条探索，不能混成同一套因果结论。",
+        "xScope": "本轮复核 1 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "把模型能力变成可用软件，是一门独立的工程实践。",
@@ -387,56 +441,149 @@
             "text": "笔记、教程、演示和开源项目让学习有输出，也让他人的反馈进入过程。先帮助过去的自己，不必等到成为专家。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "The Rise of the AI Engineer",
+            "type": "个人文章",
+            "date": "2023-06-30",
+            "author": "Swyx · Latent Space",
+            "url": "https://www.latent.space/p/ai-engineer",
+            "summary": "提出 AI Engineer 这一应用层角色，讨论基础模型的可用性如何改变开发者的工作边界。",
+            "why": "理解研究、模型工程和应用工程各自解决什么问题。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Learn in Public",
+            "type": "个人文章",
+            "date": "2018（长期维护）",
+            "author": "Swyx",
+            "url": "https://swyx.io/learn-in-public",
+            "summary": "通过持续发布小型学习成果获得反馈，建立知识、作品与同行关系。",
+            "why": "可立即实践的学习方法，也解释他为何建设社区。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "先读 AI Engineer，再用 Learn in Public 做一个小项目的公开复盘。它不是要求你每天追新闻。"
       }
     },
     {
       "id": "josh",
       "name": "Josh Woodward",
-      "short": "Google Labs · AI 产品",
+      "short": "多模态产品 · 用户反馈",
       "category": "产品与设计",
-      "role": "Google Labs、Gemini app 与 AI Studio 产品负责人（官方作者页）",
+      "role": "Gemini 与开发者产品的署名作者；职务以引用公告发表时为准",
       "home": "https://blog.google/authors/josh-woodward/",
       "x": "https://x.com/joshwoodward",
       "tags": [
-        "Gemini",
-        "AI Studio",
-        "Google Labs"
+        "日常助手需要看见语境并提供可操作输出",
+        "能力、速度和成本要按任务组合",
+        "早期用户反馈进入迭代"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "从他的署名产品文章看，主线是个性化、主动帮助、多模态交互和降低使用门槛。Google Labs 的实验产品提供观察新交互的窗口；这里把发布主张与已经证明的效果分开阅读。",
-      "ideas": [],
+      "thesis": "把 AI 接到人的真实语境、表达方式和反馈中，让它成为可用的日常产品。",
+      "summary": "本人署名的 Gemini 公告与选定推文，呈现多模态、个人语境与用户反馈的产品方向；不是其全部个人思想。",
+      "ideas": [
+        {
+          "title": "日常助手需要看见语境并提供可操作输出",
+          "text": "相机、屏幕和个人资料提供任务语境；交互测验、网页和语音帮助人处理信息。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            3
+          ],
+          "representativeness": "署名公告与近期学习场景推文相互支持。",
+          "boundary": "功能公告含营销语境；不以演示证明可靠性或当前地区可用性。"
+        },
+        {
+          "title": "能力、速度和成本要按任务组合",
+          "text": "开发者产品需要不同能力和响应速度的模型，而非所有任务都用最大模型。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "联名公告明确区分 Pro 与 Flash 的用途。",
+          "boundary": "本轮不复验性能，2024 年规格不能作为当前选型表。"
+        },
+        {
+          "title": "早期用户反馈进入迭代",
+          "text": "他公开描述 power user 群体参与功能测试，并邀请下一批用户。",
+          "source": 2,
+          "sourceIndices": [
+            2
+          ],
+          "representativeness": "本人近期发言，给出具体反馈机制。",
+          "boundary": "只知道公开描述；未检查测试过程或验证反馈造成的实际改进。"
+        }
+      ],
       "works": [
         {
           "title": "Gemini gets more personal, proactive and powerful",
-          "type": "署名产品文章",
-          "date": "2025-05-20",
-          "author": "Josh Woodward · Google",
           "url": "https://blog.google/products-and-platforms/products/gemini/gemini-app-updates-io-2025/",
-          "summary": "围绕 Gemini Live、创作能力和个性化发布产品更新，展示 Google 对助手体验的构想。",
-          "why": "沿着具体交互，观察“更主动的助手”如何被产品化。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-05-20",
+          "locator": "Gemini Live、Deep Research、Canvas、互动测验",
+          "summary": "把视觉、个人材料和可操作输出连接到日常任务。",
+          "access": "已阅读列出的本人署名公告章节；没有把当时价格、地域或计划当作当前可用性。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
-          "title": "Gemini 1.5 Pro updates, 1.5 Flash debut and 2 new Gemma models",
-          "type": "联合署名文章",
-          "date": "2024-05-14",
-          "author": "Mat Velloso、Josh Woodward · Google",
+          "title": "Gemini 1.5 Pro、Flash 与 Gemma 更新",
           "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-gemma-developer-updates-may-2024/",
-          "summary": "结合模型质量、速度、长上下文和开发工具说明能力如何开放给开发者。",
-          "why": "了解模型能力、开发者入口与成本选择如何一起影响产品。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2024-05-14",
+          "locator": "模型选择、长上下文、新开发功能",
+          "summary": "不同模型分别面向能力、响应速度与开发者需求。",
+          "access": "已阅读与 Mat Velloso 联名公告正文；团队产品方向不归作 Josh 的独立发明。",
+          "type": "本人联名文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "让早期用户参与产品测试",
+          "url": "https://x.com/joshwoodward/status/2099558443078365287",
+          "date": "Mon Sep 14 17:58:35 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "公开感谢 power user 群体测试早期功能并提供反馈。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@joshwoodward",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "把学习材料接到语音问答",
+          "url": "https://x.com/joshwoodward/status/2099921866014306633",
+          "date": "Tue Sep 15 18:02:42 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "描述课堂材料问答和自动保存音频笔记的使用场景。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@joshwoodward",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "发布文是产品意图的一手材料。是否形成长期价值，需要自己持续使用来检验。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 4,
+        "scope": "本轮依据 4 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本人署名的 Gemini 公告与选定推文，呈现多模态、个人语境与用户反馈的产品方向；不是其全部个人思想。",
+        "xScope": "本轮复核 2 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "AI 助手要进入人的实际生活，而不只停留在一个聊天窗口。",
@@ -457,56 +604,151 @@
             "text": "开发者文章通过 AI Studio、模型 API 与示例资源让新能力可尝试；模型能力需要通过工具进入开发流程。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Gemini gets more personal, proactive and powerful",
+            "type": "署名产品文章",
+            "date": "2025-05-20",
+            "author": "Josh Woodward · Google",
+            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-app-updates-io-2025/",
+            "summary": "围绕 Gemini Live、创作能力和个性化发布产品更新，展示 Google 对助手体验的构想。",
+            "why": "沿着具体交互，观察“更主动的助手”如何被产品化。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Gemini 1.5 Pro updates, 1.5 Flash debut and 2 new Gemma models",
+            "type": "联合署名文章",
+            "date": "2024-05-14",
+            "author": "Mat Velloso、Josh Woodward · Google",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-gemma-developer-updates-may-2024/",
+            "summary": "结合模型质量、速度、长上下文和开发工具说明能力如何开放给开发者。",
+            "why": "了解模型能力、开发者入口与成本选择如何一起影响产品。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "发布文是产品意图的一手材料。是否形成长期价值，需要自己持续使用来检验。"
       }
     },
     {
       "id": "boris",
       "name": "Boris Cherny",
-      "short": "Claude Code · 开发工作流",
+      "short": "质量验证 · 工程护栏",
       "category": "Agent 与模型",
-      "role": "Claude Code 创建者；Programming TypeScript 作者",
+      "role": "Claude Code 创建者；Programming TypeScript 作者（按引用材料语境）",
       "home": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
       "x": "https://x.com/bcherny",
       "tags": [
-        "Claude Code",
-        "并行工作",
-        "验证循环"
+        "生产代码要有持续验证",
+        "把重复审查转为明确规则",
+        "形式化工具可以帮助找局部反例"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "Boris 的代表材料把 Claude Code 的内部建设与个人工作方式联系起来：先形成足够清晰的计划，运行多个 Agent，把反复出现的问题沉淀为可执行的检查。",
-      "ideas": [],
+      "thesis": "让 Agent 承担实现，但用计划、清晰代码和持续验证守住质量。",
+      "summary": "研究区分主持人整理的工作流，以及本人近期对生产代码和形式化找错的限定。",
+      "ideas": [
+        {
+          "title": "生产代码要有持续验证",
+          "text": "原型可以接受有限风险；生产代码需要测试、lint、审查和维护机制。",
+          "source": 1,
+          "sourceIndices": [
+            1,
+            0
+          ],
+          "representativeness": "本人长帖与节目方的代码质量归纳一致。",
+          "boundary": "具体模型、PR 数量与内部结果没有独立复验；不将其当成普遍保证。"
+        },
+        {
+          "title": "把重复审查转为明确规则",
+          "text": "先形成清晰计划，减少代码库混乱；重复出现的审查意见可以变为自动规则。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "节目方工作流摘要与本人强调上下文、技能和护栏的长帖。",
+          "boundary": "计划能否一次实现取决于任务；只读摘要，不声称逐字核对完整访谈。"
+        },
+        {
+          "title": "形式化工具可以帮助找局部反例",
+          "text": "让模型针对状态机或竞态建立模型、找反例，再复现和修复真实代码。",
+          "source": 2,
+          "sourceIndices": [
+            2,
+            3
+          ],
+          "representativeness": "本人连续两条解释，后一条主动收窄了前一条的表述。",
+          "boundary": "不是整个代码库已形式化验证；没有运行或审计其演示。"
+        }
+      ],
       "works": [
         {
           "title": "Building Claude Code with Boris Cherny",
-          "type": "原始访谈",
-          "date": "2026-03-04",
-          "author": "Boris Cherny · The Pragmatic Engineer",
           "url": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
-          "summary": "讨论 Claude Code 从内部工具到产品的过程，以及计划、并行、代码库质量、搜索与原型的取舍。",
-          "why": "比工具小技巧更能解释一套开发系统为什么这样设计。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2026-03-04",
+          "locator": "Key observation 1 至 4",
+          "summary": "主持人总结计划、代码质量、搜索与把重复审查转为 lint 的实践。",
+          "access": "只阅读节目方公开摘要及注明的观察条目；未读取完整逐字稿或观看整场访谈。",
+          "type": "原始节目方整理稿",
+          "author": "Gergely Orosz 整理；嘉宾 Boris Cherny",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
-          "title": "Claude Code 个人工作流：13 条分享",
-          "type": "推文串",
-          "date": "2026-01-02",
+          "title": "生产代码需要更高质量门槛",
+          "url": "https://x.com/bcherny/status/2098217573276131577",
+          "date": "Fri Sep 11 01:10:27 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "明确区分可丢弃原型与生产代码，列举测试、审查和规则护栏。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
           "author": "@bcherny",
-          "url": "https://x.com/bcherny/status/2007179832300581177",
-          "summary": "介绍多会话、共享项目知识、重复流程与验证环节，是理解其日常用法的补充入口。",
-          "why": "配合完整访谈阅读，区分个人配置与普遍原则。",
-          "access": "X 原页拒绝抓取；链接与主题由公开转载交叉确认，未逐条转述全文。",
-          "evidence": ""
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "形式化找错的具体范围",
+          "url": "https://x.com/bcherny/status/2102898067133595992",
+          "date": "Wed Sep 23 23:09:03 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "澄清只是对复杂局部建模、找反例、复现并修复，并非整库验证。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@bcherny",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "用 Lean 与 TLA+ 探索找错",
+          "url": "https://x.com/bcherny/status/2102543349102338309",
+          "date": "Tue Sep 22 23:39:32 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "描述本人对复杂状态和竞态的实验。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@bcherny",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "别把“跑几个 Agent”当成目标。先定义每个任务的完成条件和验证方式，再考虑并行。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 4,
+        "scope": "本轮依据 4 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "研究区分主持人整理的工作流，以及本人近期对生产代码和形式化找错的限定。",
+        "xScope": "本轮复核 3 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "工程师的价值，从逐行写代码转向设计工作与检验结果。",
@@ -527,56 +769,125 @@
             "text": "Claude Code 团队比较过多种代码搜索方式，模型驱动的 glob 与 grep 在他们的情境下比复杂索引更有效。这个结论有具体适用范围。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Building Claude Code with Boris Cherny",
+            "type": "原始访谈",
+            "date": "2026-03-04",
+            "author": "Boris Cherny · The Pragmatic Engineer",
+            "url": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
+            "summary": "讨论 Claude Code 从内部工具到产品的过程，以及计划、并行、代码库质量、搜索与原型的取舍。",
+            "why": "比工具小技巧更能解释一套开发系统为什么这样设计。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Claude Code 个人工作流：13 条分享",
+            "type": "推文串",
+            "date": "2026-01-02",
+            "author": "@bcherny",
+            "url": "https://x.com/bcherny/status/2007179832300581177",
+            "summary": "介绍多会话、共享项目知识、重复流程与验证环节，是理解其日常用法的补充入口。",
+            "why": "配合完整访谈阅读，区分个人配置与普遍原则。",
+            "access": "X 原页拒绝抓取；链接与主题由公开转载交叉确认，未逐条转述全文。",
+            "evidence": ""
+          }
+        ],
+        "note": "别把“跑几个 Agent”当成目标。先定义每个任务的完成条件和验证方式，再考虑并行。"
       }
     },
     {
       "id": "thibault",
       "name": "Thibault Sottiaux",
-      "short": "Codex · 产品与平台",
+      "short": "开放生态 · 用户反馈",
       "category": "Agent 与模型",
-      "role": "OpenAI 产品与平台建设者；所引公告中为 Codex Lead",
+      "role": "OpenAI 产品与平台建设者；所引公告中为 Codex Lead（按引用材料语境）",
       "home": "https://openai.com/build-week/",
       "x": "https://x.com/thsottiaux",
       "tags": [
-        "Codex",
-        "开发工具",
-        "完整工作流"
+        "开放生态让第三方参与产品价值",
+        "直接询问用户下一步要改什么"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "可核验的官方引述指向一个明确方向：Codex 不只生成代码，还需要使用现有工具、验证结果和长期维护软件。这里使用官方公告与个人演示，避免把团队路线全部归为个人独创。",
-      "ideas": [],
-      "works": [
+      "thesis": "偏好开放的 Agent 生态，并把具体用户反馈带进产品迭代。",
+      "summary": "仅依据选定本人推文建立初步主题；未用公司收购公告推断他的全部主张。",
+      "ideas": [
         {
-          "title": "OpenAI to acquire Astral",
-          "type": "官方公告／个人引述",
-          "date": "2026-03-19",
-          "author": "OpenAI；含 Thibault Sottiaux 引述",
-          "url": "https://openai.com/index/openai-to-acquire-astral/",
-          "summary": "解释将 Python 开发工具生态与 Codex 结合，推动 Agent 参与更多软件开发环节的方向。",
-          "why": "看清工具生态为何与模型能力同样重要。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "开放生态让第三方参与产品价值",
+          "text": "他的近期发言把插件发现、服务构建和分享视为生态方向。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "两条同周本人发言支持，但覆盖期较短。",
+          "boundary": "这是产品方向；不证明采用率，也不等于所有接口和模型都开源。"
         },
         {
-          "title": "用工作 Agent 整理未读邮件",
-          "type": "推文／使用演示",
-          "date": "2026-10-02",
-          "author": "@thsottiaux",
-          "url": "https://x.com/thsottiaux/status/2105899634032025682",
-          "summary": "分享减少未读邮件、继续向 inbox zero 推进的个人使用任务。",
-          "why": "把“Agent 做知识工作”还原成可观察的具体案例。",
-          "access": "依据 Zara 的公开 feed；未独立复验演示效果。",
-          "evidence": ""
+          "title": "直接询问用户下一步要改什么",
+          "text": "他公开询问接下来两周的功能需求与改进建议。",
+          "source": 2,
+          "sourceIndices": [
+            2
+          ],
+          "representativeness": "本人明确的反馈邀请。",
+          "boundary": "单次公开提问不足以证明团队完整决策流程；本页还需补原始访谈。"
         }
       ],
-      "note": "先读生命周期方向，再看一次真实任务。区分愿景、演示和可靠交付的证据。",
+      "works": [
+        {
+          "title": "Open ecosystems will win",
+          "url": "https://x.com/thsottiaux/status/2105039482013757749",
+          "date": "Tue Sep 29 20:58:16 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "表达对插件发现与开放生态的支持。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@thsottiaux",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "让用户构建并分享 MCP 服务",
+          "url": "https://x.com/thsottiaux/status/2105519215092584786",
+          "date": "Thu Oct 01 04:44:34 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "描述服务可构建、部署和设置分享范围。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@thsottiaux",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "公开征求短期产品改进建议",
+          "url": "https://x.com/thsottiaux/status/2105348026416140781",
+          "date": "Wed Sep 30 17:24:19 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "询问用户希望下一轮增加或改进哪些功能。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@thsottiaux",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 3,
+        "scope": "本轮依据 3 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "仅依据选定本人推文建立初步主题；未用公司收购公告推断他的全部主张。",
+        "xScope": "本轮复核 3 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "Coding Agent 的目标，是参与整个软件开发生命周期。",
@@ -597,56 +908,149 @@
             "text": "他的公开推文展示整理大量未读邮件的任务。这是个人使用案例，不是成功率或通用可靠性证明。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "OpenAI to acquire Astral",
+            "type": "官方公告／个人引述",
+            "date": "2026-03-19",
+            "author": "OpenAI；含 Thibault Sottiaux 引述",
+            "url": "https://openai.com/index/openai-to-acquire-astral/",
+            "summary": "解释将 Python 开发工具生态与 Codex 结合，推动 Agent 参与更多软件开发环节的方向。",
+            "why": "看清工具生态为何与模型能力同样重要。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "用工作 Agent 整理未读邮件",
+            "type": "推文／使用演示",
+            "date": "2026-10-02",
+            "author": "@thsottiaux",
+            "url": "https://x.com/thsottiaux/status/2105899634032025682",
+            "summary": "分享减少未读邮件、继续向 inbox zero 推进的个人使用任务。",
+            "why": "把“Agent 做知识工作”还原成可观察的具体案例。",
+            "access": "依据 Zara 的公开 feed；未独立复验演示效果。",
+            "evidence": ""
+          }
+        ],
+        "note": "先读生命周期方向，再看一次真实任务。区分愿景、演示和可靠交付的证据。"
       }
     },
     {
       "id": "peter-yang",
       "name": "Peter Yang",
-      "short": "实战教程 · Builder 访谈",
+      "short": "个人工具 · Agent 入口",
       "category": "学习与创作",
-      "role": "Behind the Craft 作者与主持人；AI 教程与个人工作系统的制作人",
+      "role": "Behind the Craft 作者与主持人；AI 教程与个人工作系统的制作人（按引用材料语境）",
       "home": "https://creatoreconomy.so",
       "x": "https://x.com/petergyang",
       "tags": [
-        "Agent-first",
-        "教程",
-        "知识工作"
+        "产品能力要能被 Agent 调用",
+        "用自己的问题学习和做原型",
+        "Agent 功能多，也要让普通人知道怎么用"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "Peter 的特色是把抽象变化拆成可看、可做的工作流程。个人观点以署名文章为依据，访谈中的技术主张保留给嘉宾，不把整期节目都当成他的观点。",
-      "ideas": [],
+      "thesis": "从自己的问题出发学 AI，做能交给人和 Agent 使用的工具，并认真处理上手体验。",
+      "summary": "结合公开文章前半段、学习路线与选定本人推文；付费内容、关联视频和嘉宾观点均不冒充已读。",
+      "ideas": [
+        {
+          "title": "产品能力要能被 Agent 调用",
+          "text": "重要功能需要可用接口；连接工具与说明工作流的技能是不同部分。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人公开文章的中心主张，引用范围限于预览。",
+          "boundary": "不适用于所有消费体验；完整五步方案没有读取，不能按标题补全。"
+        },
+        {
+          "title": "用自己的问题学习和做原型",
+          "text": "学习路线围绕具体工作与创作任务；近期又用自己的工具需求做小作品。",
+          "source": 1,
+          "sourceIndices": [
+            1,
+            3
+          ],
+          "representativeness": "长期教程定位与近期实践相互支持。",
+          "boundary": "五分钟等速度是个人说法，未测量；原型不等于可维护产品。"
+        },
+        {
+          "title": "Agent 功能多，也要让普通人知道怎么用",
+          "text": "他指出入口拥挤、多任务对话不清晰和新用户上手难的问题。",
+          "source": 2,
+          "sourceIndices": [
+            2
+          ],
+          "representativeness": "本人较完整的近期产品体验评论。",
+          "boundary": "个人体验不是用户研究样本；对产品的评价会随版本变化。"
+        }
+      ],
       "works": [
         {
           "title": "Why You Need to Build Your Product for AI Agents First",
-          "type": "个人文章",
-          "date": "2026-02-25",
-          "author": "Peter Yang",
           "url": "https://creatoreconomy.so/p/why-you-need-to-build-your-product-for-ai-agents-first",
-          "summary": "讨论 Agent 通过接口使用产品后，产品入口、文档和用户体验为何需要重新考虑。",
-          "why": "适合正在做工具、服务或 API 的人建立接口意识。",
-          "access": "已读取公开部分；完整后半部分为付费内容。",
-          "evidence": ""
+          "date": "2026-02-25",
+          "locator": "Why build for agents first；APIs, skills, and MCPs；可见的前两步",
+          "summary": "产品能力应有可供 Agent 调用的接口；MCP 与工作流说明分别解决连接和操作问题。",
+          "access": "只读付费墙之前的公开预览；后续三个步骤及人工监督章节未读取。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
           "title": "Introducing My New AI Learning Path and Co-Pilot",
-          "type": "个人文章／学习目录",
-          "date": "2025-08-27",
-          "author": "Peter Yang",
           "url": "https://creatoreconomy.so/p/introducing-my-new-ai-learning-path-and-co-pilot",
-          "summary": "把教程、访谈与 AI 学习助手组织成学习路线，并标记视频与付费内容。",
-          "why": "作为他代表教程和访谈的导航入口。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-08-27",
+          "locator": "实用教程定位；学习路径分类",
+          "summary": "用问题导向的教程，从个人助手、工作任务到应用原型逐步学习。",
+          "access": "已读公开介绍与路线分类；未使用付费 co-pilot 或逐篇学习链接。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "个人 Agent 使用与上手体验",
+          "url": "https://x.com/petergyang/status/2105374125669884120",
+          "date": "Wed Sep 30 19:08:02 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "比较个人实际使用体验，指出多任务对话与复杂入口的困扰。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@petergyang",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "为自己的核心需求做小工具",
+          "url": "https://x.com/petergyang/status/2106072698564874410",
+          "date": "Fri Oct 02 17:23:54 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "因原产品过于复杂，尝试让 Claude 制作自己需要的核心功能。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@petergyang",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "教程可以当起点，但别跳过产品自己的文档。遇到嘉宾建议，回到嘉宾原话与适用情境。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 4,
+        "scope": "本轮依据 4 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "结合公开文章前半段、学习路线与选定本人推文；付费内容、关联视频和嘉宾观点均不冒充已读。",
+        "xScope": "本轮复核 2 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "产品的使用者，正在从只有人扩展到人和 Agent。",
@@ -667,67 +1071,122 @@
             "text": "AI Learning Path 将教程与一线访谈组织成逐步学习材料；他的内容定位是让忙碌的人能拿走一个可执行的方法。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Why You Need to Build Your Product for AI Agents First",
+            "type": "个人文章",
+            "date": "2026-02-25",
+            "author": "Peter Yang",
+            "url": "https://creatoreconomy.so/p/why-you-need-to-build-your-product-for-ai-agents-first",
+            "summary": "讨论 Agent 通过接口使用产品后，产品入口、文档和用户体验为何需要重新考虑。",
+            "why": "适合正在做工具、服务或 API 的人建立接口意识。",
+            "access": "已读取公开部分；完整后半部分为付费内容。",
+            "evidence": ""
+          },
+          {
+            "title": "Introducing My New AI Learning Path and Co-Pilot",
+            "type": "个人文章／学习目录",
+            "date": "2025-08-27",
+            "author": "Peter Yang",
+            "url": "https://creatoreconomy.so/p/introducing-my-new-ai-learning-path-and-co-pilot",
+            "summary": "把教程、访谈与 AI 学习助手组织成学习路线，并标记视频与付费内容。",
+            "why": "作为他代表教程和访谈的导航入口。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "教程可以当起点，但别跳过产品自己的文档。遇到嘉宾建议，回到嘉宾原话与适用情境。"
       }
     },
     {
       "id": "nan",
       "name": "Nan Yu",
-      "short": "Linear · 产品实践",
+      "short": "完成定义 · 团队语境",
       "category": "产品与设计",
-      "role": "Linear 产品实践者；所引访谈为 Linear 产品负责人及 Linear Agent 参与者",
+      "role": "产品负责人；本页区分 Linear 时期实践与 2026-09 加入 OpenAI 后的公开观察",
       "home": "https://linear.app/now/how-we-run-projects-at-linear",
       "x": "https://x.com/thenanyu",
       "tags": [
-        "Linear",
-        "速度与质量",
-        "生产 Agent"
+        "项目需要明确的完成定义",
+        "规格说明提供情境和意图",
+        "行动速度与稳定性存在取舍"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的材料兼具传统产品纪律与 AI 实践：限制软件膨胀，让团队理解项目为什么做；在 Agent 项目中则强调真实工作流、按需取上下文和评估。",
-      "ideas": [],
-      "works": [
+      "thesis": "让项目有清楚的完成条件，让团队理解问题与取舍，而不只是接收任务清单。",
+      "summary": "区分 Linear 时期团队访谈中的本人回答，与 2026 年加入 OpenAI 后的个人观察。",
+      "ideas": [
         {
-          "title": "Linear’s secret to building beloved B2B products",
-          "type": "原始访谈",
-          "date": "2025-01-30",
-          "author": "Nan Yu · Lenny’s Podcast",
-          "url": "https://www.lennysnewsletter.com/p/linears-secret-to-building-beloved-b2b-products-nan-yu",
-          "summary": "讨论速度与质量、避免功能膨胀、创造性探索和慎用截止日期。",
-          "why": "理解 AI 产品建设仍然需要的基本功。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "项目需要明确的完成定义",
+          "text": "项目应有终点；不同发布阶段可以用不同的里程碑定义完成。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人在项目定义和里程碑两个问答中重复强调。",
+          "boundary": "2023 年团队实践，不能推出所有组织必须使用相同期限。"
         },
         {
-          "title": "How we run projects at Linear",
-          "type": "团队访谈",
-          "date": "2023-10-05",
-          "author": "Nan Yu 与 Linear 工程团队",
-          "url": "https://linear.app/now/how-we-run-projects-at-linear",
-          "summary": "解释项目完成标准、简短规格、工程师负责项目以及沟通方法。",
-          "why": "看看好的产品纪律怎样落在日常协作中。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "规格说明提供情境和意图",
+          "text": "把反馈与未解决问题整理起来，让工程、设计和支持理解为什么做、影响什么。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人对 specs 的明确解释。",
+          "boundary": "团队访谈不能证明他当前公司沿用同样流程。"
         },
         {
-          "title": "5 Rules for Building AI Agents That Work in Production",
-          "type": "原始访谈",
-          "date": "2026-08-09",
-          "author": "Nan Yu、Jacob Shumway · Peter Yang",
-          "url": "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob",
-          "summary": "从内部备忘录到 Linear Agent，讨论工作流、取上下文工具和评估。",
-          "why": "从“做一个 Agent”转到“嵌入一段能验收的工作”。",
-          "access": "已读取公开节目说明与前两项要点；完整文章付费。",
-          "evidence": ""
+          "title": "行动速度与稳定性存在取舍",
+          "text": "近期观察赞赏快速行动，同时承认事情容易在脚下变化。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "本人初入新公司的公开观察，主动写出两面。",
+          "boundary": "只有约一周观察，不是组织效果研究。"
         }
       ],
-      "note": "先读速度与质量，再读 Agent 案例，观察哪些产品原则保持不变。不要把 Jacob 的具体技术意见单独归给 Nan。",
+      "works": [
+        {
+          "title": "How we run projects at Linear",
+          "url": "https://linear.app/now/how-we-run-projects-at-linear",
+          "date": "2023-10-05",
+          "locator": "Nan Yu 的 project、spec、updates 与 milestones 回答",
+          "summary": "用情境说明、更新和阶段完成标准协调项目。",
+          "access": "已阅读团队访谈正文；本页只归纳标注 Nan Yu 的回答，工程同事的观点不算他的个人主张。",
+          "type": "本人参与的团队访谈",
+          "author": "Nan Yu、Sabin Roman、Raissa Largman",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "加入 OpenAI 后观察行动文化",
+          "url": "https://x.com/thenanyu/status/2105316751802348005",
+          "date": "Wed Sep 30 15:20:03 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "描述自己加入约一周的高行动倾向，也指出变化过快的代价。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@thenanyu",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "区分 Linear 时期团队访谈中的本人回答，与 2026 年加入 OpenAI 后的个人观察。",
+        "xScope": "本轮复核 1 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "好产品的速度，来自理解和熟练，而不是少做质量工作。",
@@ -748,56 +1207,175 @@
             "text": "Nan 与 Jacob 的访谈从实际流程出发，界定上下文在哪、哪些动作完成工作、何时需要人工复核。具体工具建议来自两位嘉宾共同实践。",
             "source": 2
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Linear’s secret to building beloved B2B products",
+            "type": "原始访谈",
+            "date": "2025-01-30",
+            "author": "Nan Yu · Lenny’s Podcast",
+            "url": "https://www.lennysnewsletter.com/p/linears-secret-to-building-beloved-b2b-products-nan-yu",
+            "summary": "讨论速度与质量、避免功能膨胀、创造性探索和慎用截止日期。",
+            "why": "理解 AI 产品建设仍然需要的基本功。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "How we run projects at Linear",
+            "type": "团队访谈",
+            "date": "2023-10-05",
+            "author": "Nan Yu 与 Linear 工程团队",
+            "url": "https://linear.app/now/how-we-run-projects-at-linear",
+            "summary": "解释项目完成标准、简短规格、工程师负责项目以及沟通方法。",
+            "why": "看看好的产品纪律怎样落在日常协作中。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "5 Rules for Building AI Agents That Work in Production",
+            "type": "原始访谈",
+            "date": "2026-08-09",
+            "author": "Nan Yu、Jacob Shumway · Peter Yang",
+            "url": "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob",
+            "summary": "从内部备忘录到 Linear Agent，讨论工作流、取上下文工具和评估。",
+            "why": "从“做一个 Agent”转到“嵌入一段能验收的工作”。",
+            "access": "已读取公开节目说明与前两项要点；完整文章付费。",
+            "evidence": ""
+          }
+        ],
+        "note": "先读速度与质量，再读 Agent 案例，观察哪些产品原则保持不变。不要把 Jacob 的具体技术意见单独归给 Nan。"
       }
     },
     {
       "id": "madhu",
       "name": "Madhu Guru",
-      "short": "AI 产品 · 评估方法",
+      "short": "执行路径 · 动态评估",
       "category": "Agent 与模型",
-      "role": "AI 产品实践者；公开撰写 How to build great evals 系列",
+      "role": "AI 产品实践者；公开撰写 How to build great evals 系列（按引用材料语境）",
       "home": "https://x.com/realmadhuguru",
       "x": "https://x.com/realmadhuguru",
       "tags": [
-        "Evals",
-        "失败定位",
-        "产品演进"
+        "结果相同，执行路径也可能不同",
+        "评估要跟着真实使用变化",
+        "与业务团队一起做 AI，而不是强推工具"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的代表性推文把 eval 从一次发布前的测试，变成随真实使用演进的产品机制。这里侧重可读取的评估系列，不采用未充分核验的最新职务说法。",
-      "ideas": [],
-      "works": [
+      "thesis": "把评估嵌进真实工作流，既看结果也看路径，并随着用户任务变化而更新。",
+      "summary": "本人 evals 系列与企业 AI 长帖提供较集中的主题样本；没有把金融例子当作投资建议。",
+      "ideas": [
         {
-          "title": "How to build great evals — Part 9: The Eval Roadmap Problem",
-          "type": "推文",
-          "date": "2026-08-26",
-          "author": "@realmadhuguru",
-          "url": "https://x.com/realmadhuguru/status/2092426017118028266",
-          "summary": "主张 eval 需要随产品和用户行为的变化形成路线图。",
-          "why": "把产品未来将承担的任务提前写进评估计划。",
-          "access": "原 X 页无法读取；基于作者推文的公开镜像转述，镜像年份元数据不一致，日期采用正文与摘要交叉核对。",
-          "evidence": "https://zamantika.com/vi/realmadhuguru/status/2092426017118028266"
+          "title": "结果相同，执行路径也可能不同",
+          "text": "检查检索、工具调用、重复步骤和错误恢复，才能诊断 Agent 工作质量。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            3
+          ],
+          "representativeness": "系列连续两篇从步骤与粒度解释同一主题。",
+          "boundary": "路径效率与可靠性应按任务权衡，不是调用越少越好。"
         },
         {
-          "title": "How to build great evals — Part 10: Measure the steps, not just the result",
-          "type": "推文",
-          "date": "2026-09-10",
-          "author": "@realmadhuguru",
-          "url": "https://x.com/realmadhuguru/status/2098064969464217720",
-          "summary": "把最终正确性与执行步骤分开评估，关注工具使用和恢复过程。",
-          "why": "适合用来设计可诊断的 Agent 测试。",
-          "access": "原 X 页无法读取；基于作者推文的公开镜像。",
-          "evidence": "https://zamantika.com/realmadhuguru/status/2098064969464217720"
+          "title": "评估要跟着真实使用变化",
+          "text": "用户会从短问答转向复杂综合与主动任务，评估维度和难例也要更新。",
+          "source": 1,
+          "sourceIndices": [
+            1,
+            2
+          ],
+          "representativeness": "系列解释评估路线图与区分能力的标准。",
+          "boundary": "文中变化时间是示例，不能当作所有用户的固定进度。"
+        },
+        {
+          "title": "与业务团队一起做 AI，而不是强推工具",
+          "text": "让懂 AI 的构建者进入财务、销售或支持的工作流，评估成为一等工作。",
+          "source": 4,
+          "sourceIndices": [
+            4,
+            1
+          ],
+          "representativeness": "企业长帖与评估路线图都强调实际使用。",
+          "boundary": "是本人诊断与建议，本轮没有验证企业失败率。"
         }
       ],
-      "note": "从自己的实际失败案例开始做评估。镜像不是原站，重要细节应回到原推文确认。",
+      "works": [
+        {
+          "title": "Evals 第 10 篇：测量步骤而非只看答案",
+          "url": "https://x.com/realmadhuguru/status/2098064969464217720",
+          "date": "Thu Sep 10 15:04:03 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "比较同样答案背后的工具调用与错误恢复。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@realmadhuguru",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Evals 第 9 篇：评估也要有路线图",
+          "url": "https://x.com/realmadhuguru/status/2092426017118028266",
+          "date": "Wed Aug 26 01:36:52 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "随着任务长度、轮次与自主性变化，更新评估。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@realmadhuguru",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Evals 第 8 篇：区分有效能力差异",
+          "url": "https://x.com/realmadhuguru/status/2092058332735693264",
+          "date": "Tue Aug 25 01:15:49 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "评估要现实、有难度，并能区分相关系统。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@realmadhuguru",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Evals 第 7 篇：诊断所需的粒度",
+          "url": "https://x.com/realmadhuguru/status/2091684812012875981",
+          "date": "Mon Aug 24 00:31:35 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "按中间任务分解评价，避免过粗或过细。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@realmadhuguru",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "为什么企业 AI 项目失败",
+          "url": "https://x.com/realmadhuguru/status/2098448235048378456",
+          "date": "Fri Sep 11 16:27:01 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "反对脱离一线工作流建设统一工具，主张与业务团队共同构建。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@realmadhuguru",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 5,
+        "scope": "本轮依据 5 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本人 evals 系列与企业 AI 长帖提供较集中的主题样本；没有把金融例子当作投资建议。",
+        "xScope": "本轮复核 5 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "评估要告诉你哪里该改，而不只是给产品一个总分。",
@@ -818,56 +1396,124 @@
             "text": "定义每一步的任务，以及典型和困难案例，才能决定是单独评估还是作为整体评估的切片。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "How to build great evals — Part 9: The Eval Roadmap Problem",
+            "type": "推文",
+            "date": "2026-08-26",
+            "author": "@realmadhuguru",
+            "url": "https://x.com/realmadhuguru/status/2092426017118028266",
+            "summary": "主张 eval 需要随产品和用户行为的变化形成路线图。",
+            "why": "把产品未来将承担的任务提前写进评估计划。",
+            "access": "原 X 页无法读取；基于作者推文的公开镜像转述，镜像年份元数据不一致，日期采用正文与摘要交叉核对。",
+            "evidence": "https://zamantika.com/vi/realmadhuguru/status/2092426017118028266"
+          },
+          {
+            "title": "How to build great evals — Part 10: Measure the steps, not just the result",
+            "type": "推文",
+            "date": "2026-09-10",
+            "author": "@realmadhuguru",
+            "url": "https://x.com/realmadhuguru/status/2098064969464217720",
+            "summary": "把最终正确性与执行步骤分开评估，关注工具使用和恢复过程。",
+            "why": "适合用来设计可诊断的 Agent 测试。",
+            "access": "原 X 页无法读取；基于作者推文的公开镜像。",
+            "evidence": "https://zamantika.com/realmadhuguru/status/2098064969464217720"
+          }
+        ],
+        "note": "从自己的实际失败案例开始做评估。镜像不是原站，重要细节应回到原推文确认。"
       }
     },
     {
       "id": "amanda",
       "name": "Amanda Askell",
-      "short": "Claude Character · 价值与行为",
+      "short": "诚实与品格 · 对齐边界",
       "category": "Agent 与模型",
-      "role": "Anthropic Character 工作负责人；Claude’s Constitution 主要作者",
+      "role": "Anthropic 研究者；本人介绍中的方向为诚实、品格与微调",
       "home": "https://www.anthropic.com/constitution",
       "x": "https://x.com/AmandaAskell",
       "tags": [
-        "Character",
-        "模型行为",
-        "Constitution"
+        "诚实与品格是明确的研究对象",
+        "对齐与无害不是同一条轴"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "她的代表作品不是 App，而是训练与指导 Claude 行为的价值文档。宪法描述的是期望的模型品格；Anthropic 明确承认真实模型行为可能与这些理想存在差距。",
-      "ideas": [],
-      "works": [
+      "thesis": "研究模型的诚实与品格，并区分“对齐了什么”与“是否造成伤害”。",
+      "summary": "本人介绍和选定推文支持有限个人观点；Claude 宪法属于团队文件，作为背景，不归为她独自提出的全部立场。",
+      "ideas": [
         {
-          "title": "Claude’s Constitution",
-          "type": "主要作者作品",
-          "date": "2026-01-21（PDF 署期）",
-          "author": "Amanda Askell 与多位共同贡献者",
-          "url": "https://www.anthropic.com/constitution",
-          "summary": "说明 Claude 的价值、帮助性、诚实、安全和多方关系，直接参与训练过程。",
-          "why": "观察“模型人格”如何成为可讨论、可修订的工程材料。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "诚实与品格是明确的研究对象",
+          "text": "她的团队介绍把诚实、品格和新的微调方法列为工作方向。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人自述研究对象，可确认范围较窄。",
+          "boundary": "研究方向不等于已经证明模型拥有道德人格或相应效果。"
         },
         {
-          "title": "Claude’s new constitution",
-          "type": "官方解释文章",
-          "date": "2026-01-22",
-          "author": "Anthropic",
-          "url": "https://www.anthropic.com/news/claude-new-constitution",
-          "summary": "解释从独立原则清单转向更充分的理由说明，以及宪法在训练中的用途。",
-          "why": "先读这个较短版本，再阅读长篇宪法。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "对齐与无害不是同一条轴",
+          "text": "模型即使按目标行事，也可能因为情境信息错误造成伤害，需要分别分析。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "本人明确纠正他人的表述。",
+          "boundary": "只读取她的回应文字，未核对被引用视频；这是概念区分，不是完整安全理论。"
         }
       ],
-      "note": "这是一份目标与训练材料，不是对所有 Claude 回答的质量承诺。个人贡献与团队共同建设应一起看。",
+      "works": [
+        {
+          "title": "Amanda Askell：本人介绍",
+          "url": "https://askell.io/",
+          "date": "页面未标日期，核验于 2026-10-04",
+          "locator": "About Me：团队研究描述",
+          "summary": "介绍自己在 Anthropic 从事微调、诚实与品格研究。",
+          "access": "已阅读本人介绍正文；未把履历页当作完整理论文章。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Aligned 与 harmless 是不同维度",
+          "url": "https://x.com/AmandaAskell/status/2084369056765989224",
+          "date": "Mon Aug 03 20:01:23 +0000 2026",
+          "locator": "本人帖子正文",
+          "summary": "指出模型或人可能在错误情境信息下，按对齐目标行动却造成伤害。",
+          "access": "已阅读 2026-10-03 采集快照中的此条本人帖子全文；未重新采集主页，媒体、引用内容和外链未逐一核验。",
+          "type": "本人 X 帖子",
+          "author": "@AmandaAskell",
+          "excerpt": "",
+          "why": "本人公开表达；日期与适用语境一并保留。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Claude’s new constitution：团队背景",
+          "url": "https://www.anthropic.com/news/claude-new-constitution",
+          "date": "2026-01-22",
+          "locator": "新宪法的说明及价值推理方法",
+          "summary": "官方说明模型价值与行为的训练方向。",
+          "access": "只读官方说明正文；完整宪法另有长篇文本，本轮未逐条阅读。文件表达团队立场，不全归于 Amanda。",
+          "type": "团队背景材料",
+          "author": "Anthropic",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 3,
+        "scope": "本轮依据 3 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本人介绍和选定推文支持有限个人观点；Claude 宪法属于团队文件，作为背景，不归为她独自提出的全部立场。",
+        "xScope": "本轮复核 1 条指定本人帖子的已有文字快照；采集于 2026-10-03，未刷新时间线。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "让模型理解行为背后的理由，而不只记住一张规则清单。",
@@ -888,56 +1534,109 @@
             "text": "公开宪法让外部读者知道哪些行为是设计意图；真正的遵循程度还需要训练、评估和系统报告。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Claude’s Constitution",
+            "type": "主要作者作品",
+            "date": "2026-01-21（PDF 署期）",
+            "author": "Amanda Askell 与多位共同贡献者",
+            "url": "https://www.anthropic.com/constitution",
+            "summary": "说明 Claude 的价值、帮助性、诚实、安全和多方关系，直接参与训练过程。",
+            "why": "观察“模型人格”如何成为可讨论、可修订的工程材料。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Claude’s new constitution",
+            "type": "官方解释文章",
+            "date": "2026-01-22",
+            "author": "Anthropic",
+            "url": "https://www.anthropic.com/news/claude-new-constitution",
+            "summary": "解释从独立原则清单转向更充分的理由说明，以及宪法在训练中的用途。",
+            "why": "先读这个较短版本，再阅读长篇宪法。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "这是一份目标与训练材料，不是对所有 Claude 回答的质量承诺。个人贡献与团队共同建设应一起看。"
       }
     },
     {
       "id": "cat",
       "name": "Cat Wu",
-      "short": "Claude Code · AI 产品组织",
+      "short": "产品判断 · 留存与审查",
       "category": "产品与设计",
       "role": "Claude Code 与 Cowork 产品建设者（所引访谈语境）",
       "home": "https://www.youtube.com/watch?v=PplmzlgE0kg",
       "x": "https://x.com/_catwu",
       "tags": [
-        "产品判断",
-        "快速迭代",
-        "Claude Code"
+        "产品与商业判断的价值上升",
+        "用真实内部使用和留存决定是否发布",
+        "自动审查的信任要靠渐进验证"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "Cat 的访谈从产品职能谈 AI 团队如何运转：明确用户和任务，减少从想法到发布的摩擦，并在当前模型能力与未来能力之间选择产品形态。",
-      "ideas": [],
-      "works": [
+      "thesis": "实现变快之后，更需要判断值得做什么，并用真实留存与验证逐步扩大自动化。",
+      "summary": "目前依据一场原始访谈的 Cat 发言段落，材料较集中；主持人总结和 Thariq 发言不混作她的观点。",
+      "ideas": [
         {
-          "title": "How Anthropic’s product team moves faster than anyone else",
-          "type": "原始访谈",
-          "date": "2026-04-23",
-          "author": "Cat Wu · Lenny’s Podcast",
-          "url": "https://www.youtube.com/watch?v=PplmzlgE0kg",
-          "summary": "讨论 PM 的变化、清晰目标、发布流程、产品判断和模型能力边界。",
-          "why": "看技术变快后，组织和产品岗位如何随之改变。",
-          "access": "视频抓取受限；已读取节目官方 GitHub 转录。",
-          "evidence": "https://github.com/LennysNewsletter/lennys-newsletterpodcastdata/blob/main/podcasts/cat-wu.md"
+          "title": "产品与商业判断的价值上升",
+          "text": "当实现周期缩短，工程师也要判断哪些体验和功能值得建设。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "Cat 在 03:39 对工作角色变化的解释。",
+          "boundary": "单场访谈，未检验跨时间稳定性；基础设施仍需严谨执行。"
         },
         {
-          "title": "Claude Code’s product lead talks usage limits, transparency, and the “lean harness”",
-          "type": "原始采访",
-          "date": "2026-05",
-          "author": "Cat Wu · Ars Technica",
-          "url": "https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/",
-          "summary": "补充讨论不同使用界面、使用限制与精简 Agent 外层设计。",
-          "why": "与产品组织访谈对照，继续追问产品取舍的代价。",
-          "access": "基于公开可见采访节选；本档案未概括全文。",
-          "evidence": ""
+          "title": "用真实内部使用和留存决定是否发布",
+          "text": "先给员工及早期用户使用，迭代到持续被使用，再公开发布。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "Cat 在 11:41 明确解释团队门槛。",
+          "boundary": "没有公开具体阈值；内部用户不一定代表外部市场。"
+        },
+        {
+          "title": "自动审查的信任要靠渐进验证",
+          "text": "保留核心代码负责人审核，把事故样例变成评估集，逐步扩大自动审查范围。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "Cat 在 14:20 说明关键人工审核和逐步移交。",
+          "boundary": "不是立即无人审核；团队内部效果未独立审计。"
         }
       ],
-      "note": "“快速发布”有适用边界。读她如何界定用户、成功任务和预览承诺，而不是只记住速度。",
+      "works": [
+        {
+          "title": "A Fireside Chat with Cat and Thariq",
+          "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+          "date": "2026-07-21",
+          "locator": "01:05、03:39、11:41、14:20 的 Cat 回答",
+          "summary": "讨论产品判断、内部留存门槛和逐步改进自动审查。",
+          "access": "已阅读主持人发布的逐字稿中指定 Cat 回答；未观看完整视频，不把主持人笔记或 Thariq 的回答归给 Cat。",
+          "type": "原始访谈逐字稿",
+          "author": "Cat Wu；Simon Willison 主持",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "目前依据一场原始访谈的 Cat 发言段落，材料较集中；主持人总结和 Thariq 发言不混作她的观点。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "写代码越来越便宜，决定该写什么越来越重要。",
@@ -958,54 +1657,123 @@
             "text": "只为极强的未来模型设计很容易；难的是判断当前模型能做什么、如何最大限度发挥它，以及下一阶段能力将打开哪些场景。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "How Anthropic’s product team moves faster than anyone else",
+            "type": "原始访谈",
+            "date": "2026-04-23",
+            "author": "Cat Wu · Lenny’s Podcast",
+            "url": "https://www.youtube.com/watch?v=PplmzlgE0kg",
+            "summary": "讨论 PM 的变化、清晰目标、发布流程、产品判断和模型能力边界。",
+            "why": "看技术变快后，组织和产品岗位如何随之改变。",
+            "access": "视频抓取受限；已读取节目官方 GitHub 转录。",
+            "evidence": "https://github.com/LennysNewsletter/lennys-newsletterpodcastdata/blob/main/podcasts/cat-wu.md"
+          },
+          {
+            "title": "Claude Code’s product lead talks usage limits, transparency, and the “lean harness”",
+            "type": "原始采访",
+            "date": "2026-05",
+            "author": "Cat Wu · Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/",
+            "summary": "补充讨论不同使用界面、使用限制与精简 Agent 外层设计。",
+            "why": "与产品组织访谈对照，继续追问产品取舍的代价。",
+            "access": "基于公开可见采访节选；本档案未概括全文。",
+            "evidence": ""
+          }
+        ],
+        "note": "“快速发布”有适用边界。读她如何界定用户、成功任务和预览承诺，而不是只记住速度。"
       }
     },
     {
       "id": "thariq",
       "name": "Thariq Shihipar",
-      "short": "Claude Code · 工具设计",
+      "short": "工具能力 · 按需上下文",
       "category": "Agent 与模型",
       "origin": "仓库名单",
-      "role": "Claude Code 团队；Seeing like an agent 署名作者",
+      "role": "Claude Code 团队；Seeing like an agent 署名作者（按引用材料语境）",
       "home": "https://claude.com/blog/seeing-like-an-agent",
       "x": "https://x.com/trq212",
       "tags": [
-        "工具设计",
-        "上下文",
-        "Claude Code"
+        "工具设计要匹配模型的能力",
+        "让 Agent 按需找到上下文",
+        "能力变了，就重新检查原有工具和约束"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他通过 Claude Code 的具体迭代说明：工具不只是 API 的集合。工具的粒度、提问机制、搜索方式和信息呈现，都要与模型能力配合。",
-      "ideas": [],
-      "works": [
+      "thesis": "从模型的能力出发设计工具，让它能找到上下文，并随能力变化重新检查脚手架。",
+      "summary": "本人署名文章与原始访谈指定段落支持工具设计主题；其他嘉宾观点分开归属。",
+      "ideas": [
         {
-          "title": "Seeing like an agent: how we design tools in Claude Code",
-          "type": "署名文章",
-          "date": "2026-04-10",
-          "author": "Thariq Shihipar · Claude",
-          "url": "https://claude.com/blog/seeing-like-an-agent",
-          "summary": "以提问工具、任务机制、搜索和渐进披露为例，解释 Claude Code 如何测试和调整工具。",
-          "why": "文章包含失败尝试，适合直接用来检查自己的 Agent 接口。"
+          "title": "工具设计要匹配模型的能力",
+          "text": "读执行输出、试验调用方式；结构化提问工具是否有效，取决于模型能否稳定使用。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人文章用多个失败尝试解释设计方法。",
+          "boundary": "不是工具越少越好；具体工具随任务和模型变化。"
         },
         {
-          "title": "How I plan, build, and run loops with Claude Code",
-          "type": "访谈",
-          "date": "2026-07-19",
-          "author": "Peter Yang 访谈 Thariq Shihipar",
-          "url": "https://creatoreconomy.so/p/how-i-plan-build-and-run-loops-with-claude-code-thariq-shihipar",
-          "summary": "讨论计划如何消除未知、模型升级后重新审视旧指令，以及用可验证目标运行循环。",
-          "why": "从工具设计进一步看到个人实际使用方式。",
-          "access": "已读公开部分；完整访谈可能需要订阅。",
-          "evidence": ""
+          "title": "让 Agent 按需找到上下文",
+          "text": "用搜索、技能与专门文档检索，逐步获取需要的信息，避免一次塞进所有说明。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "文章在搜索与渐进披露案例中重复论证。",
+          "boundary": "是 Claude Code 的经验，不证明所有检索系统都应弃用 RAG。"
+        },
+        {
+          "title": "能力变了，就重新检查原有工具和约束",
+          "text": "旧 todo、提醒与提示可能限制更强模型；重写仍要有测试和验证支撑。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "署名文章与访谈给出两个具体语境。",
+          "boundary": "重写不是普遍无风险；缺少测试与代码理解时不能照搬。"
         }
       ],
-      "note": "先读失败尝试，再看最终设计；具体工具选择依赖模型能力，不宜照抄成永久规则。",
-      "researchStatus": "todo",
+      "works": [
+        {
+          "title": "Seeing like an agent",
+          "url": "https://claude.com/blog/seeing-like-an-agent",
+          "date": "2026-04-10",
+          "locator": "AskUserQuestion；tasks 与 todos；search；progressive disclosure",
+          "summary": "通过实际工具的成败说明工具要匹配模型能力。",
+          "access": "已读工具设计正文至渐进披露案例；未运行工具实验。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "A Fireside Chat with Cat and Thariq",
+          "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+          "date": "2026-07-21",
+          "locator": "03:39 与 14:20 的 Thariq 回答",
+          "summary": "讨论有测试支持的重写、代码负责人和验证环境。",
+          "access": "只读指定 Thariq 回答；未观看完整视频，Cat 与主持人评论不算他的主张。",
+          "type": "原始访谈逐字稿",
+          "author": "Thariq Shihipar；Simon Willison 主持",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本人署名文章与原始访谈指定段落支持工具设计主题；其他嘉宾观点分开归属。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "设计 Agent 工具，要从模型看得见、用得好的接口出发。",
@@ -1021,57 +1789,122 @@
             "text": "通过搜索和按需加载，让模型在需要时得到信息；工具数量与说明长度都不是越多越好。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Seeing like an agent: how we design tools in Claude Code",
+            "type": "署名文章",
+            "date": "2026-04-10",
+            "author": "Thariq Shihipar · Claude",
+            "url": "https://claude.com/blog/seeing-like-an-agent",
+            "summary": "以提问工具、任务机制、搜索和渐进披露为例，解释 Claude Code 如何测试和调整工具。",
+            "why": "文章包含失败尝试，适合直接用来检查自己的 Agent 接口。"
+          },
+          {
+            "title": "How I plan, build, and run loops with Claude Code",
+            "type": "访谈",
+            "date": "2026-07-19",
+            "author": "Peter Yang 访谈 Thariq Shihipar",
+            "url": "https://creatoreconomy.so/p/how-i-plan-build-and-run-loops-with-claude-code-thariq-shihipar",
+            "summary": "讨论计划如何消除未知、模型升级后重新审视旧指令，以及用可验证目标运行循环。",
+            "why": "从工具设计进一步看到个人实际使用方式。",
+            "access": "已读公开部分；完整访谈可能需要订阅。",
+            "evidence": ""
+          }
+        ],
+        "note": "先读失败尝试，再看最终设计；具体工具选择依赖模型能力，不宜照抄成永久规则。"
       }
     },
     {
       "id": "google-labs",
       "name": "Google Labs",
-      "short": "实验产品 · 创作工具",
+      "short": "意图设计 · 交互原型",
       "category": "官方信息源",
-      "role": "Google 实验性产品官方信息源；非个人账号",
+      "role": "Google Labs 官方信息源；本页研究 Stitch 的团队产品方向",
       "home": "https://labs.google",
       "x": "https://x.com/GoogleLabs",
       "tags": [
-        "Stitch",
-        "原型",
-        "创作工具"
+        "从设计意图出发，而不是先固定像素",
+        "设计输出需要能验证用户流程",
+        "让设计系统与开发工作流相接"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "官方账号提供一手发布信息。以 Stitch 为例，产品从静态界面生成扩展到交互原型与设计画布；这里总结官方内容主线，不把它拟人化成个人哲学。",
-      "ideas": [],
-      "works": [
+      "thesis": "把设计意图、可交互原型和开发交接连接起来，而不只是生成一张界面图。",
+      "summary": "这是 Google Labs 的官方产品方向，以 Stitch 公告为样本；不是某位作者或模型的个人立场。",
+      "ideas": [
         {
-          "title": "Introducing “vibe design” with Stitch",
-          "type": "官方产品文章",
-          "date": "2026-03-18",
-          "author": "Rustin Banks · Google Labs",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
-          "summary": "介绍 AI 原生设计画布，从自然语言、图像、文字和代码探索高保真界面。",
-          "why": "观察 AI 设计工具如何围绕意图和迭代组织工作。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "从设计意图出发，而不是先固定像素",
+          "text": "把用户目标、品牌感觉和已有材料作为输入，在画布中探索、收敛和修订。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "官方公告将 intent 作为主要设计方法。",
+          "boundary": "产品定位与功能介绍，不是独立用户研究。"
         },
         {
-          "title": "Bring your app ideas to life with Gemini 3 in Stitch",
-          "type": "官方产品文章",
-          "date": "2025-12-10",
-          "author": "Rustin Banks · Google",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/",
-          "summary": "增加 Gemini 3 与 Prototypes，尝试连接多个屏幕并设计交互。",
-          "why": "对照后续版本，理解工具演进而不只看单次发布。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "设计输出需要能验证用户流程",
+          "text": "连接界面形成可交互原型，帮助检查流程，而不止审美。",
+          "source": 1,
+          "sourceIndices": [
+            1,
+            0
+          ],
+          "representativeness": "两次官方更新反复推进交互与迭代。",
+          "boundary": "本轮没有实测生成质量；原型不等于生产实现。"
+        },
+        {
+          "title": "让设计系统与开发工作流相接",
+          "text": "用 DESIGN.md、代码导出与工具连接保持设计约束并交接实现。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "公告列出的明确工作流能力。",
+          "boundary": "功能由团队提出；不代表所有导出都无须人工整理。"
         }
       ],
-      "note": "这是官方发布源。搭配 Josh Woodward 的产品文章和自己的使用记录，更容易形成判断。",
+      "works": [
+        {
+          "title": "Stitch：面向意图的设计画布",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
+          "date": "2026-03-18",
+          "locator": "Creating with intent；design agent；DESIGN.md；语音与导出",
+          "summary": "将文本、图像、代码和设计系统带入可迭代的画布。",
+          "access": "已读官方公告列出的正文章节；跳过自动摘要，没有实际测试产品。",
+          "type": "官方产品公告",
+          "author": "Rustin Banks / Google Labs",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Stitch 接入 Gemini 3 与交互原型",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/",
+          "date": "2025-12-10",
+          "locator": "Prototypes：连接屏幕与测试流程",
+          "summary": "从单张界面走向可点击的多屏用户流程。",
+          "access": "已读官方公告公开正文；当时为实验功能，不证明当前效果或可用地区。",
+          "type": "官方产品公告",
+          "author": "Google Labs",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
       "official": true,
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "这是 Google Labs 的官方产品方向，以 Stitch 公告为样本；不是某位作者或模型的个人立场。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "用真实实验产品，观察 AI 如何改变创作的入口。",
@@ -1092,56 +1925,112 @@
             "text": "官方文章明确标记部分功能的实验性质，并邀请反馈；发布说明不能代替跨场景的独立测试。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Introducing “vibe design” with Stitch",
+            "type": "官方产品文章",
+            "date": "2026-03-18",
+            "author": "Rustin Banks · Google Labs",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
+            "summary": "介绍 AI 原生设计画布，从自然语言、图像、文字和代码探索高保真界面。",
+            "why": "观察 AI 设计工具如何围绕意图和迭代组织工作。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Bring your app ideas to life with Gemini 3 in Stitch",
+            "type": "官方产品文章",
+            "date": "2025-12-10",
+            "author": "Rustin Banks · Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/",
+            "summary": "增加 Gemini 3 与 Prototypes，尝试连接多个屏幕并设计交互。",
+            "why": "对照后续版本，理解工具演进而不只看单次发布。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "这是官方发布源。搭配 Josh Woodward 的产品文章和自己的使用记录，更容易形成判断。"
       }
     },
     {
       "id": "amjad",
       "name": "Amjad Masad",
-      "short": "Replit · 软件创作普及",
+      "short": "软件普及 · 即兴试验",
       "category": "软件与创业",
-      "role": "Replit 联合创始人；长期建设在线编程与软件创作平台",
+      "role": "Replit 联合创始人；长期建设在线编程与软件创作平台（按引用材料语境）",
       "home": "https://replit.com",
       "x": "https://x.com/amasad",
       "tags": [
-        "Replit",
-        "创作门槛",
-        "计算能力"
+        "降低配置负担，让更多人直接构建",
+        "给即兴试验和意外发现留出空间"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "在生成式 AI 之前，他就强调让普通人拥有计算能力、玩中学习、快速发布和与人协作。AI Agent 是这条产品方向的延伸，不应把后来全部团队功能都算成他的个人作品。",
-      "ideas": [],
-      "works": [
+      "thesis": "让更多人能直接动手构建软件：降低配置门槛，把试验、协作和学习放在同一个环境里。",
+      "summary": "本轮读的是 2021 年本人及联名文章，主要覆盖 Replit 的早期愿景；近期 AI Agent 立场仍需补材料。",
+      "ideas": [
         {
-          "title": "Series A to Revolutionize Computing",
-          "type": "联合署名文章",
-          "date": "2021-02-17",
-          "author": "Amjad Masad、Haya Odeh · Replit",
-          "url": "https://blog.replit.com/seriesa",
-          "summary": "阐述普及计算能力、在线协作、易学且可扩展的产品方向。",
-          "why": "读 AI 热潮之前的长期信念，避免只依据新发布理解创始人。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "降低配置负担，让更多人直接构建",
+          "text": "云端环境、容易学会的界面和可组合能力，应让初学者开始，也允许熟练者逐步深入。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "署名愿景文章的中心论点。",
+          "boundary": "历史文章，不能据此声称当前 Replit 完成了所有愿景。"
         },
         {
-          "title": "The Internet of Fun",
-          "type": "个人署名文章",
-          "date": "2021-02-01",
-          "author": "Amjad Masad · Replit",
-          "url": "https://blog.replit.com/internet-of-fun",
-          "summary": "通过社区成员自发制作聊天工具的故事，说明平台的可编程性与玩中学习。",
-          "why": "从真实用户行为理解“人人能造软件”的产品基础。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "给即兴试验和意外发现留出空间",
+          "text": "快速改动、看到结果、与他人分享，有助于探索本来没有规划过的用途。",
+          "source": 1,
+          "sourceIndices": [
+            1,
+            0
+          ],
+          "representativeness": "本人试验文章与联名协作愿景相互支持。",
+          "boundary": "不意味着生产系统可以忽略测试；近期 AI 使用观点尚未复核。"
         }
       ],
-      "note": "先读创始人的早期方向，再亲自试 Replit Agent；不要把一次成功演示当作所有生产软件都可靠。",
+      "works": [
+        {
+          "title": "Computers are for giving people superpowers",
+          "url": "https://blog.replit.com/seriesa",
+          "date": "2021-02-17；页面更新 2023-10-06",
+          "locator": "learnable/scalable UI；云端环境；协作",
+          "summary": "主张把强大的计算能力和低门槛构建环境交给更多人。",
+          "access": "已读前半段愿景与产品原则；历史产品细节不视作当前承诺。",
+          "type": "本人联名文章",
+          "author": "Amjad Masad、Haya Odeh",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Tinkering Is a Lost Art",
+          "url": "https://blog.replit.com/internet-of-fun",
+          "date": "2021-02-01；页面更新 2023-10-05",
+          "locator": "tinkering；实时修改；意外发现与社交",
+          "summary": "以实际小实验说明自由试验与分享如何促进学习。",
+          "access": "已读文章主体中的试验故事；页面末尾其他推荐文章不归入此文。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本轮读的是 2021 年本人及联名文章，主要覆盖 Replit 的早期愿景；近期 AI Agent 立场仍需补材料。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "让更多人成为软件的创作者，是一个长期的产品方向。",
@@ -1162,56 +2051,122 @@
             "text": "他在 The Internet of Fun 中从用户的自发创造讨论平台社区；玩、修改和分享能够形成学习的动力。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Series A to Revolutionize Computing",
+            "type": "联合署名文章",
+            "date": "2021-02-17",
+            "author": "Amjad Masad、Haya Odeh · Replit",
+            "url": "https://blog.replit.com/seriesa",
+            "summary": "阐述普及计算能力、在线协作、易学且可扩展的产品方向。",
+            "why": "读 AI 热潮之前的长期信念，避免只依据新发布理解创始人。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "The Internet of Fun",
+            "type": "个人署名文章",
+            "date": "2021-02-01",
+            "author": "Amjad Masad · Replit",
+            "url": "https://blog.replit.com/internet-of-fun",
+            "summary": "通过社区成员自发制作聊天工具的故事，说明平台的可编程性与玩中学习。",
+            "why": "从真实用户行为理解“人人能造软件”的产品基础。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "先读创始人的早期方向，再亲自试 Replit Agent；不要把一次成功演示当作所有生产软件都可靠。"
       }
     },
     {
       "id": "guillermo",
       "name": "Guillermo Rauch",
-      "short": "Vercel · AI Cloud",
+      "short": "部署协作 · Agent 环境",
       "category": "软件与创业",
-      "role": "Vercel 创始人；Socket.IO、Mongoose 等开源项目建设者",
+      "role": "Vercel 创始人；Socket.IO、Mongoose 等开源项目建设者（按引用材料语境）",
       "home": "https://rauchg.com",
       "x": "https://x.com/rauchg",
       "tags": [
-        "Vercel",
-        "AI Cloud",
-        "部署体验"
+        "可访问的运行结果是协作材料",
+        "Agent 需要行动和持续运行的环境",
+        "保留开放网络与开发者选择"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的主线从让 Web 开发和部署更顺畅，扩展到 Agent 所需的推理、运行、连接和执行基础设施。个人博客把产品路线与开发体验联系起来。",
-      "ideas": [],
+      "thesis": "先让开发者快速把想法变成可访问的软件，再为更长时间运行的 Agent 提供环境。",
+      "summary": "2020 年部署愿景与 2025 年 AI Cloud 署名文章呈现方向变化；发布能力和未来愿景分开表述。",
+      "ideas": [
+        {
+          "title": "可访问的运行结果是协作材料",
+          "text": "部署成 URL，让同事围绕真实软件反馈，减少本地配置和交接摩擦。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "本人早期产品愿景明确强调分享部署。",
+          "boundary": "早期实践，不是当前所有平台的能力比较。"
+        },
+        {
+          "title": "Agent 需要行动和持续运行的环境",
+          "text": "从展示页面走向持续任务、沙箱和后台执行，才能尝试监测问题并提供解决方案。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人 AI Cloud 文章的核心转向。",
+          "boundary": "自动修复等属于方向与案例，不能推断无须监督或已可靠泛化。"
+        },
+        {
+          "title": "保留开放网络与开发者选择",
+          "text": "在域名、工具、框架与部署层保留选择空间，避免产品能力完全锁在单一平台。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "文章明确提出从封闭到开放。",
+          "boundary": "开放网络不等于所有模型、数据和平台代码都开源。"
+        }
+      ],
       "works": [
         {
           "title": "The AI Cloud",
-          "type": "个人文章",
-          "date": "2025-10-17",
-          "author": "Guillermo Rauch",
           "url": "https://rauchg.com/2025/the-ai-cloud",
-          "summary": "从页面到 Agent、从问题到方案、从封闭到开放，解释他对 AI 云平台的方向。",
-          "why": "连接 Agent 架构与基础设施需求，而不只讨论模型。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-10-17",
+          "locator": "From pages to agents；From problems to solutions；From closed to open",
+          "summary": "提出长时间运行、可行动的 Agent 和开放网络产品方向。",
+          "access": "已读署名文章的三个转变及相关例子；未来设想不算已发布事实。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
-          "title": "Vercel",
-          "type": "个人文章",
-          "date": "2020",
-          "author": "Guillermo Rauch",
+          "title": "Vercel：让前端工作流更快",
           "url": "https://rauchg.com/2020/vercel",
-          "summary": "讨论前端开发体验、预览 URL、云服务与协作如何组合成平台。",
-          "why": "看到 AI Cloud 背后的长期开发体验思路。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2020-04-21",
+          "locator": "组件；部署 URL；协作与配置",
+          "summary": "把可运行的部署和共享链接放进开发协作。",
+          "access": "已读文章开头与开发工作流章节；2020 年产品规格不作为当前信息。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "这些文章也在解释作者公司的产品路线。把通用洞察与具体厂商的商业定位一起阅读。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "2020 年部署愿景与 2025 年 AI Cloud 署名文章呈现方向变化；发布能力和未来愿景分开表述。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "云平台应该交付可运行的结果，并逐渐承担解决问题的工作。",
@@ -1232,56 +2187,98 @@
             "text": "Vercel 文章强调部署 URL 帮助团队在真实环境讨论与测试，开发体验需要包括交付与验证。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "The AI Cloud",
+            "type": "个人文章",
+            "date": "2025-10-17",
+            "author": "Guillermo Rauch",
+            "url": "https://rauchg.com/2025/the-ai-cloud",
+            "summary": "从页面到 Agent、从问题到方案、从封闭到开放，解释他对 AI 云平台的方向。",
+            "why": "连接 Agent 架构与基础设施需求，而不只讨论模型。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Vercel",
+            "type": "个人文章",
+            "date": "2020",
+            "author": "Guillermo Rauch",
+            "url": "https://rauchg.com/2020/vercel",
+            "summary": "讨论前端开发体验、预览 URL、云服务与协作如何组合成平台。",
+            "why": "看到 AI Cloud 背后的长期开发体验思路。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "这些文章也在解释作者公司的产品路线。把通用洞察与具体厂商的商业定位一起阅读。"
       }
     },
     {
       "id": "alex",
       "name": "Alex Albert",
-      "short": "模型产品 · Claude",
+      "short": "能力方向 · 模型与工具",
       "category": "Agent 与模型",
-      "role": "Anthropic 的模型产品建设者；曾从事开发者关系",
+      "role": "Anthropic 的模型产品建设者；曾从事开发者关系（按引用材料语境）",
       "home": "https://www.anthropic.com",
       "x": "https://x.com/alexalbert__",
       "tags": [
-        "模型产品",
-        "评估",
-        "用户反馈"
+        "研究能力选择需要真实用户问题",
+        "评估时把模型与 harness 放在一起"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的访谈把研究、模型行为、产品体验和评估连接起来；团队工程文章则补充了检索系统的具体实践。",
-      "ideas": [],
-      "works": [
+      "thesis": "公开访谈预览中的两个主题：按真实需求选择能力，并把模型与运行它的工具环境一起考虑。",
+      "summary": "目前只读 Peter Yang 发布的原始节目公开预览。以下是节目方整理的主题，尚未逐字核对 Alex 的完整回答。",
+      "ideas": [
         {
-          "title": "Inside how Anthropic is building the next Claude",
-          "type": "访谈",
-          "date": "2026-05-17",
-          "author": "Peter Yang 访谈 Alex Albert",
-          "url": "https://creatoreconomy.so/p/inside-how-anthropic-is-building-the-next-claude",
-          "summary": "讨论模型产品团队如何挑选能力方向，以及模型与产品环境如何配合。",
-          "why": "理解研究与产品之间的具体工作。",
-          "access": "已读公开部分；完整内容可能需要订阅。",
-          "evidence": ""
+          "title": "研究能力选择需要真实用户问题",
+          "text": "节目公开摘要称能力方向来自客户对话和员工自己遇到的工作障碍。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "原始访谈发布方的明确归纳；仍待 Alex 原始回答复核。",
+          "boundary": "这是主持人整理，不能当作逐字引语或独立证实的内部流程。"
         },
         {
-          "title": "Introducing Contextual Retrieval",
-          "type": "团队技术文章",
-          "date": "2024-09-19",
-          "author": "Anthropic 团队；Alex 参与文稿",
-          "url": "https://www.anthropic.com/engineering/contextual-retrieval",
-          "summary": "介绍给检索片段补上下文，再组合检索与重排的技术方案。",
-          "why": "把抽象的上下文质量落到具体系统设计。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "评估时把模型与 harness 放在一起",
+          "text": "节目摘要指出同一模型在不同提示、工具和产品入口下可能表现不同。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "公开预览直接列出此主题。",
+          "boundary": "没有完整回答；本页不补全付费墙后“常见错误”段落。"
         }
       ],
-      "note": "区分他的访谈观点与 Anthropic 团队成果；参与文稿不等于独立提出或实现整套方法。",
+      "works": [
+        {
+          "title": "Inside How Anthropic Is Building the Next Claude",
+          "url": "https://creatoreconomy.so/p/inside-how-anthropic-is-building-the-next-claude",
+          "date": "2026-05-17",
+          "locator": "公开 takeaways：capability bets；model and harness",
+          "summary": "节目方归纳客户反馈与模型、工具环境之间的关系。",
+          "access": "只读付费墙之前的节目方摘要；完整逐字稿及视频未读取，不能作为 Alex 原话。",
+          "type": "原始节目方公开摘要",
+          "author": "Peter Yang 整理；嘉宾 Alex Albert",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "目前只读 Peter Yang 发布的原始节目公开预览。以下是节目方整理的主题，尚未逐字核对 Alex 的完整回答。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "模型也需要产品判断：选择哪些能力进步，以及怎样让用户真正用上。",
@@ -1302,56 +2299,122 @@
             "text": "团队的 Contextual Retrieval 给文本片段补充来源语境，配合关键词与向量检索改善检索质量。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Inside how Anthropic is building the next Claude",
+            "type": "访谈",
+            "date": "2026-05-17",
+            "author": "Peter Yang 访谈 Alex Albert",
+            "url": "https://creatoreconomy.so/p/inside-how-anthropic-is-building-the-next-claude",
+            "summary": "讨论模型产品团队如何挑选能力方向，以及模型与产品环境如何配合。",
+            "why": "理解研究与产品之间的具体工作。",
+            "access": "已读公开部分；完整内容可能需要订阅。",
+            "evidence": ""
+          },
+          {
+            "title": "Introducing Contextual Retrieval",
+            "type": "团队技术文章",
+            "date": "2024-09-19",
+            "author": "Anthropic 团队；Alex 参与文稿",
+            "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+            "summary": "介绍给检索片段补上下文，再组合检索与重排的技术方案。",
+            "why": "把抽象的上下文质量落到具体系统设计。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "区分他的访谈观点与 Anthropic 团队成果；参与文稿不等于独立提出或实现整套方法。"
       }
     },
     {
       "id": "aaron",
       "name": "Aaron Levie",
-      "short": "Box · 企业工作流",
+      "short": "业务流程 · 内容与权限",
       "category": "企业与组织",
-      "role": "Box 联合创始人；关注企业内容、业务流程与 AI",
+      "role": "Box 联合创始人；关注企业内容、业务流程与 AI（按引用材料语境）",
       "home": "https://www.box.com",
       "x": "https://x.com/levie",
       "tags": [
-        "企业 AI",
-        "工作流",
-        "组织变革"
+        "从个人提效走向业务流程",
+        "公司自己的内容与权限是重要基础",
+        "能力扩展也会改变工作预期"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他频繁讨论企业采用 AI 的组织阻力。关键不是买到模型，而是找到流程负责人、接通数据和系统，并建立真正承担落地工作的角色。",
-      "ideas": [],
-      "works": [
+      "thesis": "企业 Agent 的价值在业务流程里；前提是让它安全地获得公司自己的信息。",
+      "summary": "从 Box 原始活动报道中只选明确标注 Aaron 的发言。团队治理框架作为背景，不归给他独自提出。",
+      "ideas": [
         {
-          "title": "Building an AI-first enterprise: Part 1",
-          "type": "团队文章／个人引语",
-          "date": "2025-12-04",
-          "author": "Box 团队；引用 Aaron Levie",
-          "url": "https://blog.box.com/ai-first-part-1",
-          "summary": "从能力扩展、组织工作方式和治理解释 AI-first 企业。",
-          "why": "把个人提效与企业转型分开观察。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "从个人提效走向业务流程",
+          "text": "Aaron 把企业 AI 的主要机会放在跨组织流程，而非仅个人问答。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "原始活动方反复引用其工作流观点。",
+          "boundary": "是愿景和产品语境，未独立验证业务收益。"
         },
         {
-          "title": "企业内部需要自己的 FDE",
-          "type": "个人推文",
-          "date": "2026-10-01／02 feed 快照",
-          "author": "Aaron Levie",
-          "url": "https://x.com/levie/status/2105695329513504976",
-          "summary": "强调需要把技术、AI 与业务流程结合起来的内部实施角色。",
-          "why": "看到“谁负责把 Agent 接到业务”这个经常被忽略的问题。",
-          "access": "依据 Zara 的公开 feed 摘要核对；未独立读取 X 原帖全文。",
-          "evidence": ""
+          "title": "公司自己的内容与权限是重要基础",
+          "text": "公开模型不了解企业内部语境；内容分散、过期和权限混乱会妨碍 Agent。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "其发言明确谈到非结构化内容与系统碎片化。",
+          "boundary": "Box 相关营销主张不证明其他方案不能解决问题。"
+        },
+        {
+          "title": "能力扩展也会改变工作预期",
+          "text": "AI 不仅加快旧工作，还可能增加原先做不了的工作，并改变产出期待。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "框架文章明确署名的本人引语。",
+          "boundary": "团队的具体治理模型不归为 Aaron 独自的理论；影响仍需实际验证。"
         }
       ],
-      "note": "他的企业视角与 Box 的商业位置有关。阅读时追问：谁接系统、谁评估结果、谁承担流程责任。",
+      "works": [
+        {
+          "title": "From AI assistants to agentic workflows",
+          "url": "https://blog.box.com/virtual-summit-recap-2026",
+          "date": "2026 年活动报道；页面未标具体日期",
+          "locator": "Aaron Levie 发言：业务流程、非结构化内容、碎片化数据",
+          "summary": "强调 Agent 接入业务流程及受治理的企业内容。",
+          "access": "已读官方活动报道全文，归纳限于标注 Levie 的发言；未观看完整活动。",
+          "type": "原始活动方报道",
+          "author": "Michael Krantz 整理；Aaron Levie 发言",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "AI-First Transformation: Box's Principles, Strategy, and Execution Framework",
+          "url": "https://blog.box.com/ai-first-part-1",
+          "date": "2026 年框架；页面未标具体日期",
+          "locator": "开头与 Why AI Principles Come First 中 Levie 引语",
+          "summary": "Aaron 将 AI 同时描述为扩大能力和改变产出预期；其余框架由团队陈述。",
+          "access": "已读开头、原则与治理部分；只把明确 Levie 引语归为其个人表达，团队框架单独标注。",
+          "type": "官方团队背景与本人引语",
+          "author": "Box；Aaron Levie、Olivia Nottebohm 等发言",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "从 Box 原始活动报道中只选明确标注 Aaron 的发言。团队治理框架作为背景，不归给他独自提出。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "企业 AI 的价值，需要从个人提效走到业务流程的重建。",
@@ -1372,56 +2435,109 @@
             "text": "团队文章讨论使用习惯、治理和人机分工；模型采购不能替代这些组织工作。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Building an AI-first enterprise: Part 1",
+            "type": "团队文章／个人引语",
+            "date": "2025-12-04",
+            "author": "Box 团队；引用 Aaron Levie",
+            "url": "https://blog.box.com/ai-first-part-1",
+            "summary": "从能力扩展、组织工作方式和治理解释 AI-first 企业。",
+            "why": "把个人提效与企业转型分开观察。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "企业内部需要自己的 FDE",
+            "type": "个人推文",
+            "date": "2026-10-01／02 feed 快照",
+            "author": "Aaron Levie",
+            "url": "https://x.com/levie/status/2105695329513504976",
+            "summary": "强调需要把技术、AI 与业务流程结合起来的内部实施角色。",
+            "why": "看到“谁负责把 Agent 接到业务”这个经常被忽略的问题。",
+            "access": "依据 Zara 的公开 feed 摘要核对；未独立读取 X 原帖全文。",
+            "evidence": ""
+          }
+        ],
+        "note": "他的企业视角与 Box 的商业位置有关。阅读时追问：谁接系统、谁评估结果、谁承担流程责任。"
       }
     },
     {
       "id": "ryo",
       "name": "Ryo Lu",
-      "short": "Cursor · 在代码里设计",
+      "short": "软件雕塑 · 系统原语",
       "category": "产品与设计",
-      "role": "Cursor 设计建设者；ryOS 创作者",
+      "role": "Cursor 设计负责人（所引 2025 年访谈语境）",
       "home": "https://ryo.lu",
       "x": "https://x.com/ryolu_",
       "tags": [
-        "设计系统",
-        "Cursor",
-        "可塑界面"
+        "直接构建能成为设计思考过程",
+        "用统一原语处理复杂产品需求",
+        "可塑软件也要保持可理解性"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的访谈强调直接在工作代码里塑造体验，并通过一致的基础模块构成产品；个人作品展示了这种方法的探索性与趣味。",
-      "ideas": [],
-      "works": [
+      "thesis": "用可运行的软件探索想法，再把多样需求收敛到一致、可组合的系统。",
+      "summary": "依据 Dive Club 发布的 Ryo 访谈摘录，只选直接标注他的表达；主持人的案例和标题不混为他的主张。",
+      "ideas": [
         {
-          "title": "Designing Cursor with Ryo Lu",
-          "type": "访谈",
-          "date": "2025-07-11",
-          "author": "Dive Club · Ryo Lu",
-          "url": "https://dive-club.beehiiv.com/p/new-post-e3a65bcf546dbdba",
-          "summary": "讨论代码作为设计材料、产品系统和 AI 时代的界面可塑性。",
-          "why": "适合想从画界面转向塑造实际产品的人。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "直接构建能成为设计思考过程",
+          "text": "把想法做成能操作的软件，再通过修改和试用感受问题，而非只在静态画面中想象。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "节目中 Ryo 对 sculpting software 的直接解释。",
+          "boundary": "单场访谈；不是说所有设计都可以跳过需求研究。"
         },
         {
-          "title": "ryOS",
-          "type": "个人作品",
-          "date": "持续更新项目",
-          "author": "Ryo Lu",
-          "url": "https://os.ryo.lu/",
-          "summary": "一个可交互的个人操作系统风格作品。",
-          "why": "把访谈里的设计方法与实际交互作品对照。",
-          "access": "作品入口；不以项目演示证明通用产品效果。",
-          "evidence": ""
+          "title": "用统一原语处理复杂产品需求",
+          "text": "先寻找不同功能共有的模式，再设计可复用的系统，使多个入口保持一致。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "访谈直接讨论系统思维与统一机制。",
+          "boundary": "不等于抽象越多越好；本轮未审计 Cursor 的具体实现。"
+        },
+        {
+          "title": "可塑软件也要保持可理解性",
+          "text": "有组织的积木和可配置系统，与每次生成任意界面是不同方向。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "摘录将其未来 HCI 想法与系统一致性联系。",
+          "boundary": "探索性方向，不是已解决的通用产品原则。"
         }
       ],
-      "note": "建议先读访谈，再体验作品。关注交互的一致性，而不仅是视觉效果。",
+      "works": [
+        {
+          "title": "Designing the future of Cursor：3 big ideas from Ryo Lu",
+          "url": "https://dive-club.beehiiv.com/p/new-post-e3a65bcf546dbdba",
+          "date": "2025-07-11",
+          "locator": "直接引语：sculpting software；systems thinking；malleable software",
+          "summary": "讨论直接构建、统一原语与可塑但不混乱的软件。",
+          "access": "已读原始节目方文字摘录；仅归纳 Ryo 直接引语及其相邻解释，未观看完整视频。",
+          "type": "原始访谈摘录",
+          "author": "Ridd 整理；Ryo Lu 发言",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "依据 Dive Club 发布的 Ryo 访谈摘录，只选直接标注他的表达；主持人的案例和标题不混为他的主张。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "设计的材料可以是运行中的软件，系统比孤立的屏幕更重要。",
@@ -1442,56 +2558,109 @@
             "text": "让界面适应用户，不等于随意生成所有 UI；稳定的模块和交互原则提供可塑性的基础。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Designing Cursor with Ryo Lu",
+            "type": "访谈",
+            "date": "2025-07-11",
+            "author": "Dive Club · Ryo Lu",
+            "url": "https://dive-club.beehiiv.com/p/new-post-e3a65bcf546dbdba",
+            "summary": "讨论代码作为设计材料、产品系统和 AI 时代的界面可塑性。",
+            "why": "适合想从画界面转向塑造实际产品的人。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "ryOS",
+            "type": "个人作品",
+            "date": "持续更新项目",
+            "author": "Ryo Lu",
+            "url": "https://os.ryo.lu/",
+            "summary": "一个可交互的个人操作系统风格作品。",
+            "why": "把访谈里的设计方法与实际交互作品对照。",
+            "access": "作品入口；不以项目演示证明通用产品效果。",
+            "evidence": ""
+          }
+        ],
+        "note": "建议先读访谈，再体验作品。关注交互的一致性，而不仅是视觉效果。"
       }
     },
     {
       "id": "garry",
       "name": "Garry Tan",
-      "short": "YC · 用户与行动力",
+      "short": "客户需求 · 主动性与品味",
       "category": "软件与创业",
-      "role": "Y Combinator 总裁与 CEO；软件创作者",
+      "role": "Y Combinator 总裁与 CEO；软件创作者（按引用材料语境）",
       "home": "https://blog.garrytan.com",
       "x": "https://x.com/garrytan",
       "tags": [
-        "创业",
-        "用户需求",
-        "行动力"
+        "能否找到值得解决的问题更关键",
+        "主动性与品味帮助选择该做什么",
+        "设计需要理解人的目标"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的演讲把 AI 工具、小团队和创始人的判断联系起来。技术门槛下降，反而让用户理解、品味与执行成为更明显的差异。",
-      "ideas": [],
-      "works": [
+      "thesis": "技术实现变容易后，瓶颈更集中在客户需求、主动性和产品判断。",
+      "summary": "原始 Vanta 访谈中明确标注 Garry 的回答支持这些主题；与其他嘉宾的不同观点分开。",
+      "ideas": [
         {
-          "title": "Why the next unicorns are built by AI",
-          "type": "演讲／公开逐字稿",
-          "date": "2025-05-21",
-          "author": "Vanta 活动 · Garry Tan",
-          "url": "https://www.vanta.com/resources/why-the-next-unicorns-are-built-by-ai",
-          "summary": "讨论 AI 创业、小团队、主动性、用户接触与产品品味。",
-          "why": "把工具能力与创业的长期原则连接起来。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "能否找到值得解决的问题更关键",
+          "text": "当软件构建门槛下降，仍要找到真实客户需要并愿意使用或付费的东西。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "Garry 在访谈中直接将客户需求作为瓶颈。",
+          "boundary": "不表示技术约束消失；“下一个独角兽”是预测。"
         },
         {
-          "title": "Dylan Field and Garry Tan on design, AI, and locking in",
-          "type": "联合对谈",
-          "date": "2025-03-14",
-          "author": "Figma · Garry Tan 对谈 Dylan Field",
-          "url": "https://www.figma.com/blog/in-conversation-dylan-field-and-garry-tan/",
-          "summary": "围绕 AI、设计、早期用户与产品探索展开对话。",
-          "why": "观察 Garry 如何提问；设计论述主要来自受访者 Dylan。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "主动性与品味帮助选择该做什么",
+          "text": "面对更便宜的实现能力，人仍需要主动推进、判断结果和区分好坏。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "访谈中反复讨论 agency 与 taste。",
+          "boundary": "没有量化其对创业成功的影响，不能当成成功公式。"
+        },
+        {
+          "title": "设计需要理解人的目标",
+          "text": "好的产品判断来自理解用户要达成什么，而不仅是界面是否漂亮。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人对设计与同理心的直接解释。",
+          "boundary": "单次访谈，尚需本人跨时期文章确认稳定性。"
         }
       ],
-      "note": "对谈里提问者与回答者的观点不同。不要把 Dylan 关于设计的回答全部归给 Garry。",
+      "works": [
+        {
+          "title": "Why the Next Unicorns Will Be Built on AI",
+          "url": "https://www.vanta.com/resources/why-the-next-unicorns-are-built-by-ai",
+          "date": "2025-05-21",
+          "locator": "Garry 回答：值得建设的问题；agency/taste；设计与客户目标",
+          "summary": "把实现成本下降后的重点放在客户需求和判断。",
+          "access": "已读原始逐字稿中开头与产品判断相关回答；没有观看整场视频。",
+          "type": "原始访谈逐字稿",
+          "author": "Garry Tan；Vanta 主持",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "原始 Vanta 访谈中明确标注 Garry 的回答支持这些主题；与其他嘉宾的不同观点分开。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "造软件更容易之后，选对用户问题和持续行动仍是创业的核心。",
@@ -1512,56 +2681,109 @@
             "text": "他分享小团队建设公司的案例；这些观察提示可能性，并不保证每家公司都适用同样的人数与增长路径。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Why the next unicorns are built by AI",
+            "type": "演讲／公开逐字稿",
+            "date": "2025-05-21",
+            "author": "Vanta 活动 · Garry Tan",
+            "url": "https://www.vanta.com/resources/why-the-next-unicorns-are-built-by-ai",
+            "summary": "讨论 AI 创业、小团队、主动性、用户接触与产品品味。",
+            "why": "把工具能力与创业的长期原则连接起来。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Dylan Field and Garry Tan on design, AI, and locking in",
+            "type": "联合对谈",
+            "date": "2025-03-14",
+            "author": "Figma · Garry Tan 对谈 Dylan Field",
+            "url": "https://www.figma.com/blog/in-conversation-dylan-field-and-garry-tan/",
+            "summary": "围绕 AI、设计、早期用户与产品探索展开对话。",
+            "why": "观察 Garry 如何提问；设计论述主要来自受访者 Dylan。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "对谈里提问者与回答者的观点不同。不要把 Dylan 关于设计的回答全部归给 Garry。"
       }
     },
     {
       "id": "matt",
       "name": "Matt Turck",
-      "short": "MAD · 产业地图",
+      "short": "资本与建设 · 商业基础",
       "category": "产业与判断",
-      "role": "FirstMark 投资人；MAD 数据与 AI 产业地图建设者",
+      "role": "FirstMark 投资人；MAD 数据与 AI 产业地图建设者（按引用材料语境）",
       "home": "https://www.mattturck.com",
       "x": "https://x.com/mattturck",
       "tags": [
-        "MAD",
-        "产业地图",
-        "商业化"
+        "泡沫与真实建设可以同时发生",
+        "热度之外看留存、成本与分发",
+        "Agent 产品背后仍有数据与系统工作"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的长篇年度报告梳理数据、基础设施、模型和应用之间的关系，也讨论资本热度与真实企业需求可以同时存在。",
-      "ideas": [],
-      "works": [
+      "thesis": "在资本热度之外，观察 AI 是否进入真实系统，以及企业是否建立可持续的业务基础。",
+      "summary": "以 2025 MAD 年度产业文章为样本；这是投资研究视角，部分预测和公司数据未独立验证。",
+      "ideas": [
         {
-          "title": "The 2025 MAD landscape",
-          "type": "联合署名产业报告",
-          "date": "2025-10-28",
-          "author": "Matt Turck、Aman Kabeer",
-          "url": "https://api.mattturck.com/mad2025/",
-          "summary": "系统梳理数据与 AI 产业，讨论模型、应用、企业采用和商业结构。",
-          "why": "适合建立全局地图，再定位自己关注的产品层。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "泡沫与真实建设可以同时发生",
+          "text": "资本投机并不自动否定技术价值；要分别看基础设施投入和实际部署。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "年度文章开头的核心框架。",
+          "boundary": "描述 2025 年，不证明当前估值合理，也不是投资建议。"
         },
         {
-          "title": "MAD Landscapes",
-          "type": "长期研究项目",
-          "date": "历年地图／持续更新",
-          "author": "Matt Turck · FirstMark",
-          "url": "https://www.mattturck.com/mad-landscapes",
-          "summary": "历年数据、机器学习与 AI 产业地图索引。",
-          "why": "比较几年间分类与公司分布的变化。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "热度之外看留存、成本与分发",
+          "text": "持续收入、使用留存、服务成本和获客渠道，比演示或融资新闻更能帮助判断业务基础。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "文章的商业指标与分发章节给出判断维度。",
+          "boundary": "具体企业数字未复核；指标仍需结合产品阶段和业务模式。"
+        },
+        {
+          "title": "Agent 产品背后仍有数据与系统工作",
+          "text": "工具、记忆、治理数据与推理模型共同构成能实际执行任务的系统。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "年度文章多处将 Agent 与基础设施连接。",
+          "boundary": "产业归纳，不代表所有团队需要整套复杂架构。"
         }
       ],
-      "note": "这是一位投资人的产业分析。报告的趋势判断不等于确定事实，也不是投资建议。",
+      "works": [
+        {
+          "title": "Bubble & Build: The 2025 MAD Landscape",
+          "url": "https://api.mattturck.com/mad2025/",
+          "date": "2025 年度文章；页面正文未列日期",
+          "locator": "开头 Bubble & Build；商业指标与分发；agents/data/infrastructure",
+          "summary": "讨论投机与实际部署并存，以及系统、数据和商业基础。",
+          "access": "已读文章开头及商业基础、Agent 和数据基础设施章节；不是本轮重新核对整张公司图谱。",
+          "type": "本人联名年度研究",
+          "author": "Matt Turck、Aman Kabeer",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "以 2025 MAD 年度产业文章为样本；这是投资研究视角，部分预测和公司数据未独立验证。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "理解 AI 产业，要把技术、采用情况与商业结构放在同一张图里。",
@@ -1582,7 +2804,32 @@
             "text": "开源、闭源和多模型的取舍，需结合能力、成本、客户需求与供应商风险，而不是立场。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "The 2025 MAD landscape",
+            "type": "联合署名产业报告",
+            "date": "2025-10-28",
+            "author": "Matt Turck、Aman Kabeer",
+            "url": "https://api.mattturck.com/mad2025/",
+            "summary": "系统梳理数据与 AI 产业，讨论模型、应用、企业采用和商业结构。",
+            "why": "适合建立全局地图，再定位自己关注的产品层。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "MAD Landscapes",
+            "type": "长期研究项目",
+            "date": "历年地图／持续更新",
+            "author": "Matt Turck · FirstMark",
+            "url": "https://www.mattturck.com/mad-landscapes",
+            "summary": "历年数据、机器学习与 AI 产业地图索引。",
+            "why": "比较几年间分类与公司分布的变化。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "这是一位投资人的产业分析。报告的趋势判断不等于确定事实，也不是投资建议。"
       }
     },
     {
@@ -1834,50 +3081,91 @@
     {
       "id": "nikunj",
       "name": "Nikunj Kothari",
-      "short": "判断力 · AI 原生个人",
+      "short": "决策反馈 · 主动性与专长",
       "category": "产业与判断",
-      "role": "FPV Ventures 投资人；产品与运营背景的作者",
+      "role": "产品、运营与投资背景的作者；本页引用其 2026 年本人文章",
       "home": "https://www.nikunjk.com",
       "x": "https://x.com/nikunjk",
       "tags": [
-        "判断数据",
-        "主动性",
-        "商业模式"
+        "修正决策的反馈比堆积信息更有用",
+        "为业务价值设计计费，而非只照搬席位",
+        "AI 可以放大主动性，也放大领域深度"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的文章从应用护城河写到个人如何重新学习：上下文不够，纠错和决策同样重要；经验也可能成为限制新方法的旧习惯。",
-      "ideas": [],
+      "thesis": "更便宜的执行能力，让领域知识、主动性和真实决策反馈变得更重要。",
+      "summary": "本人近期文章讨论决策型产品和人才变化；商业模式建议与招聘观察都标为假设或个人样本。",
+      "ideas": [
+        {
+          "title": "修正决策的反馈比堆积信息更有用",
+          "text": "专业经验会体现在对建议的纠正和判断中，产品应积累这类 know-how。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人文章将 context 与 know-how 区分。",
+          "boundary": "是否构成持久护城河仍是假设，需要用户和业务数据验证。"
+        },
+        {
+          "title": "为业务价值设计计费，而非只照搬席位",
+          "text": "他探讨按决策或成果收费，让价格跟价值更直接相关。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "文章集中讨论 agent 与企业业务价值。",
+          "boundary": "商业模式设想；结果归因与风险分担仍未解决，不是通用定价答案。"
+        },
+        {
+          "title": "AI 可以放大主动性，也放大领域深度",
+          "text": "会试验新工具的人和有深厚领域判断的人可能形成不同优势。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "本人招聘观察与放大效应论述。",
+          "boundary": "个人样本，不能泛化成年龄或学历的就业结论。"
+        }
+      ],
       "works": [
         {
           "title": "Decisions and Dollars",
-          "type": "个人文章",
-          "date": "2026-06-12",
-          "author": "Nikunj Kothari",
           "url": "https://writing.nikunjk.com/p/decisions-and-dollars",
-          "summary": "讨论应用的判断能力、数据价值与 Agent 时代商业模式。",
-          "why": "把“有数据”进一步拆成上下文与纠错判断。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2026-06-12",
+          "locator": "决策修正；context vs know-how；agent 计费",
+          "summary": "将领域经验和决策反馈视作产品资产，讨论按业务价值计费。",
+          "access": "已读正文至决策数据与定价讨论；文中估值、收入和企业案例没有独立核验。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
           "title": "The Amplification Gap",
-          "type": "个人文章",
-          "date": "2026-09-23",
-          "author": "Nikunj Kothari",
           "url": "https://writing.nikunjk.com/p/the-amplification-gap",
-          "summary": "通过招聘见闻与个人反思讨论主动性、领域能力和 AI 的相互放大。",
-          "why": "适合思考个人工作方式，而不只是产品选型。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2026-09-23",
+          "locator": "high agency 与 deep domain knowledge；招聘观察",
+          "summary": "讨论 AI 放大主动性，也放大深厚领域知识的价值。",
+          "access": "已读公开文章主体；招聘样本属于本人观察，不当作总体就业统计。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "招聘判断来自作者见闻，不是统计结论。把它当作反思工具，不宜据此断言一类人必然失业。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本人近期文章讨论决策型产品和人才变化；商业模式建议与招聘观察都标为假设或个人样本。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "AI 的放大效应来自工具与人的主动性、专业判断共同作用。",
@@ -1898,56 +3186,125 @@
             "text": "The Amplification Gap 通过创始人招聘观察讨论主动学习与深领域能力，并反思自己的产品经验。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Decisions and Dollars",
+            "type": "个人文章",
+            "date": "2026-06-12",
+            "author": "Nikunj Kothari",
+            "url": "https://writing.nikunjk.com/p/decisions-and-dollars",
+            "summary": "讨论应用的判断能力、数据价值与 Agent 时代商业模式。",
+            "why": "把“有数据”进一步拆成上下文与纠错判断。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "The Amplification Gap",
+            "type": "个人文章",
+            "date": "2026-09-23",
+            "author": "Nikunj Kothari",
+            "url": "https://writing.nikunjk.com/p/the-amplification-gap",
+            "summary": "通过招聘见闻与个人反思讨论主动性、领域能力和 AI 的相互放大。",
+            "why": "适合思考个人工作方式，而不只是产品选型。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "招聘判断来自作者见闻，不是统计结论。把它当作反思工具，不宜据此断言一类人必然失业。"
       }
     },
     {
       "id": "steinberger",
       "name": "Peter Steinberger",
-      "short": "OpenClaw · 快速交付",
+      "short": "执行闭环 · 架构取舍",
       "category": "Agent 与模型",
-      "role": "OpenClaw 创建者；长期软件与开源建设者",
+      "role": "软件与开源建设者；本页引用其 2025 年开发实践",
       "home": "https://steipete.me",
       "x": "https://x.com/steipete",
       "tags": [
-        "Agent 编程",
-        "交付速度",
-        "CLI"
+        "优先让任务具有可验证的执行闭环",
+        "人的瓶颈在架构、依赖与取舍",
+        "通过对话和试用持续修订"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的个人实践记录非常具体：如何给 Agent 工作、怎样并行、怎样保持代码易理解。速度来自工具与工程习惯的组合，而不是完全放弃判断。",
-      "ideas": [],
+      "thesis": "给 Agent 容易验证的工具和环境，人集中处理架构与取舍，并在实际试用中迭代。",
+      "summary": "两篇本人开发实践文章支持这一主线；偏好属于具体工具时代和个人项目语境。",
+      "ideas": [
+        {
+          "title": "优先让任务具有可验证的执行闭环",
+          "text": "CLI 和明确输出让 Agent 能自行运行、读取结果并纠错。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "两篇文章都强调直接工具与验证。",
+          "boundary": "不是所有 GUI 任务都能转成 CLI，也不是所有 MCP 都无用。"
+        },
+        {
+          "title": "人的瓶颈在架构、依赖与取舍",
+          "text": "实现变快之后，要花注意力决定系统如何组成，避免过度复杂和错误依赖。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "两篇实践文章重复讨论架构判断。",
+          "boundary": "个人项目经验，不证明企业工程可以省去评审。"
+        },
+        {
+          "title": "通过对话和试用持续修订",
+          "text": "直接表达目标、观察运行结果，再改下一步；不把固定规划流程当作所有任务的答案。",
+          "source": 1,
+          "sourceIndices": [
+            1,
+            0
+          ],
+          "representativeness": "本人对实际工作方式的解释。",
+          "boundary": "没有质量比较实验；任务规模和风险会改变规划需求。"
+        }
+      ],
       "works": [
         {
           "title": "Shipping at Inference-Speed",
-          "type": "个人实践文章",
-          "date": "2025-12-28",
-          "author": "Peter Steinberger",
           "url": "https://steipete.me/posts/2025/shipping-at-inference-speed",
-          "summary": "总结 Agent 编程带来的工程注意力变化，以及 CLI、反馈与判断的作用。",
-          "why": "读一位有经验工程师如何调整实际工作流。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-12-28",
+          "locator": "CLI-first；反馈循环；架构与依赖；试用与迭代",
+          "summary": "让工具可被 Agent 调用和验证，保留人对架构与体验的判断。",
+          "access": "已读与 CLI、验证、架构和工作节奏相关章节；没有复验文中交付数量和速度。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
           "title": "Just Talk To It",
-          "type": "个人实践文章",
-          "date": "2025-10-14",
-          "author": "Peter Steinberger",
           "url": "https://steipete.me/posts/just-talk-to-it",
-          "summary": "讨论直接与 Agent 交流、并行任务和日常工程习惯。",
-          "why": "用具体经验评估自己的工具复杂度。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-10-14",
+          "locator": "对话规划；测试与同一上下文；CLI 和 MCP",
+          "summary": "讨论直接沟通、可检查结果与工具接口的取舍。",
+          "access": "已读工作流、验证与工具相关章节；文中模型和工具偏好是当时经验。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "这是作者在特定项目中的工作方式。并行数量与检查力度应按项目性质调整。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "两篇本人开发实践文章支持这一主线；偏好属于具体工具时代和个人项目语境。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "工程师的注意力转向架构、反馈与验证，Agent 承接更多实现工作。",
@@ -1968,56 +3325,123 @@
             "text": "Just Talk To It 分享直接沟通、并行任务与小提交的个人经验；复杂编排不应先于实际需求。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Shipping at Inference-Speed",
+            "type": "个人实践文章",
+            "date": "2025-12-28",
+            "author": "Peter Steinberger",
+            "url": "https://steipete.me/posts/2025/shipping-at-inference-speed",
+            "summary": "总结 Agent 编程带来的工程注意力变化，以及 CLI、反馈与判断的作用。",
+            "why": "读一位有经验工程师如何调整实际工作流。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Just Talk To It",
+            "type": "个人实践文章",
+            "date": "2025-10-14",
+            "author": "Peter Steinberger",
+            "url": "https://steipete.me/posts/just-talk-to-it",
+            "summary": "讨论直接与 Agent 交流、并行任务和日常工程习惯。",
+            "why": "用具体经验评估自己的工具复杂度。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "这是作者在特定项目中的工作方式。并行数量与检查力度应按项目性质调整。"
       }
     },
     {
       "id": "dan",
       "name": "Dan Shipper",
-      "short": "Every · 人机协作",
+      "short": "思考与责任 · Agent 协作",
       "category": "学习与创作",
-      "role": "Every 联合创始人；AI & I 节目主持人和作者",
+      "role": "Every 联合创始人；AI & I 节目主持人和作者（按引用材料语境）",
       "home": "https://every.to",
       "x": "https://x.com/danshipper",
       "tags": [
-        "知识工作",
-        "人机协作",
-        "AI & I"
+        "执行自动化后，仍需要设定问题与判断",
+        "人必须理解并认可 AI 写出的协作材料",
+        "产品可以给 Agent 提供可调用入口"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的文章与节目关注知识工作者怎样实际使用 AI。重点不是只追问替代多少任务，而是研究自动化之后的新任务和新的工作组织。",
-      "ideas": [],
-      "works": [
+      "thesis": "AI 承担表达和执行之后，人仍要负责思考、判断，并对分享出去的内容承担责任。",
+      "summary": "结合本人短文与原始节目逐字稿中 Dan 的回答；Austin 的工作流经验不移植为 Dan 的个人实践。",
+      "ideas": [
         {
-          "title": "After automation: There will be more human work than ever",
-          "type": "个人文章",
-          "date": "页面未显示明确发布日期",
-          "author": "Dan Shipper · Every",
-          "url": "https://every.to/thesis-statements/dan-shipper",
-          "summary": "讨论自动化之后，人的理解、判断与整合工作如何改变。",
-          "why": "思考 AI 能做更多之后，人应把注意力放在哪里。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "执行自动化后，仍需要设定问题与判断",
+          "text": "重要工作包含理解语境、决定目标和评判结果，而不只是生产更多文字。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "短文与本人访谈回应都强调思考。",
+          "boundary": "未来劳动变化是观点，不是已验证的就业预测。"
         },
         {
-          "title": "Why we switched from Claude Code to Codex",
-          "type": "播客逐字稿",
-          "date": "2026-05-06",
-          "author": "Dan Shipper 主持；Austin Tedesco 受访",
-          "url": "https://every.to/podcast/transcript-why-we-switched-from-claude-code-to-codex",
-          "summary": "围绕实际知识工作和工具使用经验讨论一次工具切换。",
-          "why": "看任务、材料和反馈如何影响选择。",
-          "access": "公开逐字稿；具体经验需区分主持人与受访者。",
-          "evidence": ""
+          "title": "人必须理解并认可 AI 写出的协作材料",
+          "text": "他愿意接受 Agent 整理的文档，但要求发送者能解释并对内容负责。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "36:03 起本人回答清楚区分写作格式与责任。",
+          "boundary": "不能把 AI 写作当作免审理由；只是其团队协作偏好。"
+        },
+        {
+          "title": "产品可以给 Agent 提供可调用入口",
+          "text": "他描述把 Plus Ones 通过 CLI 交给 Agent，减少重复手动配置的尝试。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "27:36 本人解释具体产品实验。",
+          "boundary": "不是所有产品都应取消界面；隐私、授权和错误恢复仍需设计。"
         }
       ],
-      "note": "AI & I 是访谈平台，不是所有嘉宾观点都代表 Dan。阅读时关注任务背景和发言人。",
+      "works": [
+        {
+          "title": "After Automation",
+          "url": "https://every.to/thesis-statements/dan-shipper",
+          "date": "页面未标日期，核验于 2026-10-04",
+          "locator": "知识工作的新角色；判断、语境与表达",
+          "summary": "把自动化后的工作重点放在问题设定和判断上。",
+          "access": "已读公开短文主体；其中未来工作判断是作者推测。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        },
+        {
+          "title": "Why We Switched From Claude Code to Codex：逐字稿",
+          "url": "https://every.to/podcast/transcript-why-we-switched-from-claude-code-to-codex",
+          "date": "2026-05-06；更新 2026-09-10",
+          "locator": "27:36、36:03、38:09 的 Dan 回答",
+          "summary": "讨论 Agent 可调用入口，以及本人必须理解并认可 AI 撰写的协作文档。",
+          "access": "已读指定 Dan 回答及必要相邻对话；不将 Austin 的工作流细节归给 Dan，也未观看视频。",
+          "type": "本人原始节目逐字稿",
+          "author": "Dan Shipper；嘉宾 Austin Tedesco",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "结合本人短文与原始节目逐字稿中 Dan 的回答；Austin 的工作流经验不移植为 Dan 的个人实践。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "自动化可能增加需要人来理解、判断与整合的工作。",
@@ -2038,56 +3462,109 @@
             "text": "不同知识工作任务、执行环境与检查方式，决定哪种工具适合；一个团队的切换不代表统一最优选择。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "After automation: There will be more human work than ever",
+            "type": "个人文章",
+            "date": "页面未显示明确发布日期",
+            "author": "Dan Shipper · Every",
+            "url": "https://every.to/thesis-statements/dan-shipper",
+            "summary": "讨论自动化之后，人的理解、判断与整合工作如何改变。",
+            "why": "思考 AI 能做更多之后，人应把注意力放在哪里。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Why we switched from Claude Code to Codex",
+            "type": "播客逐字稿",
+            "date": "2026-05-06",
+            "author": "Dan Shipper 主持；Austin Tedesco 受访",
+            "url": "https://every.to/podcast/transcript-why-we-switched-from-claude-code-to-codex",
+            "summary": "围绕实际知识工作和工具使用经验讨论一次工具切换。",
+            "why": "看任务、材料和反馈如何影响选择。",
+            "access": "公开逐字稿；具体经验需区分主持人与受访者。",
+            "evidence": ""
+          }
+        ],
+        "note": "AI & I 是访谈平台，不是所有嘉宾观点都代表 Dan。阅读时关注任务背景和发言人。"
       }
     },
     {
       "id": "aditya",
       "name": "Aditya Agarwal",
-      "short": "SPC · 重新学习",
+      "short": "新目标 · 持续适应",
       "category": "企业与组织",
-      "role": "South Park Commons 建设者；长期工程与技术团队背景",
+      "role": "South Park Commons 建设者；长期工程与技术团队背景（按引用材料语境）",
       "home": "https://www.southparkcommons.com",
       "x": "https://x.com/adityaag",
       "tags": [
-        "工程转型",
-        "好奇心",
-        "-1 到 0"
+        "旧能力被自动化，可能带来身份失落",
+        "成本下降，可以尝试以前负担不起的目标",
+        "适应力比静态履历更值得观察"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他以工程师的个人感受写技术变化，也从 SPC 社区解释探索期的价值：先找到值得投入的方向，再组织建设公司。",
-      "ideas": [],
-      "works": [
+      "thesis": "软件实现成本下降之后，重新设定值得追求的目标，并培养持续适应新工具的能力。",
+      "summary": "本人 2026 年文章把职业情绪、构建机会和适应力联系起来；招聘故事是个人样本。",
+      "ideas": [
         {
-          "title": "When Your Life’s Work Becomes Free",
-          "type": "个人文章",
-          "date": "2026-03-13",
-          "author": "Aditya Agarwal",
-          "url": "https://blog.southparkcommons.com/p/when-your-lifes-work-becomes-free",
-          "summary": "一位资深工程师对 AI 编程改变职业能力价值的坦诚反思。",
-          "why": "适合认真理解兴奋之外的职业转型感受。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "旧能力被自动化，可能带来身份失落",
+          "text": "职业技能不再稀缺时，人会失去原先的成就感，需要重新寻找投入方向。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "文章明确描述本人及身边人的情绪经验。",
+          "boundary": "个人经验，不是心理健康诊断或普遍调查结果。"
         },
         {
-          "title": "Announcing SPC’s $575M Fund IV",
-          "type": "署名机构文章",
-          "date": "2026-08-05",
-          "author": "Aditya Agarwal · SPC",
-          "url": "https://www.southparkcommons.com/news/announcing-spc-575m-fund-iv/",
-          "summary": "借机构发展说明社区、探索期和创始人选择方向的理念。",
-          "why": "理解他为何重视探索与人才环境。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "成本下降，可以尝试以前负担不起的目标",
+          "text": "把省下的实现成本投入更大的新问题，而不只要求原工作做得更快。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人将丰富的构建机会与目标调整联系。",
+          "boundary": "新机会不保证商业成功，需求与维护成本仍存在。"
+        },
+        {
+          "title": "适应力比静态履历更值得观察",
+          "text": "通过实际工作试验，观察候选人能否学会并有效使用新工具。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人用招聘经验说明判断标准。",
+          "boundary": "小样本，不能推导年龄、学历或全部岗位的优劣。"
         }
       ],
-      "note": "个人反思与机构宣传有不同目的。更值得借鉴的是学习和探索的方法，而不是基金规模。",
+      "works": [
+        {
+          "title": "When Life and Work Are Free and Abundant",
+          "url": "https://blog.southparkcommons.com/p/when-your-lifes-work-becomes-free",
+          "date": "2026-03-13",
+          "locator": "职业身份；新目标；adaptability；工作试验",
+          "summary": "讨论自动化带来的失落，以及实现成本下降后的新机会。",
+          "access": "已读本人署名正文；招聘经历和未来判断没有独立复验。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "本人 2026 年文章把职业情绪、构建机会和适应力联系起来；招聘故事是个人样本。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "当实现能力迅速变便宜，重新学习和选择问题变得更重要。",
@@ -2108,56 +3585,125 @@
             "text": "SPC 的 -1 到 0 阶段强调与高质量同行共同探索，找到真正愿意长期解决的问题。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "When Your Life’s Work Becomes Free",
+            "type": "个人文章",
+            "date": "2026-03-13",
+            "author": "Aditya Agarwal",
+            "url": "https://blog.southparkcommons.com/p/when-your-lifes-work-becomes-free",
+            "summary": "一位资深工程师对 AI 编程改变职业能力价值的坦诚反思。",
+            "why": "适合认真理解兴奋之外的职业转型感受。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Announcing SPC’s $575M Fund IV",
+            "type": "署名机构文章",
+            "date": "2026-08-05",
+            "author": "Aditya Agarwal · SPC",
+            "url": "https://www.southparkcommons.com/news/announcing-spc-575m-fund-iv/",
+            "summary": "借机构发展说明社区、探索期和创始人选择方向的理念。",
+            "why": "理解他为何重视探索与人才环境。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "个人反思与机构宣传有不同目的。更值得借鉴的是学习和探索的方法，而不是基金规模。"
       }
     },
     {
       "id": "sam",
       "name": "Sam Altman",
-      "short": "智能成本 · 长期预测",
+      "short": "智能成本 · 能力分配",
       "category": "产业与判断",
-      "role": "OpenAI 联合创始人；个人博客作者",
+      "role": "OpenAI 联合创始人；个人博客作者（按引用材料语境）",
       "home": "https://blog.samaltman.com",
       "x": "https://x.com/sama",
       "tags": [
-        "智能成本",
-        "Agent",
-        "长期预测"
+        "成本下降可能扩大能力需求",
+        "人要主动决定把能力用在哪里",
+        "广泛可得与收益分配需要主动处理"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的个人文章结合技术趋势与宏观预测，强调智能的经济影响、Agent 的可能角色和个人主动性。阅读时要把作者的预测与已经发生的事实分开。",
-      "ideas": [],
+      "thesis": "把 AI 看作逐渐变便宜的能力，同时强调人的主动性、持续适应与收益分配。",
+      "summary": "两篇本人长文提供经济和社会视角。文中的未来时间表属于预测，不作为已经实现的事实。",
+      "ideas": [
+        {
+          "title": "成本下降可能扩大能力需求",
+          "text": "他的经济框架认为更便宜的智能会打开新用途，而不只是压低已有任务成本。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "两篇长文反复用经济与能力丰富解释趋势。",
+          "boundary": "具体降价速度和规模规律是作者判断，不作为保证。"
+        },
+        {
+          "title": "人要主动决定把能力用在哪里",
+          "text": "他认为主动性、适应力和判断在 AI 丰富时代更重要；专家仍可更有效地工作。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "两篇文章对个人作用的重复强调。",
+          "boundary": "不代表所有人都会自动受益，技术采用存在资源差异。"
+        },
+        {
+          "title": "广泛可得与收益分配需要主动处理",
+          "text": "能力增长不自动保证公平，安全、获取门槛和利益分配需要制度与产品选择。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "文中明确提出安全和分配问题。",
+          "boundary": "是政策及社会方向，不是已落地、已验证的治理方案。"
+        }
+      ],
       "works": [
         {
           "title": "Three Observations",
-          "type": "个人预测文章",
-          "date": "2025-02-09",
-          "author": "Sam Altman",
           "url": "https://blog.samaltman.com/three-observations",
-          "summary": "围绕智能能力、成本、Agent 与经济影响提出三条观察和推演。",
-          "why": "理解作者解释 AI 经济变化的框架。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-02-09",
+          "locator": "三项经济观察；虚拟工程师；agency；利益分配",
+          "summary": "讨论规模、成本、需求以及个人和政策层的影响。",
+          "access": "已读公开文章正文；经济规律、效率和未来结论为作者判断，未独立审计。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
           "title": "The Gentle Singularity",
-          "type": "个人预测文章",
-          "date": "2025-06-10",
-          "author": "Sam Altman",
           "url": "https://blog.samaltman.com/the-gentle-singularity",
-          "summary": "描绘智能持续进步之后，工作、科学与社会可能怎样变化。",
-          "why": "对照实际进展阅读长期预测。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-06-10",
+          "locator": "渐进适应；科研与迭代；安全与广泛可得",
+          "summary": "提出能力快速增长但生活逐渐适应的未来图景。",
+          "access": "已读文章正文；2026、2027 及更远预测没有自动升级为当前事实。",
+          "type": "本人文章",
+          "author": null,
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "作者同时是 AI 公司的领导者。文中的时间表和未来图景是预测，不能当作已经实现的能力。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "两篇本人长文提供经济和社会视角。文中的未来时间表属于预测，不作为已经实现的事实。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "如果智能成本持续下降，软件、工作和社会制度都需要重新适应。",
@@ -2178,57 +3724,135 @@
             "text": "文章涉及广泛受益与人的主动性；这些制度与未来判断不由模型能力本身自动决定。",
             "source": 0
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Three Observations",
+            "type": "个人预测文章",
+            "date": "2025-02-09",
+            "author": "Sam Altman",
+            "url": "https://blog.samaltman.com/three-observations",
+            "summary": "围绕智能能力、成本、Agent 与经济影响提出三条观察和推演。",
+            "why": "理解作者解释 AI 经济变化的框架。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "The Gentle Singularity",
+            "type": "个人预测文章",
+            "date": "2025-06-10",
+            "author": "Sam Altman",
+            "url": "https://blog.samaltman.com/the-gentle-singularity",
+            "summary": "描绘智能持续进步之后，工作、科学与社会可能怎样变化。",
+            "why": "对照实际进展阅读长期预测。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "作者同时是 AI 公司的领导者。文中的时间表和未来图景是预测，不能当作已经实现的能力。"
       }
     },
     {
       "id": "claude",
       "name": "Claude",
-      "short": "官方账号 · Agent 工程",
+      "short": "简单系统 · 上下文工程",
       "category": "官方信息源",
-      "role": "Claude 官方账号；这里整理 Anthropic 团队公开内容",
+      "role": "Claude 产品与官方账号；本页展示 Anthropic 团队工程实践",
       "home": "https://claude.ai",
       "x": "https://x.com/claudeai",
       "tags": [
-        "Agent",
-        "上下文工程",
-        "工具接口"
+        "从简单方案开始，用测量决定是否增加复杂性",
+        "清晰的工具接口与真实反馈很重要",
+        "上下文是有限资源，需要按需取用",
+        "长任务需要保存可以继续工作的状态"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "这不是个人 builder 档案。它用于跟踪 Claude 背后团队的技术方法、产品方向与公开说明，并明确文章作者或团队署名。",
-      "ideas": [],
+      "thesis": "先建立可测量的简单系统，再按需要增加自主性，并持续管理上下文与工具。",
+      "summary": "Claude 是产品与官方账号。本页研究 Anthropic 署名的工程文章，不能当作模型自己形成的个人立场。",
+      "ideas": [
+        {
+          "title": "从简单方案开始，用测量决定是否增加复杂性",
+          "text": "单次调用或固定工作流能解决时，先检查其效果；自主 Agent 会增加成本、延迟与错误传播。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "工程文章明确的中心建议。",
+          "boundary": "官方实践归纳，不证明简单方案对所有任务都最好。"
+        },
+        {
+          "title": "清晰的工具接口与真实反馈很重要",
+          "text": "工具说明要明确，Agent 应通过执行结果检查进度，并设停止条件和必要护栏。",
+          "source": 0,
+          "sourceIndices": [
+            0,
+            1
+          ],
+          "representativeness": "两篇工程文章都讨论工具契约与反馈。",
+          "boundary": "运行成功不等于业务正确；仍需任务特定评估。"
+        },
+        {
+          "title": "上下文是有限资源，需要按需取用",
+          "text": "保留高信号信息，用文件路径和查询等索引按需加载，而非始终塞进所有材料。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "官方明确讨论注意力预算和即时检索。",
+          "boundary": "运行时探索可能更慢；不是预检索或 RAG 永远没用。"
+        },
+        {
+          "title": "长任务需要保存可以继续工作的状态",
+          "text": "用压缩摘要与结构化笔记保留决定、目标和必要细节，减少上下文窗口限制。",
+          "source": 1,
+          "sourceIndices": [
+            1
+          ],
+          "representativeness": "工程文章明确列出两种长任务方法。",
+          "boundary": "摘要会损失信息，必须保留关键细节并检查偏移。"
+        }
+      ],
       "works": [
         {
-          "title": "Building Effective Agents",
-          "type": "团队技术文章",
-          "date": "2024-12-19",
-          "author": "Anthropic 工程团队",
+          "title": "Building effective agents",
           "url": "https://www.anthropic.com/engineering/building-effective-agents",
-          "summary": "讨论工作流、Agent、自主性与简单可组合模式。",
-          "why": "搭建 Agent 系统之前的基础读物。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2024-12-19；页面注明工具生态已变化",
+          "locator": "When (and when not)；框架；Agents；Summary；ACI",
+          "summary": "用可组合模式、真实环境反馈和测试构建可靠 Agent。",
+          "access": "已读列出章节；原文已提示工具生态过时，本页归纳设计原则，不复用旧工具清单。",
+          "type": "官方工程文章",
+          "author": "Anthropic",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         },
         {
           "title": "Effective context engineering for AI agents",
-          "type": "团队技术文章",
-          "date": "2025-09-29",
-          "author": "Anthropic 团队",
           "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
-          "summary": "把指令、工具、外部信息与历史记录作为有限上下文统一管理。",
-          "why": "理解为什么更多上下文不总能带来更好结果。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-09-29",
+          "locator": "注意力预算；Tools；just in time；Compaction；Structured note-taking",
+          "summary": "以高信号上下文、按需检索和持久笔记支持长任务。",
+          "access": "已读上下文约束、工具、按需加载及长任务方法章节；未复现实验。",
+          "type": "官方工程文章",
+          "author": "Anthropic",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "官方文章提供可复用方法，也带有平台语境。这里不把团队文章拟人化为某个作者的个人观点。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "仓库名单",
       "official": true,
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 2,
+        "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "材料为主题选择，不是随机抽样，不能据篇数或频率推断作者全部立场。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "Claude 是产品与官方账号。本页研究 Anthropic 署名的工程文章，不能当作模型自己形成的个人立场。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "从简单、可评估的系统开始，再增加真正需要的自主性。",
@@ -2249,56 +3873,109 @@
             "text": "Context Engineering 强调每一步选择进入模型的信息，并用整理、摘要与检索维持长期任务质量。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Building Effective Agents",
+            "type": "团队技术文章",
+            "date": "2024-12-19",
+            "author": "Anthropic 工程团队",
+            "url": "https://www.anthropic.com/engineering/building-effective-agents",
+            "summary": "讨论工作流、Agent、自主性与简单可组合模式。",
+            "why": "搭建 Agent 系统之前的基础读物。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Effective context engineering for AI agents",
+            "type": "团队技术文章",
+            "date": "2025-09-29",
+            "author": "Anthropic 团队",
+            "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+            "summary": "把指令、工具、外部信息与历史记录作为有限上下文统一管理。",
+            "why": "理解为什么更多上下文不总能带来更好结果。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "官方文章提供可复用方法，也带有平台语境。这里不把团队文章拟人化为某个作者的个人观点。"
       }
     },
     {
       "id": "christopher",
       "name": "Christopher Pedregal",
-      "short": "Granola · 无感 AI",
+      "short": "思考工具 · 默认与控制",
       "category": "产品与设计",
-      "role": "Granola 联合创始人；关注 AI 与会议工作流",
+      "role": "Granola 联合创始人；关注 AI 与会议工作流（按引用材料语境）",
       "home": "https://www.granola.ai",
       "x": "https://x.com/chrispedregal",
       "tags": [
-        "Granola",
-        "工作习惯",
-        "产品打磨"
+        "不是只自动总结，而是帮助人思考",
+        "复杂语境不容易变成无数固定规则",
+        "先把默认结果做好，再逐步开放控制"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他的访谈反复连接增强人的能力、顺应习惯与精细的产品形状。探索可以快，但最后的体验仍需要一致性与打磨。",
-      "ideas": [],
+      "thesis": "让 AI 增强人的思考和已有习惯，默认简单好用，需要时再提供更多控制。",
+      "summary": "原始 Hallway Chat 逐字稿中 Chris 的回答支持这一主题；“隐形科技”等主持人论述不归给他。",
+      "ideas": [
+        {
+          "title": "不是只自动总结，而是帮助人思考",
+          "text": "会议笔记是建立习惯的起点；他把产品定位为让人更好工作和思考的工具。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "13–15 分钟本人直接解释产品轨迹。",
+          "boundary": "当时的愿景，不能证明产品已扩展为所有思考场景。"
+        },
+        {
+          "title": "复杂语境不容易变成无数固定规则",
+          "text": "给模型与任务有关的目的和语境，比堆积互相冲突的条件更符合他的设计经验。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "约 20 分钟本人讨论短且具体的提示变化。",
+          "boundary": "不是所有规则都应该移除；效果未独立测量。"
+        },
+        {
+          "title": "先把默认结果做好，再逐步开放控制",
+          "text": "用户要求模板，不等于真的愿意配置；他们据使用反馈改进自动默认结果。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "22–25 分钟本人描述具体的反馈与尝试。",
+          "boundary": "访谈中仍承认专家控制的设计尚未解决，不是完成的通用方案。"
+        }
+      ],
       "works": [
         {
           "title": "Granola: The Art of Invisible AI",
-          "type": "访谈逐字稿",
-          "date": "2025-01-24",
-          "author": "Hallway Chat · Christopher Pedregal",
           "url": "https://www.hallwaychat.co/granola-the-art-of-invisible-ai-christopher-pedregal/",
-          "summary": "讨论无感的 AI、增强用户与顺应已有习惯。",
-          "why": "理解为什么低操作成本可以成为产品差异。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
-        },
-        {
-          "title": "Granola · Christopher Pedregal",
-          "type": "访谈",
-          "date": "2026-01-14",
-          "author": "EO Magazine · Hyeri Jo 访谈",
-          "url": "https://www.eomag.io/article/granola-christopher-pedregal",
-          "summary": "讨论产品形状、快速反馈与探索之后的精细打磨。",
-          "why": "适合研究早期产品怎样形成自己的体验。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "date": "2025-01-24",
+          "locator": "13–15 分钟：tool for thinking；20–25 分钟：语境、默认与控制",
+          "summary": "解释 Granola 的思考工具方向，以及默认质量和定制的取舍。",
+          "access": "已读指定 Chris 回答及相邻问答；未看整场视频；主持人 Fraser 和 Nabeel 的意见分别归属。",
+          "type": "原始访谈逐字稿",
+          "author": "Christopher Pedregal；Hallway Chat 主持",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
         }
       ],
-      "note": "把“无感”理解为融入工作，而不是没有可见性或没有用户控制。",
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "原对话补充",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "原始 Hallway Chat 逐字稿中 Chris 的回答支持这一主题；“隐形科技”等主持人论述不归给他。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "好的 AI 产品融入已有习惯，让人保有控制，并减少额外操作。",
@@ -2319,56 +3996,98 @@
             "text": "频繁接触用户是为了理解底层需要，产品仍需自己的方向和一致判断。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Granola: The Art of Invisible AI",
+            "type": "访谈逐字稿",
+            "date": "2025-01-24",
+            "author": "Hallway Chat · Christopher Pedregal",
+            "url": "https://www.hallwaychat.co/granola-the-art-of-invisible-ai-christopher-pedregal/",
+            "summary": "讨论无感的 AI、增强用户与顺应已有习惯。",
+            "why": "理解为什么低操作成本可以成为产品差异。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "Granola · Christopher Pedregal",
+            "type": "访谈",
+            "date": "2026-01-14",
+            "author": "EO Magazine · Hyeri Jo 访谈",
+            "url": "https://www.eomag.io/article/granola-christopher-pedregal",
+            "summary": "讨论产品形状、快速反馈与探索之后的精细打磨。",
+            "why": "适合研究早期产品怎样形成自己的体验。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          }
+        ],
+        "note": "把“无感”理解为融入工作，而不是没有可见性或没有用户控制。"
       }
     },
     {
       "id": "kevin",
       "name": "Kevin Weil",
-      "short": "产品交付 · 快速试验",
+      "short": "小团队杠杆 · API 生态",
       "category": "产品与设计",
-      "role": "OpenAI 产品领导者；以下职务与观点以所列 2025 年访谈为语境",
+      "role": "AI 产品从业者；所引活动中的职务为 2025 年语境，不作为当前任职确认",
       "home": "https://forum.openai.com",
       "x": "https://x.com/kevinweil",
       "tags": [
-        "产品交付",
-        "开发者",
-        "快速试验"
+        "小团队可以借 AI 获得更大杠杆",
+        "把能力通过 API 交给更多开发者"
       ],
-      "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
-      "summary": "他在公开活动与访谈中解释模型能力怎样进入产品、开发者 API 与新的交互形式。这里不根据旧访谈推断其 2026 年现职。",
-      "ideas": [],
-      "works": [
+      "thesis": "让 AI 能力更便宜、通过 API 提供给开发者，才能支持更多小团队和新的应用。",
+      "summary": "只归纳 OpenAI Forum 活动报道中明确标注 Kevin 的引语；其他嘉宾的经济研究不归给他。",
+      "ideas": [
         {
-          "title": "Making AI Work for Everyone",
-          "type": "公开论坛对话",
-          "date": "2025-04-08",
-          "author": "Kevin Weil、Erik Brynjolfsson · OpenAI Forum",
-          "url": "https://forum.openai.com/public/blogs/making-ai-work-for-everyone-2025",
-          "summary": "从产品与经济研究的不同视角讨论 AI 采用、开发者与组织。",
-          "why": "比较产品领导者和经济学家的问题意识。",
-          "access": "已读取公开原文／节目说明。",
-          "evidence": ""
+          "title": "小团队可以借 AI 获得更大杠杆",
+          "text": "他认为 startup 能用 AI 完成过去需要更多人力的工作。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "原始活动报道明确署名其引语。",
+          "boundary": "方向判断，不是对所有企业的已证实生产率提升。"
         },
         {
-          "title": "OpenAI’s CPO on what’s coming next",
-          "type": "访谈视频",
-          "date": "2025-06-10",
-          "author": "Azeem Azhar 访谈 Kevin Weil",
-          "url": "https://www.youtube.com/watch?v=OhbhSscjmt0",
-          "summary": "公开节目说明列出模型、Agent、硬件和产品方向等讨论议题。",
-          "why": "作为进一步收听原访谈的入口。",
-          "access": "已核验节目标题与公开说明；未取得完整逐字稿，不概括未读取部分。",
-          "evidence": ""
+          "title": "把能力通过 API 交给更多开发者",
+          "text": "他强调平台自己只能开发少部分应用，第三方可以用低成本能力创造更多产品。",
+          "source": 0,
+          "sourceIndices": [
+            0
+          ],
+          "representativeness": "本人引语把成本、API 和第三方价值连接起来。",
+          "boundary": "价格变化与优势会随时间变动；当时职务不作为当前任职确认。"
         }
       ],
-      "note": "论坛中关于生产力 J 曲线的论述主要来自 Erik，不能直接算作 Kevin 的观点。",
+      "works": [
+        {
+          "title": "Reimagining Work in the Age of AI",
+          "url": "https://forum.openai.com/public/blogs/making-ai-work-for-everyone-2025",
+          "date": "2025-04-08",
+          "locator": "Kevin Weil 引语：小团队；推理成本；API 与第三方应用",
+          "summary": "强调小团队杠杆、成本下降与开发者生态。",
+          "access": "已读官方活动公开摘要；只选 Kevin 的明确引语，未观看完整视频；Erik 的研究不算 Kevin 的立场。",
+          "type": "原始活动方报道",
+          "author": "OpenAI Forum 整理；Kevin Weil 发言",
+          "excerpt": "",
+          "why": "核对具体章节及发言者，再判断这条归纳是否成立。",
+          "reviewedAt": "2026-10-04"
+        }
+      ],
+      "note": "先对照所列章节与发言者，再判断能否用于你的任务。初步主题不是作者的完整立场。",
       "origin": "原对话补充",
-      "researchStatus": "todo",
+      "researchStatus": "partial",
       "research": {
-        "status": "todo",
-        "label": "TODO · 待深入研究",
-        "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+        "status": "partial",
+        "label": "初步整理 · 待扩展复核",
+        "reviewedAt": "2026-10-04",
+        "sourceCount": 1,
+        "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
+        "selection": "优先本人署名正文、本人帖子、原始节目方文字稿或官方团队文章。每条归纳绑定位置，并写明选入理由和适用边界。",
+        "limitations": "目前只有一份原始材料，不能检验跨时期稳定性。未完整观看音视频，未运行产品；访谈归纳保留发言者，联名与官方材料保留团队归属。后续需补跨时期材料及反例。",
+        "correction": "只归纳 OpenAI Forum 活动报道中明确标注 Kevin 的引语；其他嘉宾的经济研究不归给他。",
+        "xScope": "本轮研究没有新增本人 X 时间线采集。主档案只使用“研究材料”中列明的帖子；旧 X 总结另留作待复核线索，不表示本轮已核对全部样本。"
       },
       "legacyDraft": {
         "thesis": "能力变化很快，产品团队需要保持试验速度，并让开发者用得起、用得上。",
@@ -2389,7 +4108,32 @@
             "text": "与 Azeem Azhar 的节目围绕 Agent、模型与硬件交互展开；这里仅依据公开节目说明列出议题，不替代完整访谈。",
             "source": 1
           }
-        ]
+        ],
+        "works": [
+          {
+            "title": "Making AI Work for Everyone",
+            "type": "公开论坛对话",
+            "date": "2025-04-08",
+            "author": "Kevin Weil、Erik Brynjolfsson · OpenAI Forum",
+            "url": "https://forum.openai.com/public/blogs/making-ai-work-for-everyone-2025",
+            "summary": "从产品与经济研究的不同视角讨论 AI 采用、开发者与组织。",
+            "why": "比较产品领导者和经济学家的问题意识。",
+            "access": "已读取公开原文／节目说明。",
+            "evidence": ""
+          },
+          {
+            "title": "OpenAI’s CPO on what’s coming next",
+            "type": "访谈视频",
+            "date": "2025-06-10",
+            "author": "Azeem Azhar 访谈 Kevin Weil",
+            "url": "https://www.youtube.com/watch?v=OhbhSscjmt0",
+            "summary": "公开节目说明列出模型、Agent、硬件和产品方向等讨论议题。",
+            "why": "作为进一步收听原访谈的入口。",
+            "access": "已核验节目标题与公开说明；未取得完整逐字稿，不概括未读取部分。",
+            "evidence": ""
+          }
+        ],
+        "note": "论坛中关于生产力 J 曲线的论述主要来自 Erik，不能直接算作 Kevin 的观点。"
       }
     },
     {
@@ -2955,7 +4699,10 @@
   ],
   "revisionSummary": {
     "reviewed": 4,
-    "todo": 26,
-    "date": "2026-10-04"
+    "partial": 26,
+    "todo": 0,
+    "date": "2026-10-04",
+    "addedMaterials": 56,
+    "addedClaims": 74
   }
 }
