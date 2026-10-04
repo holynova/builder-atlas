@@ -9,7 +9,7 @@ English: A source-linked reading atlas with 30 AI builder and official-source pr
 ## 在线体验 / Live Demo
 
 - [GitHub Pages Demo](https://holynova.github.io/builder-atlas/)
-- [Cloudflare Demo（DNS 待配置）](https://builder-atlas.xiaosang.cc/)
+- [Cloudflare Demo](https://builder-atlas.xiaosang.cc/)
 - [GitHub Repo](https://github.com/holynova/builder-atlas)
 
 <img src="./assets/qr.png" width="180" alt="扫码访问 Cloudflare 在线体验">
@@ -36,7 +36,5 @@ Cloudflare Workers · Worker Route: `builder-atlas.xiaosang.cc`
 Version: **1.2.2**. Source and deployment configuration use the same `main` branch. Deploy manually from that commit; no Cloudflare release branch or deployment workflow.
 
 页面包含统一 Umami 统计。原文版权属于各作者；此项目提供原创中文转述与来源链接。
-
-DNS prerequisite: proxied A record `builder-atlas` → `192.0.2.1` in the `xiaosang.cc` zone. The Worker handles requests; this reserved address is a placeholder, not a live origin. Worker Route preserves the same HTTPS Demo when Custom Domains reach the zone limit.
 
 GitHub Pages publishes the static `dist/` directory from `main` using `.github/workflows/pages.yml`. Cloudflare remains a separate manual deployment.
