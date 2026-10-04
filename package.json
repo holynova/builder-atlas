@@ -1,13 +1,14 @@
 {
   "name": "builder-atlas",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "private": true,
   "description": "AI builder reading atlas",
   "scripts": {
     "dev": "python3 -m http.server 8765 --directory dist",
-    "check": "node --check dist/app.js && node --check dist/data.js && node --check dist/learning.js && node --check dist/x-insights.js",
+    "check": "node --check dist/app.js && node --check dist/data.js && node --check dist/learning.js && node --check dist/x-insights.js && node scripts/check-research.cjs",
     "deploy:check": "wrangler deploy --dry-run --config wrangler.jsonc",
-    "deploy": "npm run check && wrangler deploy --config wrangler.jsonc"
+    "deploy": "npm run check && wrangler deploy --config wrangler.jsonc",
+    "sync:data": "node scripts/sync-data.cjs"
   },
   "devDependencies": {
     "wrangler": "4.147.0"

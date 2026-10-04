@@ -1,10 +1,10 @@
 # Builder Atlas / AI 建造者阅读档案
 
-中文：从 Zara Zhang 的名单出发，整理 30 份 AI 建造者与官方信息源档案、66 条代表文章、推文和访谈。采用三栏研究工作台，人物、内容与原文证据联动，支持本地收藏与练习笔记。按 Karpathy 的理解方法重组内容：问题入口、观点地图、分步讲解、编辑练习及四条阅读路线。首页用同一个例子展示文字、图解、交互网页和视频脚本的区别。支持搜索、主题筛选及手机阅读。视频脚本不是已生成的视频。中文总结链接到原始依据，并标注付费、转存和未读取全文的资料。代表内容研究快照为 2026 年 10 月 2 日。新增近期 X 观点：10 月 3 日采集 9 个账号的 837 条帖子，提炼 27 条观点并附原帖；其余账号显示采集待补状态。
+中文：AI 建造者观点研究工作台，30 个研究对象。本轮深入复核 Zara Zhang、Matt Pocock、Emil Kowalski 与 Andrej Karpathy；其余 26 个对象标为 TODO。逐条展示观点、本人材料出处、具体章节、阅读范围、代表性理由与适用边界。文章、项目 README 和节目文字稿分别标注；不声称完整看过视频或穷尽作者思想。Zara、Matt 各补采 100 条 X 主页帖子；Karpathy 使用已有样本，Emil 本轮未采集 X。支持搜索、阅读路线、手机阅读、本地收藏与练习笔记。旧观点保留在数据的 legacyDraft 中供追溯，撤出当前展示。
 
-English: A source-linked reading atlas with 30 AI builder and official-source profiles and 66 representative articles, posts, talks and interviews. A three-column research workbench connects people, content, and evidence, with local bookmarks and exercise notes. A Karpathy-inspired learning edition adds question-led profiles, clickable idea maps, step-by-step explainers, editorial exercises and four reading paths. A shared example compares clear text, diagrams, interactive HTML and a video storyboard; no video file is generated. Search people, products or ideas, filter topics, and read on mobile. Chinese summaries distinguish personal views, team work and access limitations. Research snapshot: October 2, 2026. Recent X insights add 27 source-linked summaries from 837 posts across 9 accounts, collected October 3; remaining profiles show the collection status.
+English: A research workbench for 30 AI builders and official sources. Four profiles have been re-reviewed against selected first-person materials: Zara Zhang, Matt Pocock, Emil Kowalski, and Andrej Karpathy. The other 26 are marked TODO. Each claim links to source sections, access scope, editorial selection reasons, and limitations. Videos are not represented as fully watched. New X snapshots contain 100 timeline posts each for Zara and Matt; Karpathy reuses the earlier sample, while Emil has no new X collection. Original, quoted, and reposted timeline entries are distinguished. Search, reading paths, responsive layouts, local bookmarks, and exercise notes are supported. Superseded drafts remain in legacyDraft for traceability.
 
-![Project screenshot](./assets/screenshot.jpg)
+![Project screenshot](./assets/screenshot.png)
 
 ## 在线体验 / Live Demo
 
@@ -33,8 +33,12 @@ npm run deploy
 
 Cloudflare Workers · Worker Route: `builder-atlas.xiaosang.cc`
 
-Version: **1.2.2**. Source and deployment configuration use the same `main` branch. Deploy manually from that commit; no Cloudflare release branch or deployment workflow.
+Version: **1.3.0**. Source and deployment configuration use the same `main` branch. Deploy manually from that commit; no Cloudflare release branch or deployment workflow.
 
 页面包含统一 Umami 统计。原文版权属于各作者；此项目提供原创中文转述与来源链接。
 
 GitHub Pages publishes the static `dist/` directory from `main` using `.github/workflows/pages.yml`. Cloudflare remains a separate manual deployment.
+
+## 研究维护 / Research maintenance
+
+Canonical data lives in `dist/research.json`, `dist/learning.json`, and `dist/x-insights.json`. Run `npm run sync:data` after editing, then `npm run check`. Per-profile research notes live in `research/`. A reviewed label applies only to the listed materials, not the author’s entire output.

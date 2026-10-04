@@ -2,53 +2,317 @@ const BUILDERS = [
   {
     "id": "karpathy",
     "name": "Andrej Karpathy",
-    "short": "模型理解 · 编程范式",
+    "short": "模型边界 · 实验与理解",
     "category": "Agent 与模型",
     "origin": "仓库名单",
     "role": "AI 研究者与教育者；Eureka Labs、Zero to Hero 的创建者",
     "home": "https://karpathy.ai",
     "x": "https://x.com/karpathy",
     "tags": [
-      "Software 3.0",
-      "LLM",
-      "教育"
+      "Jagged Intelligence",
+      "模型教育",
+      "autoresearch",
+      "Agentic Engineering",
+      "知识库"
     ],
-    "thesis": "当代码变得充裕，人更需要理解、监督和判断。",
-    "summary": "Karpathy 擅长把模型机制转化为工程师能操作的心智模型。他的 Software 3.0 演讲讨论如何用自然语言驱动 LLM；近期公开分享则把关注点推向如何理解模型输出。",
+    "thesis": "理解模型的能力边界，让人设计可验证的工作循环，并用 AI 扩大可做与可理解的事情。",
+    "summary": "新版覆盖模型理解、数据与实验方法、Agent 应用、自动研究及个人能力扩展。输出格式是人机交互的一条主线，不能代表他的全部思想。",
     "ideas": [
       {
-        "title": "自然语言成为可编程接口",
-        "text": "Software 3.0 把 LLM 看作能通过自然语言编程的系统。工程师要在传统代码、模型能力与语言指令之间选择合适的边界。",
-        "source": 0
+        "title": "模型能力不均衡，不能用一个总分概括",
+        "text": "LLM 在部分任务很强，在另一些任务仍脆弱。训练方式与可验证领域影响这种形状；应用要按真实任务找边界。",
+        "source": 0,
+        "sourceIndices": [
+          0,
+          3
+        ],
+        "representativeness": "年度回顾与官方访谈都强调认知缺口和能力差异。",
+        "boundary": "“Agent 的十年”是其 2025 个人估计，不是确认的时间表。"
       },
       {
-        "title": "生成之后，还要帮助人理解",
-        "text": "当 AI 承担更多执行工作，人会把更多精力用于监督与理解。图解、交互网页和定制讲解视频可以帮助人消化模型输出。",
-        "source": 1
+        "title": "先建立可信实验，再增加复杂度",
+        "text": "先检查数据、简单基线和评估，再逐步改模型。nanochat 把训练、评估与推理放进可修改的实验框架。",
+        "source": 2,
+        "sourceIndices": [
+          2,
+          4
+        ],
+        "representativeness": "2019 方法与当前实验项目体现持续的可理解、可验证实践。",
+        "boundary": "旧文章的具体优化器等建议有年代；这里提炼方法，未复验项目性能。"
+      },
+      {
+        "title": "最小实现帮助理解算法核心",
+        "text": "microgpt 用小型、无依赖实现展示模型机制。它与 nanochat 的完整流程形成不同尺度的学习入口。",
+        "source": 5,
+        "sourceIndices": [
+          5,
+          4
+        ],
+        "representativeness": "本人文章明确描述长期简化模型的教育实践，项目提供结构依据。",
+        "boundary": "这是教学与实验入口，不等于生产模型只需相同规模。"
+      },
+      {
+        "title": "人设计研究循环，Agent 执行可比较实验",
+        "text": "autoresearch 固定时间预算和指标，让 Agent 修改、训练、比较并保留结果；人改实验指令和范围。",
+        "source": 6,
+        "sourceIndices": [
+          6,
+          2
+        ],
+        "representativeness": "当前本人项目把长期实验纪律落实为自动循环。",
+        "boundary": "项目针对有限训练环境；不证明所有科学研究都可无人完成。"
+      },
+      {
+        "title": "应用层要组织上下文、工具和人的控制",
+        "text": "模型之外，具体应用还要协调调用、专属界面、反馈和自动化程度，才能完成领域工作。",
+        "source": 0,
+        "sourceIndices": [
+          0,
+          3
+        ],
+        "representativeness": "年度回顾谈应用层，访谈明确 Agent 仍有未解决的工作能力。",
+        "boundary": "描述产品方向，不能直接证明某个应用已经可靠。"
+      },
+      {
+        "title": "便宜的软件打开以前不值得做的任务",
+        "text": "个人可以制作定制、一次性的工具与解释。模型能力扩大可做的事情，而不只是加快原有步骤。",
+        "source": 1,
+        "sourceIndices": [
+          1,
+          0
+        ],
+        "representativeness": "个人赋能文章与年度回顾的小型软件实践相互印证。",
+        "boundary": "个人与组织的约束不同；低制作成本不代表零运行和维护成本。"
+      },
+      {
+        "title": "生成之后，要帮助人理解",
+        "text": "简洁语言、图示、交互网页和讲解视频，是不同的理解入口；随着执行自动化，人仍需监督与判断。",
+        "source": 7,
+        "sourceIndices": [
+          7,
+          8,
+          0
+        ],
+        "representativeness": "2026 年两篇本人长帖重复提出视觉与交互输出，年度回顾也讨论视觉交互。",
+        "boundary": "视频和神经交互的未来形态包含个人展望；本站只有教学交互和视频脚本，没有生成完整视频。"
+      },
+      {
+        "title": "让知识积累，而不是只得到一次回答",
+        "text": "把来源保存在原始资料层，让 LLM 编译链接、概念和摘要；把查询结果回写知识库，并检查矛盾与缺口。",
+        "source": 9,
+        "sourceIndices": [
+          9
+        ],
+        "representativeness": "这是本人详述的近期研究工作流，补充其代码实践之外的知识工作。",
+        "boundary": "单篇近期实践，暂不视为长期共识；他对小规模 wiki 的经验不等于所有场景都无需 RAG。"
+      },
+      {
+        "title": "专业 Agent 编程需要监督与质量要求",
+        "text": "他从一次性、探索性的 vibe coding，转向强调编排 Agent、检查结果和保持软件质量的 agentic engineering。",
+        "source": 10,
+        "sourceIndices": [
+          10,
+          6
+        ],
+        "representativeness": "本人周年回顾明确区分两类工作方式；自动研究项目也给出受控循环。",
+        "boundary": "这是作者对工作方式的命名和判断；文中的使用比例不是行业统计。"
       }
     ],
     "works": [
       {
-        "title": "Software Is Changing (Again)",
-        "type": "演讲",
-        "date": "2025-06-17",
-        "author": "Andrej Karpathy · YC AI Startup School",
-        "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
-        "summary": "从传统软件、神经网络到用自然语言编程的 LLM，解释 Software 3.0 与新的软件交互方式。",
-        "why": "先建立模型与软件的关系，再理解 Agent 工具为何改变开发流程。"
+        "title": "2025 LLM Year in Review",
+        "url": "https://karpathy.bearblog.dev/year-in-review-2025/",
+        "date": "2025-12-19",
+        "summary": "讨论可验证奖励、能力不均衡、应用层、Agent 与视觉交互，提供多条相互关联的主线。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "第 2、3、5、6 节",
+        "excerpt": "Jagged Intelligence",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
       },
       {
-        "title": "如何更好地理解语言模型输出",
-        "type": "推文",
-        "date": "2026-10-02",
-        "author": "@karpathy",
+        "title": "Power to the people",
+        "url": "https://karpathy.bearblog.dev/power-to-the-people/",
+        "date": "2025-04-07",
+        "summary": "LLM 的广泛但易错的准专业能力，让个人能做以前需多个专家的事；组织采用有更多约束。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "个人与组织采用差异",
+        "excerpt": "versatile but also shallow and fallible",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "A Recipe for Training Neural Networks",
+        "url": "https://karpathy.github.io/2019/04/25/recipe/",
+        "date": "2019-04-25",
+        "summary": "先审查数据、建立简单基线和可信评估，再逐步增加模型复杂度。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "第 1–3 节：数据、训练评估骨架、过拟合",
+        "excerpt": "Become one with the data",
+        "access": "已阅读训练方法正文；这是 2019 年材料，具体技术选择不视为当前通用建议。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "Andrej Karpathy — AGI is still a decade away",
+        "url": "https://www.dwarkesh.com/p/andrej-karpathy",
+        "date": "2025-10-17",
+        "summary": "他肯定早期 Agent 的价值，也指出持续学习等认知缺口；时间判断是个人估计。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "00:00–约 00:14：Agent、持续学习、预训练与认知核心",
+        "excerpt": "",
+        "access": "已阅读节目官方逐字稿开头相关段落；未观看完整视频，未概括未读的后半场。",
+        "type": "原始访谈逐字稿",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "nanochat",
+        "url": "https://github.com/karpathy/nanochat",
+        "date": "README 快照 · 2026-10-04",
+        "summary": "提供从分词、预训练到评估和推理的可修改实验框架，强调可复现的模型实验。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "README：项目介绍、Leaderboard、Getting started",
+        "excerpt": "minimal/hackable",
+        "access": "已阅读本人项目 README 的介绍与实验结构；未训练模型或复验性能数据。",
+        "type": "本人开源项目",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "microgpt",
+        "url": "https://karpathy.github.io/2026/02/12/microgpt/",
+        "date": "2026-02-12",
+        "summary": "用单文件、无依赖 Python 展示 GPT 的算法核心，延续其简化模型、辅助理解的教育实践。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "开头；Dataset、Tokenizer、Autograd",
+        "excerpt": "Everything else is just efficiency.",
+        "access": "已阅读文章介绍与数据、分词、自动微分章节；未运行代码或观看关联课程。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "autoresearch",
+        "url": "https://github.com/karpathy/autoresearch",
+        "date": "2026-03 · README 核验于 2026-10-04",
+        "summary": "Agent 在固定时间预算下修改训练代码、比较指标并保留或舍弃结果；人设计实验规则。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "README：How it works；Design choices",
+        "excerpt": "One GPU, one file, one metric.",
+        "access": "已阅读本人 README；未运行 GPU 实验，未将开头科幻设想当作已实现能力。",
+        "type": "本人开源项目",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "让模型输出更容易理解",
         "url": "https://x.com/karpathy/status/2105819303471976479",
-        "summary": "分享从受控语言、图示、HTML 网页到定制视频的表达方式，提出人的工作将更偏向监督和理解。",
-        "why": "对学习陌生概念和做可交互的解释材料很直接。",
-        "access": "依据 Zara 维护的公开 feed；X 原页可能需要登录。"
+        "date": "Fri Oct 02 00:37:00 +0000 2026",
+        "summary": "从简洁写作、图示到交互 HTML 和定制讲解视频，帮助人理解与监督模型输出。",
+        "why": "与主页面的主题及限定对照阅读。",
+        "locator": "Writing、Diagrams / images、Web pages、Explainer videos；总结",
+        "excerpt": "understand the outputs of language models",
+        "access": "已核对采集到的本人帖子全文；样本采于 2026-10-03。未逐一查看媒体和外链，X 原页可能需要登录。",
+        "type": "本人 X 帖子",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "HTML 与视觉输出的方向",
+        "url": "https://x.com/karpathy/status/2053872850101285137",
+        "date": "Mon May 11 16:20:21 +0000 2026",
+        "summary": "推荐用 HTML 呈现回答；对未来交互式神经视频的描述属于展望。",
+        "why": "与主页面的主题及限定对照阅读。",
+        "locator": "HTML 建议；输出格式序列；未来技术的限定",
+        "excerpt": "structure your response as HTML",
+        "access": "已核对采集到的本人帖子全文；样本采于 2026-10-03。未逐一查看媒体和外链，X 原页可能需要登录。",
+        "type": "本人 X 帖子",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "LLM Knowledge Bases",
+        "url": "https://x.com/karpathy/status/2039805659525644595",
+        "date": "Thu Apr 02 20:42:21 +0000 2026",
+        "summary": "把原始材料编译成带链接的 Markdown wiki，查询结果回写，并定期检查一致性。",
+        "why": "与主页面的主题及限定对照阅读。",
+        "locator": "Data ingest、Q&A、Output、Linting",
+        "excerpt": "LLM Knowledge Bases",
+        "access": "已核对采集到的本人帖子全文；样本采于 2026-10-03。未逐一查看媒体和外链，X 原页可能需要登录。",
+        "type": "本人 X 帖子",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
+      },
+      {
+        "title": "从 vibe coding 到 agentic engineering",
+        "url": "https://x.com/karpathy/status/2019137879310836075",
+        "date": "Wed Feb 04 19:55:58 +0000 2026",
+        "summary": "回顾一次性项目与专业工作流的差别，强调监督、审查和软件质量。",
+        "why": "与主页面的主题及限定对照阅读。",
+        "locator": "Today (1 year later)；agentic / engineering 两点",
+        "excerpt": "more oversight and scrutiny",
+        "access": "已核对采集到的本人帖子全文；样本采于 2026-10-03。未逐一查看媒体和外链，X 原页可能需要登录。",
+        "type": "本人 X 帖子",
+        "reviewedAt": "2026-10-04",
+        "author": "Andrej Karpathy"
       }
     ],
-    "note": "把编程范式的描述与工程可靠性分开阅读。降低制作门槛，并不能替代对产品结果的检验。"
+    "note": "本页观点为编辑归纳。请核对每条的章节依据、代表性说明和边界；“已复核”不表示穷尽作者全部思想。",
+    "legacyDraft": {
+      "thesis": "当代码变得充裕，人更需要理解、监督和判断。",
+      "summary": "Karpathy 擅长把模型机制转化为工程师能操作的心智模型。他的 Software 3.0 演讲讨论如何用自然语言驱动 LLM；近期公开分享则把关注点推向如何理解模型输出。",
+      "ideas": [
+        {
+          "title": "自然语言成为可编程接口",
+          "text": "Software 3.0 把 LLM 看作能通过自然语言编程的系统。工程师要在传统代码、模型能力与语言指令之间选择合适的边界。",
+          "source": 0
+        },
+        {
+          "title": "生成之后，还要帮助人理解",
+          "text": "当 AI 承担更多执行工作，人会把更多精力用于监督与理解。图解、交互网页和定制讲解视频可以帮助人消化模型输出。",
+          "source": 1
+        }
+      ],
+      "works": [
+        {
+          "title": "Software Is Changing (Again)",
+          "type": "演讲",
+          "date": "2025-06-17",
+          "author": "Andrej Karpathy · YC AI Startup School",
+          "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
+          "summary": "从传统软件、神经网络到用自然语言编程的 LLM，解释 Software 3.0 与新的软件交互方式。",
+          "why": "先建立模型与软件的关系，再理解 Agent 工具为何改变开发流程。"
+        },
+        {
+          "title": "如何更好地理解语言模型输出",
+          "type": "推文",
+          "date": "2026-10-02",
+          "author": "@karpathy",
+          "url": "https://x.com/karpathy/status/2105819303471976479",
+          "summary": "分享从受控语言、图示、HTML 网页到定制视频的表达方式，提出人的工作将更偏向监督和理解。",
+          "why": "对学习陌生概念和做可交互的解释材料很直接。",
+          "access": "依据 Zara 维护的公开 feed；X 原页可能需要登录。"
+        }
+      ]
+    },
+    "researchStatus": "reviewed",
+    "research": {
+      "status": "reviewed",
+      "label": "已复核 · 限定范围",
+      "reviewedAt": "2026-10-04",
+      "sourceCount": 11,
+      "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
+      "selection": "优先正文和本人项目；用不同材料验证主题重复，保留主题演变与反例，不以热度决定代表性。",
+      "limitations": "未完整观看 YouTube 或播客音视频；未运行项目或逐一核验嵌入演示。代表性为编辑在所列材料范围内的判断。",
+      "correction": "补齐模型边界、教育与实验、自动研究、视觉化输出、知识库和专业 Agent 编程；区分长期主题与近期探索。",
+      "xScope": "复用 2026-10-03 的 100 条主页样本；本轮核对与观点相关的指定帖子文字，未重新采集或声称逐条深读全部样本。"
+    }
   },
   {
     "id": "swyx",
@@ -63,25 +327,9 @@ const BUILDERS = [
       "Learn in Public",
       "开发者社区"
     ],
-    "thesis": "把模型能力变成可用软件，是一门独立的工程实践。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的两条主线相互连接：AI Engineer 讨论如何把模型产品化，Learn in Public 则讨论如何通过公开笔记和作品建立学习反馈。重点是实际产出，而不只是积累资料。",
-    "ideas": [
-      {
-        "title": "不训练模型，也能做 AI 工程",
-        "text": "基础模型通过 API 与开源进入应用层，让更多工程师能围绕评估、工具、产品数据和用户体验构建软件。AI 工程不等于提示词写作。",
-        "source": 0
-      },
-      {
-        "title": "产品专属的评估属于工程工作",
-        "text": "模型通用能力之外，应用自己的数据与评估同样重要；调用模型成功不等于产品任务完成。",
-        "source": 0
-      },
-      {
-        "title": "把学习变成公开的小作品",
-        "text": "笔记、教程、演示和开源项目让学习有输出，也让他人的反馈进入过程。先帮助过去的自己，不必等到成为专家。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "The Rise of the AI Engineer",
@@ -107,7 +355,34 @@ const BUILDERS = [
       }
     ],
     "note": "先读 AI Engineer，再用 Learn in Public 做一个小项目的公开复盘。它不是要求你每天追新闻。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "把模型能力变成可用软件，是一门独立的工程实践。",
+      "summary": "他的两条主线相互连接：AI Engineer 讨论如何把模型产品化，Learn in Public 则讨论如何通过公开笔记和作品建立学习反馈。重点是实际产出，而不只是积累资料。",
+      "ideas": [
+        {
+          "title": "不训练模型，也能做 AI 工程",
+          "text": "基础模型通过 API 与开源进入应用层，让更多工程师能围绕评估、工具、产品数据和用户体验构建软件。AI 工程不等于提示词写作。",
+          "source": 0
+        },
+        {
+          "title": "产品专属的评估属于工程工作",
+          "text": "模型通用能力之外，应用自己的数据与评估同样重要；调用模型成功不等于产品任务完成。",
+          "source": 0
+        },
+        {
+          "title": "把学习变成公开的小作品",
+          "text": "笔记、教程、演示和开源项目让学习有输出，也让他人的反馈进入过程。先帮助过去的自己，不必等到成为专家。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "josh",
@@ -122,25 +397,9 @@ const BUILDERS = [
       "AI Studio",
       "Google Labs"
     ],
-    "thesis": "AI 助手要进入人的实际生活，而不只停留在一个聊天窗口。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "从他的署名产品文章看，主线是个性化、主动帮助、多模态交互和降低使用门槛。Google Labs 的实验产品提供观察新交互的窗口；这里把发布主张与已经证明的效果分开阅读。",
-    "ideas": [
-      {
-        "title": "更有用的助手需要用户语境",
-        "text": "2025 年 Gemini 产品文章将方向描述为更个人、更主动：理解用户的世界，再帮助完成创建、学习和探索。",
-        "source": 0
-      },
-      {
-        "title": "多模态扩大实际使用场景",
-        "text": "摄像头、屏幕共享、图像和视频让助手能围绕眼前的材料交互，而不是要求用户把一切先翻译成文字。",
-        "source": 0
-      },
-      {
-        "title": "降低试用与创作门槛",
-        "text": "开发者文章通过 AI Studio、模型 API 与示例资源让新能力可尝试；模型能力需要通过工具进入开发流程。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Gemini gets more personal, proactive and powerful",
@@ -166,7 +425,34 @@ const BUILDERS = [
       }
     ],
     "note": "发布文是产品意图的一手材料。是否形成长期价值，需要自己持续使用来检验。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "AI 助手要进入人的实际生活，而不只停留在一个聊天窗口。",
+      "summary": "从他的署名产品文章看，主线是个性化、主动帮助、多模态交互和降低使用门槛。Google Labs 的实验产品提供观察新交互的窗口；这里把发布主张与已经证明的效果分开阅读。",
+      "ideas": [
+        {
+          "title": "更有用的助手需要用户语境",
+          "text": "2025 年 Gemini 产品文章将方向描述为更个人、更主动：理解用户的世界，再帮助完成创建、学习和探索。",
+          "source": 0
+        },
+        {
+          "title": "多模态扩大实际使用场景",
+          "text": "摄像头、屏幕共享、图像和视频让助手能围绕眼前的材料交互，而不是要求用户把一切先翻译成文字。",
+          "source": 0
+        },
+        {
+          "title": "降低试用与创作门槛",
+          "text": "开发者文章通过 AI Studio、模型 API 与示例资源让新能力可尝试；模型能力需要通过工具进入开发流程。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "boris",
@@ -181,25 +467,9 @@ const BUILDERS = [
       "并行工作",
       "验证循环"
     ],
-    "thesis": "工程师的价值，从逐行写代码转向设计工作与检验结果。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "Boris 的代表材料把 Claude Code 的内部建设与个人工作方式联系起来：先形成足够清晰的计划，运行多个 Agent，把反复出现的问题沉淀为可执行的检查。",
-    "ideas": [
-      {
-        "title": "计划质量影响执行质量",
-        "text": "在 Pragmatic Engineer 访谈中，他描述先迭代计划，再交给 Agent 实现；并行会话让等待模型不再阻塞所有工作。",
-        "source": 0
-      },
-      {
-        "title": "一致的代码库同时帮助人和模型",
-        "text": "未完成的迁移与混杂的框架增加理解成本。他强调把迁移做完，并把重复审查意见自动化成检查。",
-        "source": 0
-      },
-      {
-        "title": "搜索机制要用实际结果选择",
-        "text": "Claude Code 团队比较过多种代码搜索方式，模型驱动的 glob 与 grep 在他们的情境下比复杂索引更有效。这个结论有具体适用范围。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Building Claude Code with Boris Cherny",
@@ -225,7 +495,34 @@ const BUILDERS = [
       }
     ],
     "note": "别把“跑几个 Agent”当成目标。先定义每个任务的完成条件和验证方式，再考虑并行。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "工程师的价值，从逐行写代码转向设计工作与检验结果。",
+      "summary": "Boris 的代表材料把 Claude Code 的内部建设与个人工作方式联系起来：先形成足够清晰的计划，运行多个 Agent，把反复出现的问题沉淀为可执行的检查。",
+      "ideas": [
+        {
+          "title": "计划质量影响执行质量",
+          "text": "在 Pragmatic Engineer 访谈中，他描述先迭代计划，再交给 Agent 实现；并行会话让等待模型不再阻塞所有工作。",
+          "source": 0
+        },
+        {
+          "title": "一致的代码库同时帮助人和模型",
+          "text": "未完成的迁移与混杂的框架增加理解成本。他强调把迁移做完，并把重复审查意见自动化成检查。",
+          "source": 0
+        },
+        {
+          "title": "搜索机制要用实际结果选择",
+          "text": "Claude Code 团队比较过多种代码搜索方式，模型驱动的 glob 与 grep 在他们的情境下比复杂索引更有效。这个结论有具体适用范围。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "thibault",
@@ -240,25 +537,9 @@ const BUILDERS = [
       "开发工具",
       "完整工作流"
     ],
-    "thesis": "Coding Agent 的目标，是参与整个软件开发生命周期。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "可核验的官方引述指向一个明确方向：Codex 不只生成代码，还需要使用现有工具、验证结果和长期维护软件。这里使用官方公告与个人演示，避免把团队路线全部归为个人独创。",
-    "ideas": [
-      {
-        "title": "把 Agent 接入现有开发生态",
-        "text": "在 Astral 收购公告的个人引述中，他强调让 Codex 跨越完整开发生命周期；开发工具生态是这个目标的一部分。",
-        "source": 0
-      },
-      {
-        "title": "从代码片段走向可执行的工作流",
-        "text": "公告描述规划改动、修改代码库、运行工具、验证结果与维护软件。以上是团队公开路线，不能等同于已经全部实现。",
-        "source": 0
-      },
-      {
-        "title": "用实际任务观察工作 Agent",
-        "text": "他的公开推文展示整理大量未读邮件的任务。这是个人使用案例，不是成功率或通用可靠性证明。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "OpenAI to acquire Astral",
@@ -284,7 +565,34 @@ const BUILDERS = [
       }
     ],
     "note": "先读生命周期方向，再看一次真实任务。区分愿景、演示和可靠交付的证据。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "Coding Agent 的目标，是参与整个软件开发生命周期。",
+      "summary": "可核验的官方引述指向一个明确方向：Codex 不只生成代码，还需要使用现有工具、验证结果和长期维护软件。这里使用官方公告与个人演示，避免把团队路线全部归为个人独创。",
+      "ideas": [
+        {
+          "title": "把 Agent 接入现有开发生态",
+          "text": "在 Astral 收购公告的个人引述中，他强调让 Codex 跨越完整开发生命周期；开发工具生态是这个目标的一部分。",
+          "source": 0
+        },
+        {
+          "title": "从代码片段走向可执行的工作流",
+          "text": "公告描述规划改动、修改代码库、运行工具、验证结果与维护软件。以上是团队公开路线，不能等同于已经全部实现。",
+          "source": 0
+        },
+        {
+          "title": "用实际任务观察工作 Agent",
+          "text": "他的公开推文展示整理大量未读邮件的任务。这是个人使用案例，不是成功率或通用可靠性证明。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "peter-yang",
@@ -299,25 +607,9 @@ const BUILDERS = [
       "教程",
       "知识工作"
     ],
-    "thesis": "产品的使用者，正在从只有人扩展到人和 Agent。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "Peter 的特色是把抽象变化拆成可看、可做的工作流程。个人观点以署名文章为依据，访谈中的技术主张保留给嘉宾，不把整期节目都当成他的观点。",
-    "ideas": [
-      {
-        "title": "产品需要给 Agent 可操作的接口",
-        "text": "他提出，用户会让 Agent 从多个产品取信息、执行动作，因此 API、Skills 与 MCP 逐渐成为重要入口。",
-        "source": 0
-      },
-      {
-        "title": "人仍要负责判断与监督",
-        "text": "他的 agent-first 文章保留了人类判断的讨论：把执行交给 Agent，并不意味着所有产品价值都归结为自动生成。",
-        "source": 0
-      },
-      {
-        "title": "用具体工作流建立学习路径",
-        "text": "AI Learning Path 将教程与一线访谈组织成逐步学习材料；他的内容定位是让忙碌的人能拿走一个可执行的方法。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Why You Need to Build Your Product for AI Agents First",
@@ -343,7 +635,34 @@ const BUILDERS = [
       }
     ],
     "note": "教程可以当起点，但别跳过产品自己的文档。遇到嘉宾建议，回到嘉宾原话与适用情境。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "产品的使用者，正在从只有人扩展到人和 Agent。",
+      "summary": "Peter 的特色是把抽象变化拆成可看、可做的工作流程。个人观点以署名文章为依据，访谈中的技术主张保留给嘉宾，不把整期节目都当成他的观点。",
+      "ideas": [
+        {
+          "title": "产品需要给 Agent 可操作的接口",
+          "text": "他提出，用户会让 Agent 从多个产品取信息、执行动作，因此 API、Skills 与 MCP 逐渐成为重要入口。",
+          "source": 0
+        },
+        {
+          "title": "人仍要负责判断与监督",
+          "text": "他的 agent-first 文章保留了人类判断的讨论：把执行交给 Agent，并不意味着所有产品价值都归结为自动生成。",
+          "source": 0
+        },
+        {
+          "title": "用具体工作流建立学习路径",
+          "text": "AI Learning Path 将教程与一线访谈组织成逐步学习材料；他的内容定位是让忙碌的人能拿走一个可执行的方法。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "nan",
@@ -358,25 +677,9 @@ const BUILDERS = [
       "速度与质量",
       "生产 Agent"
     ],
-    "thesis": "好产品的速度，来自理解和熟练，而不是少做质量工作。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的材料兼具传统产品纪律与 AI 实践：限制软件膨胀，让团队理解项目为什么做；在 Agent 项目中则强调真实工作流、按需取上下文和评估。",
-    "ideas": [
-      {
-        "title": "速度与质量可以同时提高",
-        "text": "Lenny 访谈把速度归因于专业能力、明确判断和快速反馈。熟练团队做得快，不意味着随意省略必要工作。",
-        "source": 0
-      },
-      {
-        "title": "需求文档提供情境，而不是代替判断",
-        "text": "Linear 团队文章中，Nan 强调解释为什么做项目、解决什么问题及其关联影响，让执行者有足够的情境意识。",
-        "source": 1
-      },
-      {
-        "title": "Agent 要融入工作发生的地方",
-        "text": "Nan 与 Jacob 的访谈从实际流程出发，界定上下文在哪、哪些动作完成工作、何时需要人工复核。具体工具建议来自两位嘉宾共同实践。",
-        "source": 2
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Linear’s secret to building beloved B2B products",
@@ -413,7 +716,34 @@ const BUILDERS = [
       }
     ],
     "note": "先读速度与质量，再读 Agent 案例，观察哪些产品原则保持不变。不要把 Jacob 的具体技术意见单独归给 Nan。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "好产品的速度，来自理解和熟练，而不是少做质量工作。",
+      "summary": "他的材料兼具传统产品纪律与 AI 实践：限制软件膨胀，让团队理解项目为什么做；在 Agent 项目中则强调真实工作流、按需取上下文和评估。",
+      "ideas": [
+        {
+          "title": "速度与质量可以同时提高",
+          "text": "Lenny 访谈把速度归因于专业能力、明确判断和快速反馈。熟练团队做得快，不意味着随意省略必要工作。",
+          "source": 0
+        },
+        {
+          "title": "需求文档提供情境，而不是代替判断",
+          "text": "Linear 团队文章中，Nan 强调解释为什么做项目、解决什么问题及其关联影响，让执行者有足够的情境意识。",
+          "source": 1
+        },
+        {
+          "title": "Agent 要融入工作发生的地方",
+          "text": "Nan 与 Jacob 的访谈从实际流程出发，界定上下文在哪、哪些动作完成工作、何时需要人工复核。具体工具建议来自两位嘉宾共同实践。",
+          "source": 2
+        }
+      ]
+    }
   },
   {
     "id": "madhu",
@@ -428,25 +758,9 @@ const BUILDERS = [
       "失败定位",
       "产品演进"
     ],
-    "thesis": "评估要告诉你哪里该改，而不只是给产品一个总分。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的代表性推文把 eval 从一次发布前的测试，变成随真实使用演进的产品机制。这里侧重可读取的评估系列，不采用未充分核验的最新职务说法。",
-    "ideas": [
-      {
-        "title": "评估要随使用方式升级",
-        "text": "从短报告总结走向多材料综合，再到主动监测，每一步都需要不同能力。用户已经升级，评估仍留在旧场景，就会漏掉问题。",
-        "source": 0
-      },
-      {
-        "title": "结果相同，执行质量也可能不同",
-        "text": "两个 Agent 最后给出同一答案，一个路径简洁，另一个反复搜索和恢复错误。过程评估能揭示这些差异。",
-        "source": 1
-      },
-      {
-        "title": "先分解工作，再决定评估粒度",
-        "text": "定义每一步的任务，以及典型和困难案例，才能决定是单独评估还是作为整体评估的切片。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "How to build great evals — Part 9: The Eval Roadmap Problem",
@@ -472,7 +786,34 @@ const BUILDERS = [
       }
     ],
     "note": "从自己的实际失败案例开始做评估。镜像不是原站，重要细节应回到原推文确认。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "评估要告诉你哪里该改，而不只是给产品一个总分。",
+      "summary": "他的代表性推文把 eval 从一次发布前的测试，变成随真实使用演进的产品机制。这里侧重可读取的评估系列，不采用未充分核验的最新职务说法。",
+      "ideas": [
+        {
+          "title": "评估要随使用方式升级",
+          "text": "从短报告总结走向多材料综合，再到主动监测，每一步都需要不同能力。用户已经升级，评估仍留在旧场景，就会漏掉问题。",
+          "source": 0
+        },
+        {
+          "title": "结果相同，执行质量也可能不同",
+          "text": "两个 Agent 最后给出同一答案，一个路径简洁，另一个反复搜索和恢复错误。过程评估能揭示这些差异。",
+          "source": 1
+        },
+        {
+          "title": "先分解工作，再决定评估粒度",
+          "text": "定义每一步的任务，以及典型和困难案例，才能决定是单独评估还是作为整体评估的切片。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "amanda",
@@ -487,25 +828,9 @@ const BUILDERS = [
       "模型行为",
       "Constitution"
     ],
-    "thesis": "让模型理解行为背后的理由，而不只记住一张规则清单。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "她的代表作品不是 App，而是训练与指导 Claude 行为的价值文档。宪法描述的是期望的模型品格；Anthropic 明确承认真实模型行为可能与这些理想存在差距。",
-    "ideas": [
-      {
-        "title": "价值文档需要帮助模型泛化",
-        "text": "新版宪法解释行为背后的理由，希望模型能把原则用于未见过的情境；高风险行为仍有明确边界。",
-        "source": 1
-      },
-      {
-        "title": "“有帮助”涉及多方关系",
-        "text": "文档分别讨论 Anthropic、应用运营者与最终用户的关系，帮助模型处理服务不同主体时的取舍。",
-        "source": 0
-      },
-      {
-        "title": "意图透明，不等于行为保证",
-        "text": "公开宪法让外部读者知道哪些行为是设计意图；真正的遵循程度还需要训练、评估和系统报告。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Claude’s Constitution",
@@ -531,7 +856,34 @@ const BUILDERS = [
       }
     ],
     "note": "这是一份目标与训练材料，不是对所有 Claude 回答的质量承诺。个人贡献与团队共同建设应一起看。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "让模型理解行为背后的理由，而不只记住一张规则清单。",
+      "summary": "她的代表作品不是 App，而是训练与指导 Claude 行为的价值文档。宪法描述的是期望的模型品格；Anthropic 明确承认真实模型行为可能与这些理想存在差距。",
+      "ideas": [
+        {
+          "title": "价值文档需要帮助模型泛化",
+          "text": "新版宪法解释行为背后的理由，希望模型能把原则用于未见过的情境；高风险行为仍有明确边界。",
+          "source": 1
+        },
+        {
+          "title": "“有帮助”涉及多方关系",
+          "text": "文档分别讨论 Anthropic、应用运营者与最终用户的关系，帮助模型处理服务不同主体时的取舍。",
+          "source": 0
+        },
+        {
+          "title": "意图透明，不等于行为保证",
+          "text": "公开宪法让外部读者知道哪些行为是设计意图；真正的遵循程度还需要训练、评估和系统报告。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "cat",
@@ -546,25 +898,9 @@ const BUILDERS = [
       "快速迭代",
       "Claude Code"
     ],
-    "thesis": "写代码越来越便宜，决定该写什么越来越重要。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "Cat 的访谈从产品职能谈 AI 团队如何运转：明确用户和任务，减少从想法到发布的摩擦，并在当前模型能力与未来能力之间选择产品形态。",
-    "ideas": [
-      {
-        "title": "PM 要缩短想法到用户的距离",
-        "text": "当交付周期缩短，跨季度路线图协调不再占据全部重心。清楚定义开箱即用的关键任务、降低发布阻力变得更重要。",
-        "source": 0
-      },
-      {
-        "title": "原则与指标让团队自主判断",
-        "text": "每周看指标、共享团队原则，让工程师理解核心用户和取舍；模糊或基础设施项目仍可能需要简短文档。",
-        "source": 0
-      },
-      {
-        "title": "在模型当前边界上建设",
-        "text": "只为极强的未来模型设计很容易；难的是判断当前模型能做什么、如何最大限度发挥它，以及下一阶段能力将打开哪些场景。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "How Anthropic’s product team moves faster than anyone else",
@@ -590,7 +926,34 @@ const BUILDERS = [
       }
     ],
     "note": "“快速发布”有适用边界。读她如何界定用户、成功任务和预览承诺，而不是只记住速度。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "写代码越来越便宜，决定该写什么越来越重要。",
+      "summary": "Cat 的访谈从产品职能谈 AI 团队如何运转：明确用户和任务，减少从想法到发布的摩擦，并在当前模型能力与未来能力之间选择产品形态。",
+      "ideas": [
+        {
+          "title": "PM 要缩短想法到用户的距离",
+          "text": "当交付周期缩短，跨季度路线图协调不再占据全部重心。清楚定义开箱即用的关键任务、降低发布阻力变得更重要。",
+          "source": 0
+        },
+        {
+          "title": "原则与指标让团队自主判断",
+          "text": "每周看指标、共享团队原则，让工程师理解核心用户和取舍；模糊或基础设施项目仍可能需要简短文档。",
+          "source": 0
+        },
+        {
+          "title": "在模型当前边界上建设",
+          "text": "只为极强的未来模型设计很容易；难的是判断当前模型能做什么、如何最大限度发挥它，以及下一阶段能力将打开哪些场景。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "thariq",
@@ -606,20 +969,9 @@ const BUILDERS = [
       "上下文",
       "Claude Code"
     ],
-    "thesis": "设计 Agent 工具，要从模型看得见、用得好的接口出发。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他通过 Claude Code 的具体迭代说明：工具不只是 API 的集合。工具的粒度、提问机制、搜索方式和信息呈现，都要与模型能力配合。",
-    "ideas": [
-      {
-        "title": "把自己放到模型的位置",
-        "text": "读模型输出、做实验，判断哪些工具真正帮助它。随着模型能力变化，曾经有用的工具也可能变成限制。",
-        "source": 0
-      },
-      {
-        "title": "渐进披露比塞满上下文更有效",
-        "text": "通过搜索和按需加载，让模型在需要时得到信息；工具数量与说明长度都不是越多越好。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Seeing like an agent: how we design tools in Claude Code",
@@ -642,7 +994,29 @@ const BUILDERS = [
         "evidence": ""
       }
     ],
-    "note": "先读失败尝试，再看最终设计；具体工具选择依赖模型能力，不宜照抄成永久规则。"
+    "note": "先读失败尝试，再看最终设计；具体工具选择依赖模型能力，不宜照抄成永久规则。",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "设计 Agent 工具，要从模型看得见、用得好的接口出发。",
+      "summary": "他通过 Claude Code 的具体迭代说明：工具不只是 API 的集合。工具的粒度、提问机制、搜索方式和信息呈现，都要与模型能力配合。",
+      "ideas": [
+        {
+          "title": "把自己放到模型的位置",
+          "text": "读模型输出、做实验，判断哪些工具真正帮助它。随着模型能力变化，曾经有用的工具也可能变成限制。",
+          "source": 0
+        },
+        {
+          "title": "渐进披露比塞满上下文更有效",
+          "text": "通过搜索和按需加载，让模型在需要时得到信息；工具数量与说明长度都不是越多越好。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "google-labs",
@@ -657,25 +1031,9 @@ const BUILDERS = [
       "原型",
       "创作工具"
     ],
-    "thesis": "用真实实验产品，观察 AI 如何改变创作的入口。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "官方账号提供一手发布信息。以 Stitch 为例，产品从静态界面生成扩展到交互原型与设计画布；这里总结官方内容主线，不把它拟人化成个人哲学。",
-    "ideas": [
-      {
-        "title": "从意图开始设计",
-        "text": "Stitch 的官方介绍允许用户先描述业务目标、期待的体验或参考材料，再逐步探索界面，而不必先画线框图。",
-        "source": 0
-      },
-      {
-        "title": "设计单位从单屏扩展到流程",
-        "text": "原型功能将多个画面连接起来，尝试从静态屏幕生成走向可运行的交互流程。",
-        "source": 1
-      },
-      {
-        "title": "实验状态需要实际反馈",
-        "text": "官方文章明确标记部分功能的实验性质，并邀请反馈；发布说明不能代替跨场景的独立测试。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Introducing “vibe design” with Stitch",
@@ -702,7 +1060,34 @@ const BUILDERS = [
     ],
     "note": "这是官方发布源。搭配 Josh Woodward 的产品文章和自己的使用记录，更容易形成判断。",
     "origin": "仓库名单",
-    "official": true
+    "official": true,
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "用真实实验产品，观察 AI 如何改变创作的入口。",
+      "summary": "官方账号提供一手发布信息。以 Stitch 为例，产品从静态界面生成扩展到交互原型与设计画布；这里总结官方内容主线，不把它拟人化成个人哲学。",
+      "ideas": [
+        {
+          "title": "从意图开始设计",
+          "text": "Stitch 的官方介绍允许用户先描述业务目标、期待的体验或参考材料，再逐步探索界面，而不必先画线框图。",
+          "source": 0
+        },
+        {
+          "title": "设计单位从单屏扩展到流程",
+          "text": "原型功能将多个画面连接起来，尝试从静态屏幕生成走向可运行的交互流程。",
+          "source": 1
+        },
+        {
+          "title": "实验状态需要实际反馈",
+          "text": "官方文章明确标记部分功能的实验性质，并邀请反馈；发布说明不能代替跨场景的独立测试。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "amjad",
@@ -717,25 +1102,9 @@ const BUILDERS = [
       "创作门槛",
       "计算能力"
     ],
-    "thesis": "让更多人成为软件的创作者，是一个长期的产品方向。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "在生成式 AI 之前，他就强调让普通人拥有计算能力、玩中学习、快速发布和与人协作。AI Agent 是这条产品方向的延伸，不应把后来全部团队功能都算成他的个人作品。",
-    "ideas": [
-      {
-        "title": "让计算机为用户服务",
-        "text": "早期联合署名文章提出易接近但有能力的工具，让人创造软件，而不是只消费软件。",
-        "source": 0
-      },
-      {
-        "title": "把想法到分享的路缩短",
-        "text": "在线环境、协作编辑、发布与托管在同一流程内，减少准备环境的成本，让试验更容易发生。",
-        "source": 0
-      },
-      {
-        "title": "学习可以来自有趣的制作",
-        "text": "他在 The Internet of Fun 中从用户的自发创造讨论平台社区；玩、修改和分享能够形成学习的动力。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Series A to Revolutionize Computing",
@@ -761,7 +1130,34 @@ const BUILDERS = [
       }
     ],
     "note": "先读创始人的早期方向，再亲自试 Replit Agent；不要把一次成功演示当作所有生产软件都可靠。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "让更多人成为软件的创作者，是一个长期的产品方向。",
+      "summary": "在生成式 AI 之前，他就强调让普通人拥有计算能力、玩中学习、快速发布和与人协作。AI Agent 是这条产品方向的延伸，不应把后来全部团队功能都算成他的个人作品。",
+      "ideas": [
+        {
+          "title": "让计算机为用户服务",
+          "text": "早期联合署名文章提出易接近但有能力的工具，让人创造软件，而不是只消费软件。",
+          "source": 0
+        },
+        {
+          "title": "把想法到分享的路缩短",
+          "text": "在线环境、协作编辑、发布与托管在同一流程内，减少准备环境的成本，让试验更容易发生。",
+          "source": 0
+        },
+        {
+          "title": "学习可以来自有趣的制作",
+          "text": "他在 The Internet of Fun 中从用户的自发创造讨论平台社区；玩、修改和分享能够形成学习的动力。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "guillermo",
@@ -776,25 +1172,9 @@ const BUILDERS = [
       "AI Cloud",
       "部署体验"
     ],
-    "thesis": "云平台应该交付可运行的结果，并逐渐承担解决问题的工作。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的主线从让 Web 开发和部署更顺畅，扩展到 Agent 所需的推理、运行、连接和执行基础设施。个人博客把产品路线与开发体验联系起来。",
-    "ideas": [
-      {
-        "title": "Agent 改变云的工作负载",
-        "text": "Agent 可以长时间执行、动态调用工具甚至生成代码，云需要支持新的执行模式，而不只快速返回一个页面。",
-        "source": 0
-      },
-      {
-        "title": "从报问题走向提供解决方案",
-        "text": "AI Cloud 的愿景包括诊断、建议、修复和自动操作；让运行平台承接原本靠人处理的部分工作。",
-        "source": 0
-      },
-      {
-        "title": "可访问的预览改变协作",
-        "text": "Vercel 文章强调部署 URL 帮助团队在真实环境讨论与测试，开发体验需要包括交付与验证。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "The AI Cloud",
@@ -820,7 +1200,34 @@ const BUILDERS = [
       }
     ],
     "note": "这些文章也在解释作者公司的产品路线。把通用洞察与具体厂商的商业定位一起阅读。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "云平台应该交付可运行的结果，并逐渐承担解决问题的工作。",
+      "summary": "他的主线从让 Web 开发和部署更顺畅，扩展到 Agent 所需的推理、运行、连接和执行基础设施。个人博客把产品路线与开发体验联系起来。",
+      "ideas": [
+        {
+          "title": "Agent 改变云的工作负载",
+          "text": "Agent 可以长时间执行、动态调用工具甚至生成代码，云需要支持新的执行模式，而不只快速返回一个页面。",
+          "source": 0
+        },
+        {
+          "title": "从报问题走向提供解决方案",
+          "text": "AI Cloud 的愿景包括诊断、建议、修复和自动操作；让运行平台承接原本靠人处理的部分工作。",
+          "source": 0
+        },
+        {
+          "title": "可访问的预览改变协作",
+          "text": "Vercel 文章强调部署 URL 帮助团队在真实环境讨论与测试，开发体验需要包括交付与验证。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "alex",
@@ -835,25 +1242,9 @@ const BUILDERS = [
       "评估",
       "用户反馈"
     ],
-    "thesis": "模型也需要产品判断：选择哪些能力进步，以及怎样让用户真正用上。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的访谈把研究、模型行为、产品体验和评估连接起来；团队工程文章则补充了检索系统的具体实践。",
-    "ideas": [
-      {
-        "title": "从用户反馈选择能力方向",
-        "text": "模型能力并非均匀增长，产品团队需要把用户需求和使用中的阻塞转成研究与产品的优先级。",
-        "source": 0
-      },
-      {
-        "title": "模型与运行环境一起设计",
-        "text": "模型和围绕它的工具、上下文与执行框架相互影响，不能只比较裸模型分数。",
-        "source": 0
-      },
-      {
-        "title": "检索要保留片段的上下文",
-        "text": "团队的 Contextual Retrieval 给文本片段补充来源语境，配合关键词与向量检索改善检索质量。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Inside how Anthropic is building the next Claude",
@@ -879,7 +1270,34 @@ const BUILDERS = [
       }
     ],
     "note": "区分他的访谈观点与 Anthropic 团队成果；参与文稿不等于独立提出或实现整套方法。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "模型也需要产品判断：选择哪些能力进步，以及怎样让用户真正用上。",
+      "summary": "他的访谈把研究、模型行为、产品体验和评估连接起来；团队工程文章则补充了检索系统的具体实践。",
+      "ideas": [
+        {
+          "title": "从用户反馈选择能力方向",
+          "text": "模型能力并非均匀增长，产品团队需要把用户需求和使用中的阻塞转成研究与产品的优先级。",
+          "source": 0
+        },
+        {
+          "title": "模型与运行环境一起设计",
+          "text": "模型和围绕它的工具、上下文与执行框架相互影响，不能只比较裸模型分数。",
+          "source": 0
+        },
+        {
+          "title": "检索要保留片段的上下文",
+          "text": "团队的 Contextual Retrieval 给文本片段补充来源语境，配合关键词与向量检索改善检索质量。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "aaron",
@@ -894,25 +1312,9 @@ const BUILDERS = [
       "工作流",
       "组织变革"
     ],
-    "thesis": "企业 AI 的价值，需要从个人提效走到业务流程的重建。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他频繁讨论企业采用 AI 的组织阻力。关键不是买到模型，而是找到流程负责人、接通数据和系统，并建立真正承担落地工作的角色。",
-    "ideas": [
-      {
-        "title": "把能力变成新工作方式",
-        "text": "Box 的 AI-first 文章引用他关于能力扩展的观点：AI 不只是节省已有工作的时间，也可能提高目标和改变工作内容。",
-        "source": 0
-      },
-      {
-        "title": "流程需要有人负责落地",
-        "text": "Agent 能力强，并不会自动让企业流程跑通；内部懂技术、AI 和业务的实施人员仍然重要。",
-        "source": 1
-      },
-      {
-        "title": "组织与治理也需要更新",
-        "text": "团队文章讨论使用习惯、治理和人机分工；模型采购不能替代这些组织工作。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Building an AI-first enterprise: Part 1",
@@ -938,7 +1340,34 @@ const BUILDERS = [
       }
     ],
     "note": "他的企业视角与 Box 的商业位置有关。阅读时追问：谁接系统、谁评估结果、谁承担流程责任。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "企业 AI 的价值，需要从个人提效走到业务流程的重建。",
+      "summary": "他频繁讨论企业采用 AI 的组织阻力。关键不是买到模型，而是找到流程负责人、接通数据和系统，并建立真正承担落地工作的角色。",
+      "ideas": [
+        {
+          "title": "把能力变成新工作方式",
+          "text": "Box 的 AI-first 文章引用他关于能力扩展的观点：AI 不只是节省已有工作的时间，也可能提高目标和改变工作内容。",
+          "source": 0
+        },
+        {
+          "title": "流程需要有人负责落地",
+          "text": "Agent 能力强，并不会自动让企业流程跑通；内部懂技术、AI 和业务的实施人员仍然重要。",
+          "source": 1
+        },
+        {
+          "title": "组织与治理也需要更新",
+          "text": "团队文章讨论使用习惯、治理和人机分工；模型采购不能替代这些组织工作。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "ryo",
@@ -953,25 +1382,9 @@ const BUILDERS = [
       "Cursor",
       "可塑界面"
     ],
-    "thesis": "设计的材料可以是运行中的软件，系统比孤立的屏幕更重要。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的访谈强调直接在工作代码里塑造体验，并通过一致的基础模块构成产品；个人作品展示了这种方法的探索性与趣味。",
-    "ideas": [
-      {
-        "title": "在可运行的代码里雕刻体验",
-        "text": "代码让设计者直接感受到行为与状态，设计不必完全停留在静态稿再交给工程师。",
-        "source": 0
-      },
-      {
-        "title": "先形成一致的系统",
-        "text": "工具、交互与模式需要共享基础逻辑；持续增加页面和局部选项，容易让产品失去整体感。",
-        "source": 0
-      },
-      {
-        "title": "可塑性需要结构",
-        "text": "让界面适应用户，不等于随意生成所有 UI；稳定的模块和交互原则提供可塑性的基础。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Designing Cursor with Ryo Lu",
@@ -997,7 +1410,34 @@ const BUILDERS = [
       }
     ],
     "note": "建议先读访谈，再体验作品。关注交互的一致性，而不仅是视觉效果。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "设计的材料可以是运行中的软件，系统比孤立的屏幕更重要。",
+      "summary": "他的访谈强调直接在工作代码里塑造体验，并通过一致的基础模块构成产品；个人作品展示了这种方法的探索性与趣味。",
+      "ideas": [
+        {
+          "title": "在可运行的代码里雕刻体验",
+          "text": "代码让设计者直接感受到行为与状态，设计不必完全停留在静态稿再交给工程师。",
+          "source": 0
+        },
+        {
+          "title": "先形成一致的系统",
+          "text": "工具、交互与模式需要共享基础逻辑；持续增加页面和局部选项，容易让产品失去整体感。",
+          "source": 0
+        },
+        {
+          "title": "可塑性需要结构",
+          "text": "让界面适应用户，不等于随意生成所有 UI；稳定的模块和交互原则提供可塑性的基础。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "garry",
@@ -1012,25 +1452,9 @@ const BUILDERS = [
       "用户需求",
       "行动力"
     ],
-    "thesis": "造软件更容易之后，选对用户问题和持续行动仍是创业的核心。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的演讲把 AI 工具、小团队和创始人的判断联系起来。技术门槛下降，反而让用户理解、品味与执行成为更明显的差异。",
-    "ideas": [
-      {
-        "title": "先找人真正想要的东西",
-        "text": "他强调接触用户和理解实际痛点，尤其是从用户的日常工作中寻找问题。",
-        "source": 0
-      },
-      {
-        "title": "工具放大主动解决问题的人",
-        "text": "更强的工具给小团队更多能力，但真正的行动力还包括自己寻找信息、联系用户、验证假设。",
-        "source": 0
-      },
-      {
-        "title": "团队规模的观察需要语境",
-        "text": "他分享小团队建设公司的案例；这些观察提示可能性，并不保证每家公司都适用同样的人数与增长路径。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Why the next unicorns are built by AI",
@@ -1056,7 +1480,34 @@ const BUILDERS = [
       }
     ],
     "note": "对谈里提问者与回答者的观点不同。不要把 Dylan 关于设计的回答全部归给 Garry。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "造软件更容易之后，选对用户问题和持续行动仍是创业的核心。",
+      "summary": "他的演讲把 AI 工具、小团队和创始人的判断联系起来。技术门槛下降，反而让用户理解、品味与执行成为更明显的差异。",
+      "ideas": [
+        {
+          "title": "先找人真正想要的东西",
+          "text": "他强调接触用户和理解实际痛点，尤其是从用户的日常工作中寻找问题。",
+          "source": 0
+        },
+        {
+          "title": "工具放大主动解决问题的人",
+          "text": "更强的工具给小团队更多能力，但真正的行动力还包括自己寻找信息、联系用户、验证假设。",
+          "source": 0
+        },
+        {
+          "title": "团队规模的观察需要语境",
+          "text": "他分享小团队建设公司的案例；这些观察提示可能性，并不保证每家公司都适用同样的人数与增长路径。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "matt",
@@ -1071,25 +1522,9 @@ const BUILDERS = [
       "产业地图",
       "商业化"
     ],
-    "thesis": "理解 AI 产业，要把技术、采用情况与商业结构放在同一张图里。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的长篇年度报告梳理数据、基础设施、模型和应用之间的关系，也讨论资本热度与真实企业需求可以同时存在。",
-    "ideas": [
-      {
-        "title": "泡沫与基本面可以并存",
-        "text": "融资热度并不能直接否定技术变化；同样，真实进步也不代表所有公司都值得同样的估值。",
-        "source": 0
-      },
-      {
-        "title": "看实际采用与付费动机",
-        "text": "企业数据、工作流和真实使用决定商业价值，不能只从演示或用户注册量判断。",
-        "source": 0
-      },
-      {
-        "title": "模型选择应服务产品",
-        "text": "开源、闭源和多模型的取舍，需结合能力、成本、客户需求与供应商风险，而不是立场。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "The 2025 MAD landscape",
@@ -1115,73 +1550,280 @@ const BUILDERS = [
       }
     ],
     "note": "这是一位投资人的产业分析。报告的趋势判断不等于确定事实，也不是投资建议。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "理解 AI 产业，要把技术、采用情况与商业结构放在同一张图里。",
+      "summary": "他的长篇年度报告梳理数据、基础设施、模型和应用之间的关系，也讨论资本热度与真实企业需求可以同时存在。",
+      "ideas": [
+        {
+          "title": "泡沫与基本面可以并存",
+          "text": "融资热度并不能直接否定技术变化；同样，真实进步也不代表所有公司都值得同样的估值。",
+          "source": 0
+        },
+        {
+          "title": "看实际采用与付费动机",
+          "text": "企业数据、工作流和真实使用决定商业价值，不能只从演示或用户注册量判断。",
+          "source": 0
+        },
+        {
+          "title": "模型选择应服务产品",
+          "text": "开源、闭源和多模型的取舍，需结合能力、成本、客户需求与供应商风险，而不是立场。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "zara",
     "name": "Zara Zhang",
-    "short": "信息筛选 · 独立制作",
+    "short": "公开构建 · 软件表达",
     "category": "学习与创作",
     "origin": "仓库名单",
     "role": "独立 Builder 与作者；Follow Builders 项目维护者",
     "home": "https://github.com/zarazhangrui",
     "x": "https://x.com/zarazhangrui",
     "tags": [
-      "信息源",
-      "持续使用",
-      "Follow Builders"
+      "Build in Public",
+      "Learn in Public",
+      "软件表达",
+      "小型产品"
     ],
-    "thesis": "先找到会反复使用的产品，再追溯造它的人。",
-    "summary": "这份名单的起点是一种学习方法：广泛发现产品，亲自持续使用，把使用经验带进创始人访谈，而不是只在发布新闻中寻找答案。",
+    "thesis": "公开分享真实的制作与学习过程，用小而有个性的产品表达自己。",
+    "summary": "她的公开构建、成人学习与软件表达相互连接：先行动，分享过程，从反馈中形成判断。信息筛选是其中一部分，不能替代这些主要主题。",
     "ideas": [
       {
-        "title": "持续使用比演示更有信号",
-        "text": "一次演示说明工具可能做什么；自己反复打开它，更能说明产品是否解决了真实问题。",
-        "source": 0
+        "title": "公开构建要让人看见你的思考",
+        "text": "分享学习、用户反馈和设计取舍，展示产品背后真实的人。只发功能清单不足以建立连接。",
+        "source": 0,
+        "sourceIndices": [
+          0,
+          6
+        ],
+        "representativeness": "专文与节目方原始访谈整理稿共同支持；这是新版最重要的纠正。",
+        "boundary": "公开过程不要求披露商业机密，也不保证增长。"
       },
       {
-        "title": "使用经验让访谈更有意义",
-        "text": "先熟悉产品，再阅读作者如何做取舍，才能把抽象建议与实际体验对应起来。",
-        "source": 0
+        "title": "传播和社区也是产品工作",
+        "text": "她把品牌、信任、社区和自主传播渠道视为重要优势。公开表达还能让用户反馈进入产品迭代。",
+        "source": 0,
+        "sourceIndices": [
+          0,
+          6
+        ],
+        "representativeness": "2026 专文与创始人传播访谈有一致主张。",
+        "boundary": "这是她的创业判断，不是所有公司的必然规律。"
       },
       {
-        "title": "建设自己的源头信息流",
-        "text": "Follow Builders 把研究者、创始人、PM 和工程师纳入来源，并维护原始内容的链接。它是一份动态信息源，不是固定权威排名。",
-        "source": 1
+        "title": "软件可以承载个人观点",
+        "text": "把独特体验和看法做成产品，让人直接体验你的世界观。小众、有个性的工具也值得存在。",
+        "source": 2,
+        "sourceIndices": [
+          2,
+          1,
+          5
+        ],
+        "representativeness": "2025 文章、2026 文章与本人幻灯片反复展开。",
+        "boundary": "个人 demo 说明创作方式，不证明产品市场匹配。"
+      },
+      {
+        "title": "用真实项目倒推学习",
+        "text": "从需要解决的问题出发，边做边补知识；公开成果和他人反馈能维持动力。",
+        "source": 3,
+        "sourceIndices": [
+          3,
+          1,
+          6
+        ],
+        "representativeness": "成人学习文章、制作文章和公开学习访谈互相印证。",
+        "boundary": "她明确面向成人与技术素养；并未证明所有基础学习都可跳过。"
+      },
+      {
+        "title": "先发布、验证，再谈护城河",
+        "text": "把想法放到用户面前，通过试用与反馈改进。小规模、有观点的作品能帮助你找到具体受众。",
+        "source": 4,
+        "sourceIndices": [
+          4,
+          1
+        ],
+        "representativeness": "2025 的行动主张与 2026 的小型制作相衔接。",
+        "boundary": "2026 又谈信任与社区的护城河；不应把旧文标题理解为否定竞争优势。"
+      },
+      {
+        "title": "带问题共创，人负责删减",
+        "text": "向 Agent 说明问题和背景，一起探索方案；生成容易，删掉多余功能和保持作品个性仍需人判断。",
+        "source": 1,
+        "sourceIndices": [
+          1,
+          5
+        ],
+        "representativeness": "本人制作方法与幻灯片给出一致实践。",
+        "boundary": "适合探索方向；不能取代生产软件的验收与可靠性要求。"
       }
     ],
     "works": [
       {
-        "title": "How I filter signal from noise in the AI world",
-        "type": "个人文章",
-        "date": "2025-05-07",
-        "author": "Zara Zhang",
-        "url": "https://zarazhang.substack.com/p/how-i-filter-signal-from-noise-in",
-        "summary": "解释如何从产品使用追溯到作者，并点名 Christopher Pedregal、Josh Woodward、Kevin Weil。",
-        "why": "读名单之前先读方法，理解为何选择这些人。"
+        "title": "What people misunderstand about building in public",
+        "url": "https://zarazhang.substack.com/p/what-people-misunderstand-about-building",
+        "date": "2026-06-28",
+        "summary": "公开构建应展示真实的人、学习与设计取舍；传播、信任和社区是产品工作的一部分。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "第 1–3 节：保密、时间、只发功能更新的误区",
+        "excerpt": "Community is the moat.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
       },
       {
-        "title": "Follow Builders, Not Influencers",
-        "type": "开源项目",
-        "date": "核验于 2026-10-02",
-        "author": "Zara Zhang",
-        "url": "https://github.com/zarazhangrui/follow-builders",
-        "summary": "收集 26 个 X 信息源、播客与官方博客，提供公开内容的摘要与来源链接。",
-        "why": "名单的源头，可继续沿链接扩展自己的阅读。"
+        "title": "How to build something small",
+        "url": "https://zarazhang.substack.com/p/how-to-build-something-small",
+        "date": "2026-05-02",
+        "summary": "做小而有个性的产品，通过制作学习；带着问题与 Agent 共创，发布前主动删减。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Why build something small?；How to talk to models",
+        "excerpt": "Bring the problem, not the solution.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
       },
       {
-        "title": "把前端代码当作叙事媒介",
-        "type": "个人推文",
-        "date": "2026-10-02 feed 快照",
-        "author": "Zara Zhang",
-        "url": "https://x.com/zarazhangrui/status/2105753728183828692",
-        "summary": "讨论代码用于表达与讲故事的可能性，而不只用于 SaaS 落地页。",
-        "why": "连接她的信息筛选方法与自己的创作实践。",
-        "access": "依据作者公开 feed；未独立读取 X 原帖全文。",
-        "evidence": ""
+        "title": "Software as Self-Expression",
+        "url": "https://zarazhang.substack.com/p/software-as-self-expression",
+        "date": "2025-11-26",
+        "summary": "用产品让他人体验你的看法：软件可以成为写作、视频之后的表达媒介。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "两个个人 demo；文章结尾",
+        "excerpt": "Make software that sounds like you.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
+      },
+      {
+        "title": "To learn anything, first unlearn school",
+        "url": "https://zarazhang.substack.com/p/to-learn-anything-first-unlearn-school",
+        "date": "2025-12-26",
+        "summary": "成年人从真实问题或项目倒推所需知识，让成果和兴趣维持学习动力。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "成人学习与个人 AI 编程经历",
+        "excerpt": "Do first, learn later.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
+      },
+      {
+        "title": "Stop talking about moats and start shipping",
+        "url": "https://zarazhang.substack.com/p/stop-talking-about-moats-and-start",
+        "date": "2025-09-21",
+        "summary": "先做出用户想要的东西，用发布、试用和反馈迭代，避免战略讨论取代行动。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Granola 例子；文章结尾",
+        "excerpt": "Start shipping.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
+      },
+      {
+        "title": "Code as a medium for storytelling",
+        "url": "https://deck.zarazhang.com/",
+        "date": "2026 · 页面未标具体日期",
+        "summary": "本人演讲幻灯片把软件表达、小型制作、公开构建和 Agent 共创连在一起。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "第 23–29 页；七条 vibe coding 建议",
+        "excerpt": "Build in public",
+        "access": "已阅读本人发布的幻灯片文字；未观看演讲或逐一验证嵌入演示。",
+        "type": "本人幻灯片",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
+      },
+      {
+        "title": "AI时代是谁的黄金时代？｜和张咋啦聊",
+        "url": "https://elsewhere.news/zh/crossing/whose-golden-age-is-the-ai-era-a-chat-with-zhang-zala-libera",
+        "date": "2026-01-07",
+        "summary": "本人谈公开学习、全员传播和创始人表达；传播是可迭代的业务策略。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Learn in Public；Founder-Led Marketing 两节",
+        "excerpt": "",
+        "access": "已阅读节目方整理稿中公开学习、传播与产品相关段落；未逐段核对音视频。",
+        "type": "原始访谈整理稿",
+        "reviewedAt": "2026-10-04",
+        "author": "Zara Zhang"
       }
     ],
-    "note": "不要把“builder”视为身份认证。对每篇内容仍要判断作者是否在讲自己真正参与的事情。"
+    "note": "本页观点为编辑归纳。请核对每条的章节依据、代表性说明和边界；“已复核”不表示穷尽作者全部思想。",
+    "legacyDraft": {
+      "thesis": "先找到会反复使用的产品，再追溯造它的人。",
+      "summary": "这份名单的起点是一种学习方法：广泛发现产品，亲自持续使用，把使用经验带进创始人访谈，而不是只在发布新闻中寻找答案。",
+      "ideas": [
+        {
+          "title": "持续使用比演示更有信号",
+          "text": "一次演示说明工具可能做什么；自己反复打开它，更能说明产品是否解决了真实问题。",
+          "source": 0
+        },
+        {
+          "title": "使用经验让访谈更有意义",
+          "text": "先熟悉产品，再阅读作者如何做取舍，才能把抽象建议与实际体验对应起来。",
+          "source": 0
+        },
+        {
+          "title": "建设自己的源头信息流",
+          "text": "Follow Builders 把研究者、创始人、PM 和工程师纳入来源，并维护原始内容的链接。它是一份动态信息源，不是固定权威排名。",
+          "source": 1
+        }
+      ],
+      "works": [
+        {
+          "title": "How I filter signal from noise in the AI world",
+          "type": "个人文章",
+          "date": "2025-05-07",
+          "author": "Zara Zhang",
+          "url": "https://zarazhang.substack.com/p/how-i-filter-signal-from-noise-in",
+          "summary": "解释如何从产品使用追溯到作者，并点名 Christopher Pedregal、Josh Woodward、Kevin Weil。",
+          "why": "读名单之前先读方法，理解为何选择这些人。"
+        },
+        {
+          "title": "Follow Builders, Not Influencers",
+          "type": "开源项目",
+          "date": "核验于 2026-10-02",
+          "author": "Zara Zhang",
+          "url": "https://github.com/zarazhangrui/follow-builders",
+          "summary": "收集 26 个 X 信息源、播客与官方博客，提供公开内容的摘要与来源链接。",
+          "why": "名单的源头，可继续沿链接扩展自己的阅读。"
+        },
+        {
+          "title": "把前端代码当作叙事媒介",
+          "type": "个人推文",
+          "date": "2026-10-02 feed 快照",
+          "author": "Zara Zhang",
+          "url": "https://x.com/zarazhangrui/status/2105753728183828692",
+          "summary": "讨论代码用于表达与讲故事的可能性，而不只用于 SaaS 落地页。",
+          "why": "连接她的信息筛选方法与自己的创作实践。",
+          "access": "依据作者公开 feed；未独立读取 X 原帖全文。",
+          "evidence": ""
+        }
+      ]
+    },
+    "researchStatus": "reviewed",
+    "research": {
+      "status": "reviewed",
+      "label": "已复核 · 限定范围",
+      "reviewedAt": "2026-10-04",
+      "sourceCount": 7,
+      "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
+      "selection": "优先正文和本人项目；用不同材料验证主题重复，保留主题演变与反例，不以热度决定代表性。",
+      "limitations": "未完整观看 YouTube 或播客音视频；未运行项目或逐一核验嵌入演示。代表性为编辑在所列材料范围内的判断。",
+      "correction": "补入公开构建、公开学习、传播与软件表达；信息筛选不再被当成整体核心。",
+      "xScope": "2026-10-04 采集 100 条主页样本，其中非纯转推 89 条；阅读文字并选择主题，不声称完整回复或媒体覆盖。"
+    }
   },
   {
     "id": "nikunj",
@@ -1196,25 +1838,9 @@ const BUILDERS = [
       "主动性",
       "商业模式"
     ],
-    "thesis": "AI 的放大效应来自工具与人的主动性、专业判断共同作用。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的文章从应用护城河写到个人如何重新学习：上下文不够，纠错和决策同样重要；经验也可能成为限制新方法的旧习惯。",
-    "ideas": [
-      {
-        "title": "上下文之外还需要判断数据",
-        "text": "Decisions and Dollars 关注纠正、决策和业务反馈如何形成价值；拥有资料不等于知道怎样做对。",
-        "source": 0
-      },
-      {
-        "title": "价格应连接实际业务价值",
-        "text": "文章讨论 Agent 应用价值与决策、资金流的联系，提示传统按席位收费未必总能表达价值。",
-        "source": 0
-      },
-      {
-        "title": "主动性与 AI 一起放大",
-        "text": "The Amplification Gap 通过创始人招聘观察讨论主动学习与深领域能力，并反思自己的产品经验。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Decisions and Dollars",
@@ -1240,7 +1866,34 @@ const BUILDERS = [
       }
     ],
     "note": "招聘判断来自作者见闻，不是统计结论。把它当作反思工具，不宜据此断言一类人必然失业。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "AI 的放大效应来自工具与人的主动性、专业判断共同作用。",
+      "summary": "他的文章从应用护城河写到个人如何重新学习：上下文不够，纠错和决策同样重要；经验也可能成为限制新方法的旧习惯。",
+      "ideas": [
+        {
+          "title": "上下文之外还需要判断数据",
+          "text": "Decisions and Dollars 关注纠正、决策和业务反馈如何形成价值；拥有资料不等于知道怎样做对。",
+          "source": 0
+        },
+        {
+          "title": "价格应连接实际业务价值",
+          "text": "文章讨论 Agent 应用价值与决策、资金流的联系，提示传统按席位收费未必总能表达价值。",
+          "source": 0
+        },
+        {
+          "title": "主动性与 AI 一起放大",
+          "text": "The Amplification Gap 通过创始人招聘观察讨论主动学习与深领域能力，并反思自己的产品经验。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "steinberger",
@@ -1255,25 +1908,9 @@ const BUILDERS = [
       "交付速度",
       "CLI"
     ],
-    "thesis": "工程师的注意力转向架构、反馈与验证，Agent 承接更多实现工作。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的个人实践记录非常具体：如何给 Agent 工作、怎样并行、怎样保持代码易理解。速度来自工具与工程习惯的组合，而不是完全放弃判断。",
-    "ideas": [
-      {
-        "title": "真正的瓶颈逐渐转向思考",
-        "text": "Shipping at Inference-Speed 讨论模型执行加快之后，选择方向、设计架构和组织任务的重要性。",
-        "source": 0
-      },
-      {
-        "title": "让 Agent 能自己验证",
-        "text": "可调用的 CLI、明确的反馈和可检查结果帮助形成实现与验证循环。",
-        "source": 0
-      },
-      {
-        "title": "简单交流和代码卫生有价值",
-        "text": "Just Talk To It 分享直接沟通、并行任务与小提交的个人经验；复杂编排不应先于实际需求。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Shipping at Inference-Speed",
@@ -1299,7 +1936,34 @@ const BUILDERS = [
       }
     ],
     "note": "这是作者在特定项目中的工作方式。并行数量与检查力度应按项目性质调整。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "工程师的注意力转向架构、反馈与验证，Agent 承接更多实现工作。",
+      "summary": "他的个人实践记录非常具体：如何给 Agent 工作、怎样并行、怎样保持代码易理解。速度来自工具与工程习惯的组合，而不是完全放弃判断。",
+      "ideas": [
+        {
+          "title": "真正的瓶颈逐渐转向思考",
+          "text": "Shipping at Inference-Speed 讨论模型执行加快之后，选择方向、设计架构和组织任务的重要性。",
+          "source": 0
+        },
+        {
+          "title": "让 Agent 能自己验证",
+          "text": "可调用的 CLI、明确的反馈和可检查结果帮助形成实现与验证循环。",
+          "source": 0
+        },
+        {
+          "title": "简单交流和代码卫生有价值",
+          "text": "Just Talk To It 分享直接沟通、并行任务与小提交的个人经验；复杂编排不应先于实际需求。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "dan",
@@ -1314,25 +1978,9 @@ const BUILDERS = [
       "人机协作",
       "AI & I"
     ],
-    "thesis": "自动化可能增加需要人来理解、判断与整合的工作。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的文章与节目关注知识工作者怎样实际使用 AI。重点不是只追问替代多少任务，而是研究自动化之后的新任务和新的工作组织。",
-    "ideas": [
-      {
-        "title": "自动化之后仍有人的工作",
-        "text": "After Automation 讨论自动化与新增需求、人类判断和整合之间的关系。",
-        "source": 0
-      },
-      {
-        "title": "看真实工作材料",
-        "text": "节目展示围绕文件、工具和实际任务的 AI 使用，比只比较抽象模型能力更贴近日常工作。",
-        "source": 1
-      },
-      {
-        "title": "区分工具效果与通用结论",
-        "text": "不同知识工作任务、执行环境与检查方式，决定哪种工具适合；一个团队的切换不代表统一最优选择。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "After automation: There will be more human work than ever",
@@ -1358,7 +2006,34 @@ const BUILDERS = [
       }
     ],
     "note": "AI & I 是访谈平台，不是所有嘉宾观点都代表 Dan。阅读时关注任务背景和发言人。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "自动化可能增加需要人来理解、判断与整合的工作。",
+      "summary": "他的文章与节目关注知识工作者怎样实际使用 AI。重点不是只追问替代多少任务，而是研究自动化之后的新任务和新的工作组织。",
+      "ideas": [
+        {
+          "title": "自动化之后仍有人的工作",
+          "text": "After Automation 讨论自动化与新增需求、人类判断和整合之间的关系。",
+          "source": 0
+        },
+        {
+          "title": "看真实工作材料",
+          "text": "节目展示围绕文件、工具和实际任务的 AI 使用，比只比较抽象模型能力更贴近日常工作。",
+          "source": 1
+        },
+        {
+          "title": "区分工具效果与通用结论",
+          "text": "不同知识工作任务、执行环境与检查方式，决定哪种工具适合；一个团队的切换不代表统一最优选择。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "aditya",
@@ -1373,25 +2048,9 @@ const BUILDERS = [
       "好奇心",
       "-1 到 0"
     ],
-    "thesis": "当实现能力迅速变便宜，重新学习和选择问题变得更重要。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他以工程师的个人感受写技术变化，也从 SPC 社区解释探索期的价值：先找到值得投入的方向，再组织建设公司。",
-    "ideas": [
-      {
-        "title": "承认旧能力价值正在变化",
-        "text": "When Your Life’s Work Becomes Free 直接写出工程师面对代码生成的震动、失落与兴奋，而不是只重复效率叙事。",
-        "source": 0
-      },
-      {
-        "title": "好奇心与适应能力值得观察",
-        "text": "他通过招聘与合作见闻强调试验、学习和改变方法；这些是个人观察，不是普遍的人才公式。",
-        "source": 0
-      },
-      {
-        "title": "给方向探索留出空间",
-        "text": "SPC 的 -1 到 0 阶段强调与高质量同行共同探索，找到真正愿意长期解决的问题。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "When Your Life’s Work Becomes Free",
@@ -1417,7 +2076,34 @@ const BUILDERS = [
       }
     ],
     "note": "个人反思与机构宣传有不同目的。更值得借鉴的是学习和探索的方法，而不是基金规模。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "当实现能力迅速变便宜，重新学习和选择问题变得更重要。",
+      "summary": "他以工程师的个人感受写技术变化，也从 SPC 社区解释探索期的价值：先找到值得投入的方向，再组织建设公司。",
+      "ideas": [
+        {
+          "title": "承认旧能力价值正在变化",
+          "text": "When Your Life’s Work Becomes Free 直接写出工程师面对代码生成的震动、失落与兴奋，而不是只重复效率叙事。",
+          "source": 0
+        },
+        {
+          "title": "好奇心与适应能力值得观察",
+          "text": "他通过招聘与合作见闻强调试验、学习和改变方法；这些是个人观察，不是普遍的人才公式。",
+          "source": 0
+        },
+        {
+          "title": "给方向探索留出空间",
+          "text": "SPC 的 -1 到 0 阶段强调与高质量同行共同探索，找到真正愿意长期解决的问题。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "sam",
@@ -1432,25 +2118,9 @@ const BUILDERS = [
       "Agent",
       "长期预测"
     ],
-    "thesis": "如果智能成本持续下降，软件、工作和社会制度都需要重新适应。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的个人文章结合技术趋势与宏观预测，强调智能的经济影响、Agent 的可能角色和个人主动性。阅读时要把作者的预测与已经发生的事实分开。",
-    "ideas": [
-      {
-        "title": "智能的成本与供给可能重塑产品",
-        "text": "Three Observations 讨论能力、资源投入、使用成本与潜在经济影响之间的关系。",
-        "source": 0
-      },
-      {
-        "title": "Agent 的作用仍是渐进扩展",
-        "text": "他以初级协作者类比 Agent：可以承担工作，但会有局限，仍需要人的判断和监督。",
-        "source": 0
-      },
-      {
-        "title": "技术收益如何分配也是问题",
-        "text": "文章涉及广泛受益与人的主动性；这些制度与未来判断不由模型能力本身自动决定。",
-        "source": 0
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Three Observations",
@@ -1476,7 +2146,34 @@ const BUILDERS = [
       }
     ],
     "note": "作者同时是 AI 公司的领导者。文中的时间表和未来图景是预测，不能当作已经实现的能力。",
-    "origin": "仓库名单"
+    "origin": "仓库名单",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "如果智能成本持续下降，软件、工作和社会制度都需要重新适应。",
+      "summary": "他的个人文章结合技术趋势与宏观预测，强调智能的经济影响、Agent 的可能角色和个人主动性。阅读时要把作者的预测与已经发生的事实分开。",
+      "ideas": [
+        {
+          "title": "智能的成本与供给可能重塑产品",
+          "text": "Three Observations 讨论能力、资源投入、使用成本与潜在经济影响之间的关系。",
+          "source": 0
+        },
+        {
+          "title": "Agent 的作用仍是渐进扩展",
+          "text": "他以初级协作者类比 Agent：可以承担工作，但会有局限，仍需要人的判断和监督。",
+          "source": 0
+        },
+        {
+          "title": "技术收益如何分配也是问题",
+          "text": "文章涉及广泛受益与人的主动性；这些制度与未来判断不由模型能力本身自动决定。",
+          "source": 0
+        }
+      ]
+    }
   },
   {
     "id": "claude",
@@ -1491,25 +2188,9 @@ const BUILDERS = [
       "上下文工程",
       "工具接口"
     ],
-    "thesis": "从简单、可评估的系统开始，再增加真正需要的自主性。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "这不是个人 builder 档案。它用于跟踪 Claude 背后团队的技术方法、产品方向与公开说明，并明确文章作者或团队署名。",
-    "ideas": [
-      {
-        "title": "工作流与自主 Agent 要区分",
-        "text": "Building Effective Agents 区分预先定义的执行路径与模型动态决定的执行过程，强调按任务选择复杂度。",
-        "source": 0
-      },
-      {
-        "title": "简单且可组合的设计更易检查",
-        "text": "先用简单方法，评估成本与延迟；工具描述、接口和反馈同样是工程的一部分。",
-        "source": 0
-      },
-      {
-        "title": "上下文是一项有限资源",
-        "text": "Context Engineering 强调每一步选择进入模型的信息，并用整理、摘要与检索维持长期任务质量。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Building Effective Agents",
@@ -1536,7 +2217,34 @@ const BUILDERS = [
     ],
     "note": "官方文章提供可复用方法，也带有平台语境。这里不把团队文章拟人化为某个作者的个人观点。",
     "origin": "仓库名单",
-    "official": true
+    "official": true,
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "从简单、可评估的系统开始，再增加真正需要的自主性。",
+      "summary": "这不是个人 builder 档案。它用于跟踪 Claude 背后团队的技术方法、产品方向与公开说明，并明确文章作者或团队署名。",
+      "ideas": [
+        {
+          "title": "工作流与自主 Agent 要区分",
+          "text": "Building Effective Agents 区分预先定义的执行路径与模型动态决定的执行过程，强调按任务选择复杂度。",
+          "source": 0
+        },
+        {
+          "title": "简单且可组合的设计更易检查",
+          "text": "先用简单方法，评估成本与延迟；工具描述、接口和反馈同样是工程的一部分。",
+          "source": 0
+        },
+        {
+          "title": "上下文是一项有限资源",
+          "text": "Context Engineering 强调每一步选择进入模型的信息，并用整理、摘要与检索维持长期任务质量。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "christopher",
@@ -1551,25 +2259,9 @@ const BUILDERS = [
       "工作习惯",
       "产品打磨"
     ],
-    "thesis": "好的 AI 产品融入已有习惯，让人保有控制，并减少额外操作。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他的访谈反复连接增强人的能力、顺应习惯与精细的产品形状。探索可以快，但最后的体验仍需要一致性与打磨。",
-    "ideas": [
-      {
-        "title": "增强，而不是拿走人的控制",
-        "text": "Granola 的产品思路把用户自己的笔记与 AI 相结合，利用已有的会议习惯。",
-        "source": 0
-      },
-      {
-        "title": "先找到正确的产品形状",
-        "text": "访谈讨论探索与打磨的不同阶段；确定方向后，需要让体验的细节形成整体。",
-        "source": 1
-      },
-      {
-        "title": "反馈不等于照单实现功能",
-        "text": "频繁接触用户是为了理解底层需要，产品仍需自己的方向和一致判断。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Granola: The Art of Invisible AI",
@@ -1595,7 +2287,34 @@ const BUILDERS = [
       }
     ],
     "note": "把“无感”理解为融入工作，而不是没有可见性或没有用户控制。",
-    "origin": "原对话补充"
+    "origin": "原对话补充",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "好的 AI 产品融入已有习惯，让人保有控制，并减少额外操作。",
+      "summary": "他的访谈反复连接增强人的能力、顺应习惯与精细的产品形状。探索可以快，但最后的体验仍需要一致性与打磨。",
+      "ideas": [
+        {
+          "title": "增强，而不是拿走人的控制",
+          "text": "Granola 的产品思路把用户自己的笔记与 AI 相结合，利用已有的会议习惯。",
+          "source": 0
+        },
+        {
+          "title": "先找到正确的产品形状",
+          "text": "访谈讨论探索与打磨的不同阶段；确定方向后，需要让体验的细节形成整体。",
+          "source": 1
+        },
+        {
+          "title": "反馈不等于照单实现功能",
+          "text": "频繁接触用户是为了理解底层需要，产品仍需自己的方向和一致判断。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "kevin",
@@ -1610,25 +2329,9 @@ const BUILDERS = [
       "开发者",
       "快速试验"
     ],
-    "thesis": "能力变化很快，产品团队需要保持试验速度，并让开发者用得起、用得上。",
+    "thesis": "TODO · 本人的主要观点与代表性尚待深入研究。",
     "summary": "他在公开活动与访谈中解释模型能力怎样进入产品、开发者 API 与新的交互形式。这里不根据旧访谈推断其 2026 年现职。",
-    "ideas": [
-      {
-        "title": "变化中的团队需要保持敏捷",
-        "text": "OpenAI Forum 对话中，他讨论快速变化的技术与产品环境，以及团队试验和推进的节奏。",
-        "source": 0
-      },
-      {
-        "title": "降低开发者试验的成本",
-        "text": "论坛对话涉及 API 成本与开发者可获得的能力，让更多应用有条件实际尝试。",
-        "source": 0
-      },
-      {
-        "title": "从模型进步走到产品形态",
-        "text": "与 Azeem Azhar 的节目围绕 Agent、模型与硬件交互展开；这里仅依据公开节目说明列出议题，不替代完整访谈。",
-        "source": 1
-      }
-    ],
+    "ideas": [],
     "works": [
       {
         "title": "Making AI Work for Everyone",
@@ -1654,180 +2357,589 @@ const BUILDERS = [
       }
     ],
     "note": "论坛中关于生产力 J 曲线的论述主要来自 Erik，不能直接算作 Kevin 的观点。",
-    "origin": "原对话补充"
+    "origin": "原对话补充",
+    "researchStatus": "todo",
+    "research": {
+      "status": "todo",
+      "label": "TODO · 待深入研究",
+      "scope": "尚未系统核对本人材料与观点代表性。旧资料仅作线索。"
+    },
+    "legacyDraft": {
+      "thesis": "能力变化很快，产品团队需要保持试验速度，并让开发者用得起、用得上。",
+      "summary": "他在公开活动与访谈中解释模型能力怎样进入产品、开发者 API 与新的交互形式。这里不根据旧访谈推断其 2026 年现职。",
+      "ideas": [
+        {
+          "title": "变化中的团队需要保持敏捷",
+          "text": "OpenAI Forum 对话中，他讨论快速变化的技术与产品环境，以及团队试验和推进的节奏。",
+          "source": 0
+        },
+        {
+          "title": "降低开发者试验的成本",
+          "text": "论坛对话涉及 API 成本与开发者可获得的能力，让更多应用有条件实际尝试。",
+          "source": 0
+        },
+        {
+          "title": "从模型进步走到产品形态",
+          "text": "与 Azeem Azhar 的节目围绕 Agent、模型与硬件交互展开；这里仅依据公开节目说明列出议题，不替代完整访谈。",
+          "source": 1
+        }
+      ]
+    }
   },
   {
     "id": "matt-pocock",
     "name": "Matt Pocock",
-    "short": "AI Hero · 工程反馈循环",
+    "short": "TypeScript · Agent 工程",
     "category": "Agent 与模型",
     "origin": "用户补充",
     "role": "AI Hero、Total TypeScript 作者；工程教育者；曾任 Vercel 开发者倡导者",
     "home": "https://www.mattpocock.com/",
     "x": "https://x.com/mattpocockuk",
     "tags": [
-      "AI Hero",
-      "TypeScript",
-      "反馈循环",
-      "AGENTS.md"
+      "软件工程",
+      "Evals",
+      "Tracer Bullets",
+      "上下文",
+      "审查"
     ],
-    "thesis": "AI 编程速度越快，工程纪律、反馈和代码质量越重要。",
-    "summary": "Matt 的教学从 TypeScript 延伸到 AI 工程与编码 Agent。他一方面讲怎样构建可靠的 LLM 应用，另一方面把传统软件方法重新应用到 Agent：定义成功、减少上下文噪声、用小而完整的功能验证假设，再逐步扩大自主执行。",
+    "thesis": "让 Agent 快速得到可靠反馈，并让人保留需求、结构与交付的判断。",
+    "summary": "他的 AI 工程覆盖两类工作：评估 LLM 应用，以及组织 coding agent 的工程过程。近期重点是环境、架构、可验证检查和更容易审查的交付。",
     "ideas": [
       {
-        "title": "先定义成功，再用真实数据迭代",
-        "text": "LLM 应用不是只在几个例子上看起来可用就能上线。明确任务的成功标准、收集真实使用与失败案例，才能判断一次修改是改善还是退步。",
-        "source": 0
+        "title": "通过练习理解 TypeScript 的原则",
+        "text": "用逐步问题和真实应用练习建立类型系统的心智模型。返回类型、推断和抽象的选择要看应用与库的具体需要。",
+        "source": 7,
+        "sourceIndices": [
+          7,
+          6
+        ],
+        "representativeness": "长期课程的教学方法与本人技术文章相互印证；这是其 AI 内容之外的基础主线。",
+        "boundary": "课程页面说明教学理念，不证明课程学习效果；返回类型的取舍不宜改写成无条件规则。"
       },
       {
-        "title": "先跑通一个完整的小功能",
-        "text": "Tracer Bullets 主张先做贯穿系统各层的最小功能，立即验证关键路径。避免先生成大量独立层次的代码，最后才发现基础连接或假设有误。",
-        "source": 1
+        "title": "LLM 应用靠评估走向生产",
+        "text": "先定义任务成功标准，用真实输入和失败案例衡量变化。模型评分、人工评估与确定性检查各有作用。",
+        "source": 0,
+        "sourceIndices": [
+          0,
+          1
+        ],
+        "representativeness": "2024 评估文章与 2025 工程心态文章构成连续主线。",
+        "boundary": "这是 LLM 应用质量问题；不能与生成代码的单元测试混为一谈。"
       },
       {
-        "title": "给 Agent 精简、按需获取的上下文",
-        "text": "AGENTS.md 应聚焦普遍必要的信息，把领域规则放进可导航的文档。不断追加规则、矛盾指令和过期路径，会让上下文成为负担。",
-        "source": 2
+        "title": "用最小端到端功能获得反馈",
+        "text": "先打通一条真实路径并测试，再扩展。不要各层全部写完后才检查能否连接。",
+        "source": 2,
+        "sourceIndices": [
+          2,
+          4,
+          5
+        ],
+        "representativeness": "Tracer Bullets、Ralph 指南与本人技能项目反复强调小步反馈。",
+        "boundary": "最小切片要验证关键假设，并非把每个任务机械拆到一行代码。"
       },
       {
-        "title": "自主循环也需要明确边界与反馈",
-        "text": "Ralph 文章建议先观察并调整有人参与的执行，再尝试无人值守；定义完成条件、限制迭代，并用类型检查、测试与进度记录反馈结果。",
-        "source": 3
+        "title": "好的环境比更多提示更可靠",
+        "text": "给 Agent 类型检查、测试和可操作的应用环境，让它观察结果；把重复错误变成确定性检查。",
+        "source": 4,
+        "sourceIndices": [
+          4,
+          5,
+          6
+        ],
+        "representativeness": "工程指南、项目 README 与近期环境和 retro 推文一致。",
+        "boundary": "返回类型规则是具体约定，不能概括成所有场景越严格越好。"
+      },
+      {
+        "title": "上下文按需提供，并保持新鲜",
+        "text": "AGENTS.md 保留少量普遍必要信息，细节按需查阅。共同语言和可导航文档有用，矛盾与过期内容会干扰 Agent。",
+        "source": 3,
+        "sourceIndices": [
+          3,
+          5
+        ],
+        "representativeness": "指令指南与项目共同语言实践互相支持。",
+        "boundary": "他近期也接受维护良好的导航文档；重点是有效维护，不是文档越少越好。"
+      },
+      {
+        "title": "自动化从有人参与的小循环开始",
+        "text": "先观察并调整，再扩大低风险任务的自动化。明确完成条件、停止上限和检查反馈。",
+        "source": 4,
+        "sourceIndices": [
+          4,
+          5
+        ],
+        "representativeness": "Ralph 的 HITL→AFK 路线与近期软件工厂推文一致。",
+        "boundary": "不能把无人值守视为质量证明；架构等高风险决定需要更强审查。"
+      },
+      {
+        "title": "工程结构和审查证据仍然重要",
+        "text": "Agent 加快实现，也会加快复杂度增长。保留简单接口、共同领域语言，并交付便于核对的结果与证据。",
+        "source": 5,
+        "sourceIndices": [
+          5,
+          3
+        ],
+        "representativeness": "当前技能项目同时处理结构和反馈；近期推文补充 PR 审查与抽象取舍。",
+        "boundary": "可组合技能是个人工作流，不是所有团队必须采用的唯一流程。"
       }
     ],
     "works": [
       {
         "title": "The AI Engineer Mindset",
-        "type": "个人署名文章",
-        "date": "更新于 2025-03-24",
-        "author": "Matt Pocock",
         "url": "https://www.aihero.dev/the-ai-engineer-mindset",
-        "summary": "解释 LLM 应用为何需要明确成功标准、系统评估和真实用户数据驱动的改进。",
-        "why": "先理解可靠 AI 应用的工作方式，再学习具体工具。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "date": "更新于 2025-03-24",
+        "summary": "LLM 应用需要具体成功标准和真实用户数据，走出仅凭感觉判断质量的阶段。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Defining Your Success Criteria；Data Is Your Most Valuable Asset",
+        "excerpt": "Data Is Your Most Valuable Asset",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
+      },
+      {
+        "title": "Your App Is Only As Good As Its Evals",
+        "url": "https://www.aihero.dev/what-are-evals",
+        "date": "更新于 2024-11-18",
+        "summary": "用确定性检查、人工评估和模型评分评估应用；把真实失败案例加入评估集。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Three Types Of Evals；The Data Flywheel",
+        "excerpt": "Manual QA Is Not Enough",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
       },
       {
         "title": "Tracer Bullets: Keeping AI Slop Under Control",
-        "type": "个人署名文章",
-        "date": "更新于 2026-01-22",
-        "author": "Matt Pocock",
         "url": "https://www.aihero.dev/tracer-bullets",
-        "summary": "把《The Pragmatic Programmer》的小型端到端功能方法用于控制 AI 生成代码的质量。",
-        "why": "可直接用于改进 Agent 的任务拆分与早期验证。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "date": "更新于 2026-01-22",
+        "summary": "先实现贯穿系统各层的最小功能，立即测试，再逐步扩大范围。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "The Solution: Tracer Bullets；个人 Reveal in File System 案例",
+        "excerpt": "Get feedback",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
       },
       {
         "title": "A Complete Guide To AGENTS.md",
-        "type": "个人署名文章",
-        "date": "更新于 2026-01-18",
-        "author": "Matt Pocock",
         "url": "https://www.aihero.dev/a-complete-guide-to-agents-md",
-        "summary": "讨论指令膨胀、过期信息、渐进披露，以及根目录和局部文档如何分工。",
-        "why": "检查自己的 Agent 指令是否重复、矛盾或不再适用。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "date": "更新于 2026-01-18",
+        "summary": "保留少量普遍必要的指令，其他内容按需披露；矛盾、过期文档会污染上下文。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Instruction Budget；Stale Documentation；Progressive Disclosure",
+        "excerpt": "Use Progressive Disclosure",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
       },
       {
         "title": "11 Tips For AI Coding With Ralph Wiggum",
-        "type": "个人署名文章",
-        "date": "更新于 2026-01-08",
-        "author": "Matt Pocock",
         "url": "https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum",
-        "summary": "从任务范围、进度文件、反馈循环、小步执行与隔离环境讨论长时间运行的编码 Agent。",
-        "why": "理解持续执行的工程条件，避免把“自动循环”当作可靠性的保证。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "date": "更新于 2026-01-08",
+        "summary": "先观察有人参与的循环，再放手处理低风险任务；明确范围、反馈和停止条件。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "第 2–8 节：HITL、范围、进度、反馈、小步、风险、质量",
+        "excerpt": "Start With HITL, Then Go AFK",
+        "access": "已阅读第 2–8 节及循环说明；未实际运行文中脚本。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
+      },
+      {
+        "title": "Skills For Real Engineers",
+        "url": "https://github.com/mattpocock/skills",
+        "date": "仓库快照 · 2026-10-04",
+        "summary": "用可组合技能处理需求对齐、共同语言、反馈循环和代码结构，保留人的控制。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "README：Why These Skills Exist，四类失败模式",
+        "excerpt": "Software engineering fundamentals matter more than ever.",
+        "access": "已阅读本人仓库 README；未逐一执行技能。",
+        "type": "本人开源项目",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
+      },
+      {
+        "title": "Should You Declare Return Types?",
+        "url": "https://www.totaltypescript.com/should-you-declare-return-types",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "给模块顶层函数声明返回类型，使后续 AI 更容易理解函数用途；JSX 组件另有例外。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Return Types 规则与例外",
+        "excerpt": "declare their return types.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
+      },
+      {
+        "title": "Total TypeScript：以练习建立理解",
+        "url": "https://www.totaltypescript.com/",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "强调通过逐步练习理解 TypeScript 的原则、推断和抽象，再把理解用于真实应用。",
+        "why": "本人长期教学实践，避免把近期 AI 编程内容当成他的全部主线。",
+        "locator": "Become the TypeScript Wizard；An exercise-driven approach；Hi, I’m Matt Pocock",
+        "excerpt": "exercise-driven approach",
+        "access": "已阅读本人课程官网的教学方法与个人介绍；未观看或完成付费课程。",
+        "type": "本人教学网站",
+        "reviewedAt": "2026-10-04",
+        "author": "Matt Pocock"
       }
     ],
-    "note": "推荐顺序：Mindset → Tracer Bullets → AGENTS.md → Ralph。文章中的具体工具行为以发表语境为准；工程原则比某个脚本或固定指令数量更值得借鉴。"
+    "note": "本页观点为编辑归纳。请核对每条的章节依据、代表性说明和边界；“已复核”不表示穷尽作者全部思想。",
+    "legacyDraft": {
+      "thesis": "AI 编程速度越快，工程纪律、反馈和代码质量越重要。",
+      "summary": "Matt 的教学从 TypeScript 延伸到 AI 工程与编码 Agent。他一方面讲怎样构建可靠的 LLM 应用，另一方面把传统软件方法重新应用到 Agent：定义成功、减少上下文噪声、用小而完整的功能验证假设，再逐步扩大自主执行。",
+      "ideas": [
+        {
+          "title": "先定义成功，再用真实数据迭代",
+          "text": "LLM 应用不是只在几个例子上看起来可用就能上线。明确任务的成功标准、收集真实使用与失败案例，才能判断一次修改是改善还是退步。",
+          "source": 0
+        },
+        {
+          "title": "先跑通一个完整的小功能",
+          "text": "Tracer Bullets 主张先做贯穿系统各层的最小功能，立即验证关键路径。避免先生成大量独立层次的代码，最后才发现基础连接或假设有误。",
+          "source": 1
+        },
+        {
+          "title": "给 Agent 精简、按需获取的上下文",
+          "text": "AGENTS.md 应聚焦普遍必要的信息，把领域规则放进可导航的文档。不断追加规则、矛盾指令和过期路径，会让上下文成为负担。",
+          "source": 2
+        },
+        {
+          "title": "自主循环也需要明确边界与反馈",
+          "text": "Ralph 文章建议先观察并调整有人参与的执行，再尝试无人值守；定义完成条件、限制迭代，并用类型检查、测试与进度记录反馈结果。",
+          "source": 3
+        }
+      ],
+      "works": [
+        {
+          "title": "The AI Engineer Mindset",
+          "type": "个人署名文章",
+          "date": "更新于 2025-03-24",
+          "author": "Matt Pocock",
+          "url": "https://www.aihero.dev/the-ai-engineer-mindset",
+          "summary": "解释 LLM 应用为何需要明确成功标准、系统评估和真实用户数据驱动的改进。",
+          "why": "先理解可靠 AI 应用的工作方式，再学习具体工具。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        },
+        {
+          "title": "Tracer Bullets: Keeping AI Slop Under Control",
+          "type": "个人署名文章",
+          "date": "更新于 2026-01-22",
+          "author": "Matt Pocock",
+          "url": "https://www.aihero.dev/tracer-bullets",
+          "summary": "把《The Pragmatic Programmer》的小型端到端功能方法用于控制 AI 生成代码的质量。",
+          "why": "可直接用于改进 Agent 的任务拆分与早期验证。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        },
+        {
+          "title": "A Complete Guide To AGENTS.md",
+          "type": "个人署名文章",
+          "date": "更新于 2026-01-18",
+          "author": "Matt Pocock",
+          "url": "https://www.aihero.dev/a-complete-guide-to-agents-md",
+          "summary": "讨论指令膨胀、过期信息、渐进披露，以及根目录和局部文档如何分工。",
+          "why": "检查自己的 Agent 指令是否重复、矛盾或不再适用。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        },
+        {
+          "title": "11 Tips For AI Coding With Ralph Wiggum",
+          "type": "个人署名文章",
+          "date": "更新于 2026-01-08",
+          "author": "Matt Pocock",
+          "url": "https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum",
+          "summary": "从任务范围、进度文件、反馈循环、小步执行与隔离环境讨论长时间运行的编码 Agent。",
+          "why": "理解持续执行的工程条件，避免把“自动循环”当作可靠性的保证。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        }
+      ]
+    },
+    "researchStatus": "reviewed",
+    "research": {
+      "status": "reviewed",
+      "label": "已复核 · 限定范围",
+      "reviewedAt": "2026-10-04",
+      "sourceCount": 8,
+      "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
+      "selection": "优先正文和本人项目；用不同材料验证主题重复，保留主题演变与反例，不以热度决定代表性。",
+      "limitations": "未完整观看 YouTube 或播客音视频；未运行项目或逐一核验嵌入演示。代表性为编辑在所列材料范围内的判断。",
+      "correction": "补齐长期 TypeScript 教学主线，并区分 LLM 应用评估与近期 Agent 编程方法。",
+      "xScope": "2026-10-04 采集 100 条主页样本，其中非纯转推 91 条；阅读文字并选择主题，不声称完整回复或媒体覆盖。"
+    }
   },
   {
     "id": "emil-kowalski",
     "name": "Emil Kowalski",
-    "short": "设计工程 · 有品味的 Agent",
+    "short": "设计判断 · 交互细节",
     "category": "产品与设计",
     "origin": "用户补充",
     "role": "Linear Web 团队设计工程师；Sonner、Vaul 与 animations.dev 创建者；曾在 Vercel 设计团队工作",
     "home": "https://emilkowal.ski/",
     "x": "https://x.com/emilkowalski_",
     "tags": [
-      "设计工程",
       "Taste",
+      "Design Engineering",
       "动效",
-      "Sonner"
+      "Sonner",
+      "Vaul"
     ],
-    "thesis": "把好体验的原因说清楚，设计品味就能训练，也能传递给 Agent。",
-    "summary": "Emil 的文章把视觉判断、动效和组件实现连接起来。他既讨论如何训练品味，也用 Sonner 等作品展示细节如何成为体验的一部分；在 AI 协作上，他尝试把经验写成具体的设计规则。",
+    "thesis": "训练并解释设计判断，用有目的的交互和细节构成好用的界面。",
+    "summary": "他把品味训练、动效取舍和真实组件实现连在一起。AI 可以执行明确的经验规则，设计者仍需判断目的、用户情境和整体体验。",
     "ideas": [
       {
-        "title": "品味是一种可以训练的判断",
-        "text": "Developing Taste 建议接触优秀作品、分析为什么某个决定更好，再通过制作与有质量的批评校准判断。只收藏好看的参考图还不够。",
-        "source": 1
+        "title": "品味是可以训练的判断力",
+        "text": "持续接触优秀作品，分析为什么有效，再制作并接受批评。能说明原因，比只说喜欢或不喜欢更有用。",
+        "source": 0,
+        "sourceIndices": [
+          0,
+          1
+        ],
+        "representativeness": "品味文章与把判断传给 Agent 的文章形成连续主线。",
+        "boundary": "不是用个人偏好替代用户需要，也不是背规则即可获得创造力。"
       },
       {
-        "title": "把品味转成有理由的规则",
-        "text": "Agents with Taste 用起始缩放、缓动和时长等例子，说明怎样把设计经验写成按场景适用的规则，让 Agent 少猜测。创作方向和新的判断仍需要人参与。",
-        "source": 0
+        "title": "把品味传给 Agent，要写清原因和场景",
+        "text": "将缩放、缓动、时长等选择转成具体规则；人继续负责新方向和整体判断。",
+        "source": 1,
+        "sourceIndices": [
+          1,
+          3
+        ],
+        "representativeness": "技能文章与具体动效建议展示从经验到规则的过程。",
+        "boundary": "示例是作者的设计经验，应结合自己的设备和任务验证。"
       },
       {
-        "title": "动效先服务目的和使用频率",
-        "text": "动画可以解释关系、提供反馈或带来愉悦，也可能拖慢高频操作。判断是否添加动画时，要看用户目标、出现频率与响应速度。",
-        "source": 2
+        "title": "先问目的和频率，再决定动画",
+        "text": "动画可解释变化和提供反馈；高频、键盘触发的操作应优先保持直接响应，必要时取消动画。",
+        "source": 2,
+        "sourceIndices": [
+          2,
+          3
+        ],
+        "representativeness": "两篇文章重复讨论目的、频率和速度。",
+        "boundary": "营销展示与高频产品交互不同；不能把“无动画”当作统一答案。"
       },
       {
-        "title": "组件质量同时来自体验与易用接口",
-        "text": "Sonner 的文章连接可中断动效、手势、不可见页面的计时处理与简洁 API；交互示例和清楚文档也属于产品体验。",
-        "source": 3
+        "title": "好体验来自相互配合的细节",
+        "text": "手势、可中断运动、计时、焦点和键盘处理一起影响自然感。单独复制一个漂亮效果并不够。",
+        "source": 4,
+        "sourceIndices": [
+          4,
+          5
+        ],
+        "representativeness": "Sonner 和 Vaul 两个本人项目提供不同场景的实践依据。",
+        "boundary": "文章是项目经验；这里没有独立复验每个交互 demo。"
+      },
+      {
+        "title": "开发者体验也是组件设计",
+        "text": "简单 API、熟悉的组合方式和交互文档，让开发者能试用和正确接入组件。",
+        "source": 4,
+        "sourceIndices": [
+          4,
+          5
+        ],
+        "representativeness": "Sonner 的 API 与文档，Vaul 的 Radix 组合方式互相支持。",
+        "boundary": "接口选择依赖组件用途；不应只凭下载量推断原因。"
+      },
+      {
+        "title": "制作变便宜，验证与取舍更重要",
+        "text": "可以用多个原型帮助思考，但应比较和验证，筛掉不值得发布的想法。",
+        "source": 6,
+        "sourceIndices": [
+          6,
+          0
+        ],
+        "representativeness": "近期文章补充 AI 制作成本下降后的判断责任。",
+        "boundary": "这是新增主题，重复材料较少；标为近期论点，不与长期主线同等确定。"
       }
     ],
     "works": [
       {
-        "title": "Agents with Taste",
-        "type": "个人署名文章",
-        "date": "页面未标明确日期 · 核验于 2026-10-02",
-        "author": "Emil Kowalski",
-        "url": "https://emilkowal.ski/ui/agents-with-taste",
-        "summary": "演示如何把设计决定背后的理由、动效准则和排版经验封装成 Agent 可使用的规则。",
-        "why": "理解“让 AI 有品味”需要哪些可表达的知识。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "title": "Developing Taste",
+        "url": "https://emilkowal.ski/ui/developing-taste",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "品味是训练出来的判断力：接触优秀作品、分析原因、制作并接受批评。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Surround yourself；Think about why；Practice",
+        "excerpt": "a trained instinct",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
       },
       {
-        "title": "Developing Taste",
-        "type": "个人署名文章",
-        "date": "页面未标明确日期 · 核验于 2026-10-02",
-        "author": "Emil Kowalski",
-        "url": "https://emilkowal.ski/ui/developing-taste",
-        "summary": "从优秀作品、分析选择、实践和批评讨论如何训练设计判断。",
-        "why": "为 Agent 写规则之前，先建立自己的判断来源。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "title": "Agents with Taste",
+        "url": "https://emilkowal.ski/ui/agents-with-taste",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "把设计取舍的原因和适用场景写成规则，让 Agent 执行；创意判断仍需人负责。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Transferring taste；easing 与 duration 规则",
+        "excerpt": "describe the rules",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
       },
       {
         "title": "You Don't Need Animations",
-        "type": "个人署名文章",
-        "date": "页面未标明确日期 · 核验于 2026-10-02",
-        "author": "Emil Kowalski",
         "url": "https://emilkowal.ski/ui/you-dont-need-animations",
-        "summary": "通过交互示例讨论动效目的、使用频率与速度，解释何时不加动画更合适。",
-        "why": "避免把精致界面简单等同于更多动效。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "动效应服务理解、响应与空间关系；高频操作可能更适合无动画。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Purposeful animations；Frequency of use；Perception of speed",
+        "excerpt": "making sure your animations have a purpose",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
+      },
+      {
+        "title": "7 Practical Animation Tips",
+        "url": "https://emilkowal.ski/ui/7-practical-animation-tips",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "即时反馈、合理缩放起点、缓动和触发点等细节共同影响响应感。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "第 1、3、4、5、6 条建议",
+        "excerpt": "Keep your animations fast",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
       },
       {
         "title": "Building a Toast Component",
-        "type": "个人署名文章",
-        "date": "页面未标明确日期 · 文中回顾 2023 年创建项目",
-        "author": "Emil Kowalski",
         "url": "https://emilkowal.ski/ui/building-a-toast-component",
-        "summary": "拆解 Sonner 的堆叠、手势、计时、API 和文档，展示组件细节怎样形成整体体验。",
-        "why": "把抽象的品味和具体代码、交互决定对照阅读。",
-        "access": "已读取作者网站公开原文。",
-        "evidence": ""
+        "date": "页面未标日期 · 回顾 2023 年项目",
+        "summary": "Sonner 的质量来自可中断运动、手势、计时、简洁 API 和交互文档的共同作用。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Animations；Developer experience；The big little details",
+        "excerpt": "Developer experience is key.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
+      },
+      {
+        "title": "Building a Drawer Component",
+        "url": "https://emilkowal.ski/ui/building-a-drawer-component",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "Vaul 把原生手势、滚动、键盘、焦点和真实性能问题带到 Web，重视真机调试。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Anatomy；Drag gesture；Inputs；Debugging",
+        "excerpt": "same environment as an actual mobile device",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
+      },
+      {
+        "title": "Friction as a Feature",
+        "url": "https://emilkowal.ski/ui/friction-as-a-feature",
+        "date": "页面未标日期 · 核验于 2026-10-04",
+        "summary": "AI 让制作变便宜，但仍需验证和筛选；原型只有经过判断才帮助思考。",
+        "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
+        "locator": "Prototyping is thinking；validate the idea",
+        "excerpt": "Prototyping is thinking.",
+        "access": "已阅读本人网站公开正文；未将嵌入视频视为已观看。",
+        "type": "本人文章",
+        "reviewedAt": "2026-10-04",
+        "author": "Emil Kowalski"
       }
     ],
-    "note": "推荐顺序：Developing Taste → Agents with Taste → 动效文章 → Sonner。规则是作者在具体界面中的经验；套用后仍应观察自己的用户、设备与交互反馈。"
+    "note": "本页观点为编辑归纳。请核对每条的章节依据、代表性说明和边界；“已复核”不表示穷尽作者全部思想。",
+    "legacyDraft": {
+      "thesis": "把好体验的原因说清楚，设计品味就能训练，也能传递给 Agent。",
+      "summary": "Emil 的文章把视觉判断、动效和组件实现连接起来。他既讨论如何训练品味，也用 Sonner 等作品展示细节如何成为体验的一部分；在 AI 协作上，他尝试把经验写成具体的设计规则。",
+      "ideas": [
+        {
+          "title": "品味是一种可以训练的判断",
+          "text": "Developing Taste 建议接触优秀作品、分析为什么某个决定更好，再通过制作与有质量的批评校准判断。只收藏好看的参考图还不够。",
+          "source": 1
+        },
+        {
+          "title": "把品味转成有理由的规则",
+          "text": "Agents with Taste 用起始缩放、缓动和时长等例子，说明怎样把设计经验写成按场景适用的规则，让 Agent 少猜测。创作方向和新的判断仍需要人参与。",
+          "source": 0
+        },
+        {
+          "title": "动效先服务目的和使用频率",
+          "text": "动画可以解释关系、提供反馈或带来愉悦，也可能拖慢高频操作。判断是否添加动画时，要看用户目标、出现频率与响应速度。",
+          "source": 2
+        },
+        {
+          "title": "组件质量同时来自体验与易用接口",
+          "text": "Sonner 的文章连接可中断动效、手势、不可见页面的计时处理与简洁 API；交互示例和清楚文档也属于产品体验。",
+          "source": 3
+        }
+      ],
+      "works": [
+        {
+          "title": "Agents with Taste",
+          "type": "个人署名文章",
+          "date": "页面未标明确日期 · 核验于 2026-10-02",
+          "author": "Emil Kowalski",
+          "url": "https://emilkowal.ski/ui/agents-with-taste",
+          "summary": "演示如何把设计决定背后的理由、动效准则和排版经验封装成 Agent 可使用的规则。",
+          "why": "理解“让 AI 有品味”需要哪些可表达的知识。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        },
+        {
+          "title": "Developing Taste",
+          "type": "个人署名文章",
+          "date": "页面未标明确日期 · 核验于 2026-10-02",
+          "author": "Emil Kowalski",
+          "url": "https://emilkowal.ski/ui/developing-taste",
+          "summary": "从优秀作品、分析选择、实践和批评讨论如何训练设计判断。",
+          "why": "为 Agent 写规则之前，先建立自己的判断来源。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        },
+        {
+          "title": "You Don't Need Animations",
+          "type": "个人署名文章",
+          "date": "页面未标明确日期 · 核验于 2026-10-02",
+          "author": "Emil Kowalski",
+          "url": "https://emilkowal.ski/ui/you-dont-need-animations",
+          "summary": "通过交互示例讨论动效目的、使用频率与速度，解释何时不加动画更合适。",
+          "why": "避免把精致界面简单等同于更多动效。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        },
+        {
+          "title": "Building a Toast Component",
+          "type": "个人署名文章",
+          "date": "页面未标明确日期 · 文中回顾 2023 年创建项目",
+          "author": "Emil Kowalski",
+          "url": "https://emilkowal.ski/ui/building-a-toast-component",
+          "summary": "拆解 Sonner 的堆叠、手势、计时、API 和文档，展示组件细节怎样形成整体体验。",
+          "why": "把抽象的品味和具体代码、交互决定对照阅读。",
+          "access": "已读取作者网站公开原文。",
+          "evidence": ""
+        }
+      ]
+    },
+    "researchStatus": "reviewed",
+    "research": {
+      "status": "reviewed",
+      "label": "已复核 · 限定范围",
+      "reviewedAt": "2026-10-04",
+      "sourceCount": 7,
+      "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
+      "selection": "优先正文和本人项目；用不同材料验证主题重复，保留主题演变与反例，不以热度决定代表性。",
+      "limitations": "未完整观看 YouTube 或播客音视频；未运行项目或逐一核验嵌入演示。代表性为编辑在所列材料范围内的判断。",
+      "correction": "从动效技巧扩展到判断力、用户情境、组件与开发者体验。",
+      "xScope": "本轮未采集近期 X 时间线；研究依据为所列本人网站文章。"
+    }
   }
 ];
