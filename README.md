@@ -1,12 +1,12 @@
-# Builder Atlas · AI建造者阅读档案
+# Builder Atlas — AI建造者阅读档案
 
 浏览30份来源绑定的建造者档案，按阅读路线查看观点、出处、收藏和练习笔记。
 
 A source-bound reading workbench for 30 builders, with reading paths, bookmarks and notes.
 
-[在线体验](https://builder-atlas.xiaosang.cc/) · [源码](https://github.com/holynova/builder-atlas)
+[在线体验](https://builder-atlas.xiaosang.cc/)、[源码](https://github.com/holynova/builder-atlas)
 
-![Builder Atlas · AI建造者阅读档案：真实页面截图](./assets/readme/screenshot.png)
+![Builder Atlas — AI建造者阅读档案：真实页面截图](./assets/readme/screenshot.png)
 
 ## 可以做什么
 

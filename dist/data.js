@@ -2,7 +2,7 @@ const BUILDERS = [
   {
     "id": "karpathy",
     "name": "Andrej Karpathy",
-    "short": "模型边界 · 实验与理解",
+    "short": "模型边界、实验与理解",
     "category": "Agent 与模型",
     "origin": "仓库名单",
     "role": "AI 研究者与教育者；Eureka Labs、Zero to Hero 的创建者",
@@ -174,7 +174,7 @@ const BUILDERS = [
       {
         "title": "nanochat",
         "url": "https://github.com/karpathy/nanochat",
-        "date": "README 快照 · 2026-10-04",
+        "date": "README 快照，2026-10-04",
         "summary": "提供从分词、预训练到评估和推理的可修改实验框架，强调可复现的模型实验。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "README：项目介绍、Leaderboard、Getting started",
@@ -200,7 +200,7 @@ const BUILDERS = [
       {
         "title": "autoresearch",
         "url": "https://github.com/karpathy/autoresearch",
-        "date": "2026-03 · README 核验于 2026-10-04",
+        "date": "2026-03，README 核验于 2026-10-04",
         "summary": "Agent 在固定时间预算下修改训练代码、比较指标并保留或舍弃结果；人设计实验规则。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "README：How it works；Design choices",
@@ -284,7 +284,7 @@ const BUILDERS = [
           "title": "Software Is Changing (Again)",
           "type": "演讲",
           "date": "2025-06-17",
-          "author": "Andrej Karpathy · YC AI Startup School",
+          "author": "Andrej Karpathy，YC AI Startup School",
           "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
           "summary": "从传统软件、神经网络到用自然语言编程的 LLM，解释 Software 3.0 与新的软件交互方式。",
           "why": "先建立模型与软件的关系，再理解 Agent 工具为何改变开发流程。"
@@ -304,7 +304,7 @@ const BUILDERS = [
     "researchStatus": "reviewed",
     "research": {
       "status": "reviewed",
-      "label": "已复核 · 限定范围",
+      "label": "已复核、限定范围",
       "reviewedAt": "2026-10-04",
       "sourceCount": 11,
       "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
@@ -317,7 +317,7 @@ const BUILDERS = [
   {
     "id": "swyx",
     "name": "Swyx / Shawn Wang",
-    "short": "AI Engineer · 公开学习",
+    "short": "AI Engineer、公开学习",
     "category": "学习与创作",
     "role": "Latent Space 与 AI Engineer 的建设者；开发者、作者与社区组织者（按引用材料语境）",
     "home": "https://swyx.io",
@@ -407,7 +407,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 3,
       "scope": "本轮依据 3 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -441,7 +441,7 @@ const BUILDERS = [
           "title": "The Rise of the AI Engineer",
           "type": "个人文章",
           "date": "2023-06-30",
-          "author": "Swyx · Latent Space",
+          "author": "Swyx，Latent Space",
           "url": "https://www.latent.space/p/ai-engineer",
           "summary": "提出 AI Engineer 这一应用层角色，讨论基础模型的可用性如何改变开发者的工作边界。",
           "why": "理解研究、模型工程和应用工程各自解决什么问题。",
@@ -466,7 +466,7 @@ const BUILDERS = [
   {
     "id": "josh",
     "name": "Josh Woodward",
-    "short": "多模态产品 · 用户反馈",
+    "short": "多模态产品、用户反馈",
     "category": "产品与设计",
     "role": "Gemini 与开发者产品的署名作者；职务以引用公告发表时为准",
     "home": "https://blog.google/authors/josh-woodward/",
@@ -570,7 +570,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 4,
       "scope": "本轮依据 4 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -604,7 +604,7 @@ const BUILDERS = [
           "title": "Gemini gets more personal, proactive and powerful",
           "type": "署名产品文章",
           "date": "2025-05-20",
-          "author": "Josh Woodward · Google",
+          "author": "Josh Woodward，Google",
           "url": "https://blog.google/products-and-platforms/products/gemini/gemini-app-updates-io-2025/",
           "summary": "围绕 Gemini Live、创作能力和个性化发布产品更新，展示 Google 对助手体验的构想。",
           "why": "沿着具体交互，观察“更主动的助手”如何被产品化。",
@@ -615,7 +615,7 @@ const BUILDERS = [
           "title": "Gemini 1.5 Pro updates, 1.5 Flash debut and 2 new Gemma models",
           "type": "联合署名文章",
           "date": "2024-05-14",
-          "author": "Mat Velloso、Josh Woodward · Google",
+          "author": "Mat Velloso、Josh Woodward，Google",
           "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-gemma-developer-updates-may-2024/",
           "summary": "结合模型质量、速度、长上下文和开发工具说明能力如何开放给开发者。",
           "why": "了解模型能力、开发者入口与成本选择如何一起影响产品。",
@@ -629,7 +629,7 @@ const BUILDERS = [
   {
     "id": "boris",
     "name": "Boris Cherny",
-    "short": "质量验证 · 工程护栏",
+    "short": "质量验证、工程护栏",
     "category": "Agent 与模型",
     "role": "Claude Code 创建者；Programming TypeScript 作者（按引用材料语境）",
     "home": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
@@ -735,7 +735,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 4,
       "scope": "本轮依据 4 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -769,7 +769,7 @@ const BUILDERS = [
           "title": "Building Claude Code with Boris Cherny",
           "type": "原始访谈",
           "date": "2026-03-04",
-          "author": "Boris Cherny · The Pragmatic Engineer",
+          "author": "Boris Cherny，The Pragmatic Engineer",
           "url": "https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny",
           "summary": "讨论 Claude Code 从内部工具到产品的过程，以及计划、并行、代码库质量、搜索与原型的取舍。",
           "why": "比工具小技巧更能解释一套开发系统为什么这样设计。",
@@ -794,7 +794,7 @@ const BUILDERS = [
   {
     "id": "thibault",
     "name": "Thibault Sottiaux",
-    "short": "开放生态 · 用户反馈",
+    "short": "开放生态、用户反馈",
     "category": "Agent 与模型",
     "role": "OpenAI 产品与平台建设者；所引公告中为 Codex Lead（按引用材料语境）",
     "home": "https://openai.com/build-week/",
@@ -874,7 +874,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 3,
       "scope": "本轮依据 3 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -933,7 +933,7 @@ const BUILDERS = [
   {
     "id": "peter-yang",
     "name": "Peter Yang",
-    "short": "个人工具 · Agent 入口",
+    "short": "个人工具、Agent 入口",
     "category": "学习与创作",
     "role": "Behind the Craft 作者与主持人；AI 教程与个人工作系统的制作人（按引用材料语境）",
     "home": "https://creatoreconomy.so",
@@ -1037,7 +1037,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 4,
       "scope": "本轮依据 4 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1096,7 +1096,7 @@ const BUILDERS = [
   {
     "id": "nan",
     "name": "Nan Yu",
-    "short": "完成定义 · 团队语境",
+    "short": "完成定义、团队语境",
     "category": "产品与设计",
     "role": "产品负责人；本页区分 Linear 时期实践与 2026-09 加入 OpenAI 后的公开观察",
     "home": "https://linear.app/now/how-we-run-projects-at-linear",
@@ -1173,7 +1173,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1207,7 +1207,7 @@ const BUILDERS = [
           "title": "Linear’s secret to building beloved B2B products",
           "type": "原始访谈",
           "date": "2025-01-30",
-          "author": "Nan Yu · Lenny’s Podcast",
+          "author": "Nan Yu，Lenny’s Podcast",
           "url": "https://www.lennysnewsletter.com/p/linears-secret-to-building-beloved-b2b-products-nan-yu",
           "summary": "讨论速度与质量、避免功能膨胀、创造性探索和慎用截止日期。",
           "why": "理解 AI 产品建设仍然需要的基本功。",
@@ -1229,7 +1229,7 @@ const BUILDERS = [
           "title": "5 Rules for Building AI Agents That Work in Production",
           "type": "原始访谈",
           "date": "2026-08-09",
-          "author": "Nan Yu、Jacob Shumway · Peter Yang",
+          "author": "Nan Yu、Jacob Shumway，Peter Yang",
           "url": "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob",
           "summary": "从内部备忘录到 Linear Agent，讨论工作流、取上下文工具和评估。",
           "why": "从“做一个 Agent”转到“嵌入一段能验收的工作”。",
@@ -1243,7 +1243,7 @@ const BUILDERS = [
   {
     "id": "madhu",
     "name": "Madhu Guru",
-    "short": "执行路径 · 动态评估",
+    "short": "执行路径、动态评估",
     "category": "Agent 与模型",
     "role": "AI 产品实践者；公开撰写 How to build great evals 系列（按引用材料语境）",
     "home": "https://x.com/realmadhuguru",
@@ -1362,7 +1362,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 5,
       "scope": "本轮依据 5 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1421,7 +1421,7 @@ const BUILDERS = [
   {
     "id": "amanda",
     "name": "Amanda Askell",
-    "short": "诚实与品格 · 对齐边界",
+    "short": "诚实与品格、对齐边界",
     "category": "Agent 与模型",
     "role": "Anthropic 研究者；本人介绍中的方向为诚实、品格与微调",
     "home": "https://www.anthropic.com/constitution",
@@ -1500,7 +1500,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 3,
       "scope": "本轮依据 3 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1559,7 +1559,7 @@ const BUILDERS = [
   {
     "id": "cat",
     "name": "Cat Wu",
-    "short": "产品判断 · 留存与审查",
+    "short": "产品判断、留存与审查",
     "category": "产品与设计",
     "role": "Claude Code 与 Cowork 产品建设者（所引访谈语境）",
     "home": "https://www.youtube.com/watch?v=PplmzlgE0kg",
@@ -1623,7 +1623,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1657,7 +1657,7 @@ const BUILDERS = [
           "title": "How Anthropic’s product team moves faster than anyone else",
           "type": "原始访谈",
           "date": "2026-04-23",
-          "author": "Cat Wu · Lenny’s Podcast",
+          "author": "Cat Wu，Lenny’s Podcast",
           "url": "https://www.youtube.com/watch?v=PplmzlgE0kg",
           "summary": "讨论 PM 的变化、清晰目标、发布流程、产品判断和模型能力边界。",
           "why": "看技术变快后，组织和产品岗位如何随之改变。",
@@ -1668,7 +1668,7 @@ const BUILDERS = [
           "title": "Claude Code’s product lead talks usage limits, transparency, and the “lean harness”",
           "type": "原始采访",
           "date": "2026-05",
-          "author": "Cat Wu · Ars Technica",
+          "author": "Cat Wu，Ars Technica",
           "url": "https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/",
           "summary": "补充讨论不同使用界面、使用限制与精简 Agent 外层设计。",
           "why": "与产品组织访谈对照，继续追问产品取舍的代价。",
@@ -1682,7 +1682,7 @@ const BUILDERS = [
   {
     "id": "thariq",
     "name": "Thariq Shihipar",
-    "short": "工具能力 · 按需上下文",
+    "short": "工具能力、按需上下文",
     "category": "Agent 与模型",
     "origin": "仓库名单",
     "role": "Claude Code 团队；Seeing like an agent 署名作者（按引用材料语境）",
@@ -1760,7 +1760,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1789,7 +1789,7 @@ const BUILDERS = [
           "title": "Seeing like an agent: how we design tools in Claude Code",
           "type": "署名文章",
           "date": "2026-04-10",
-          "author": "Thariq Shihipar · Claude",
+          "author": "Thariq Shihipar，Claude",
           "url": "https://claude.com/blog/seeing-like-an-agent",
           "summary": "以提问工具、任务机制、搜索和渐进披露为例，解释 Claude Code 如何测试和调整工具。",
           "why": "文章包含失败尝试，适合直接用来检查自己的 Agent 接口。"
@@ -1812,7 +1812,7 @@ const BUILDERS = [
   {
     "id": "google-labs",
     "name": "Google Labs",
-    "short": "意图设计 · 交互原型",
+    "short": "意图设计、交互原型",
     "category": "官方信息源",
     "role": "Google Labs 官方信息源；本页研究 Stitch 的团队产品方向",
     "home": "https://labs.google",
@@ -1891,7 +1891,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -1925,7 +1925,7 @@ const BUILDERS = [
           "title": "Introducing “vibe design” with Stitch",
           "type": "官方产品文章",
           "date": "2026-03-18",
-          "author": "Rustin Banks · Google Labs",
+          "author": "Rustin Banks，Google Labs",
           "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
           "summary": "介绍 AI 原生设计画布，从自然语言、图像、文字和代码探索高保真界面。",
           "why": "观察 AI 设计工具如何围绕意图和迭代组织工作。",
@@ -1936,7 +1936,7 @@ const BUILDERS = [
           "title": "Bring your app ideas to life with Gemini 3 in Stitch",
           "type": "官方产品文章",
           "date": "2025-12-10",
-          "author": "Rustin Banks · Google",
+          "author": "Rustin Banks，Google",
           "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/",
           "summary": "增加 Gemini 3 与 Prototypes，尝试连接多个屏幕并设计交互。",
           "why": "对照后续版本，理解工具演进而不只看单次发布。",
@@ -1950,7 +1950,7 @@ const BUILDERS = [
   {
     "id": "amjad",
     "name": "Amjad Masad",
-    "short": "软件普及 · 即兴试验",
+    "short": "软件普及、即兴试验",
     "category": "软件与创业",
     "role": "Replit 联合创始人；长期建设在线编程与软件创作平台（按引用材料语境）",
     "home": "https://replit.com",
@@ -2017,7 +2017,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2051,7 +2051,7 @@ const BUILDERS = [
           "title": "Series A to Revolutionize Computing",
           "type": "联合署名文章",
           "date": "2021-02-17",
-          "author": "Amjad Masad、Haya Odeh · Replit",
+          "author": "Amjad Masad、Haya Odeh，Replit",
           "url": "https://blog.replit.com/seriesa",
           "summary": "阐述普及计算能力、在线协作、易学且可扩展的产品方向。",
           "why": "读 AI 热潮之前的长期信念，避免只依据新发布理解创始人。",
@@ -2062,7 +2062,7 @@ const BUILDERS = [
           "title": "The Internet of Fun",
           "type": "个人署名文章",
           "date": "2021-02-01",
-          "author": "Amjad Masad · Replit",
+          "author": "Amjad Masad，Replit",
           "url": "https://blog.replit.com/internet-of-fun",
           "summary": "通过社区成员自发制作聊天工具的故事，说明平台的可编程性与玩中学习。",
           "why": "从真实用户行为理解“人人能造软件”的产品基础。",
@@ -2076,7 +2076,7 @@ const BUILDERS = [
   {
     "id": "guillermo",
     "name": "Guillermo Rauch",
-    "short": "部署协作 · Agent 环境",
+    "short": "部署协作、Agent 环境",
     "category": "软件与创业",
     "role": "Vercel 创始人；Socket.IO、Mongoose 等开源项目建设者（按引用材料语境）",
     "home": "https://rauchg.com",
@@ -2153,7 +2153,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2212,7 +2212,7 @@ const BUILDERS = [
   {
     "id": "alex",
     "name": "Alex Albert",
-    "short": "能力方向 · 模型与工具",
+    "short": "能力方向、模型与工具",
     "category": "Agent 与模型",
     "role": "Anthropic 的模型产品建设者；曾从事开发者关系（按引用材料语境）",
     "home": "https://www.anthropic.com",
@@ -2265,7 +2265,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2324,7 +2324,7 @@ const BUILDERS = [
   {
     "id": "aaron",
     "name": "Aaron Levie",
-    "short": "业务流程 · 内容与权限",
+    "short": "业务流程、内容与权限",
     "category": "企业与组织",
     "role": "Box 联合创始人；关注企业内容、业务流程与 AI（按引用材料语境）",
     "home": "https://www.box.com",
@@ -2401,7 +2401,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2460,7 +2460,7 @@ const BUILDERS = [
   {
     "id": "ryo",
     "name": "Ryo Lu",
-    "short": "软件雕塑 · 系统原语",
+    "short": "软件雕塑、系统原语",
     "category": "产品与设计",
     "role": "Cursor 设计负责人（所引 2025 年访谈语境）",
     "home": "https://ryo.lu",
@@ -2524,7 +2524,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2558,7 +2558,7 @@ const BUILDERS = [
           "title": "Designing Cursor with Ryo Lu",
           "type": "访谈",
           "date": "2025-07-11",
-          "author": "Dive Club · Ryo Lu",
+          "author": "Dive Club，Ryo Lu",
           "url": "https://dive-club.beehiiv.com/p/new-post-e3a65bcf546dbdba",
           "summary": "讨论代码作为设计材料、产品系统和 AI 时代的界面可塑性。",
           "why": "适合想从画界面转向塑造实际产品的人。",
@@ -2583,7 +2583,7 @@ const BUILDERS = [
   {
     "id": "garry",
     "name": "Garry Tan",
-    "short": "客户需求 · 主动性与品味",
+    "short": "客户需求、主动性与品味",
     "category": "软件与创业",
     "role": "Y Combinator 总裁与 CEO；软件创作者（按引用材料语境）",
     "home": "https://blog.garrytan.com",
@@ -2647,7 +2647,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2681,7 +2681,7 @@ const BUILDERS = [
           "title": "Why the next unicorns are built by AI",
           "type": "演讲／公开逐字稿",
           "date": "2025-05-21",
-          "author": "Vanta 活动 · Garry Tan",
+          "author": "Vanta 活动，Garry Tan",
           "url": "https://www.vanta.com/resources/why-the-next-unicorns-are-built-by-ai",
           "summary": "讨论 AI 创业、小团队、主动性、用户接触与产品品味。",
           "why": "把工具能力与创业的长期原则连接起来。",
@@ -2692,7 +2692,7 @@ const BUILDERS = [
           "title": "Dylan Field and Garry Tan on design, AI, and locking in",
           "type": "联合对谈",
           "date": "2025-03-14",
-          "author": "Figma · Garry Tan 对谈 Dylan Field",
+          "author": "Figma，Garry Tan 对谈 Dylan Field",
           "url": "https://www.figma.com/blog/in-conversation-dylan-field-and-garry-tan/",
           "summary": "围绕 AI、设计、早期用户与产品探索展开对话。",
           "why": "观察 Garry 如何提问；设计论述主要来自受访者 Dylan。",
@@ -2706,7 +2706,7 @@ const BUILDERS = [
   {
     "id": "matt",
     "name": "Matt Turck",
-    "short": "资本与建设 · 商业基础",
+    "short": "资本与建设、商业基础",
     "category": "产业与判断",
     "role": "FirstMark 投资人；MAD 数据与 AI 产业地图建设者（按引用材料语境）",
     "home": "https://www.mattturck.com",
@@ -2770,7 +2770,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -2815,7 +2815,7 @@ const BUILDERS = [
           "title": "MAD Landscapes",
           "type": "长期研究项目",
           "date": "历年地图／持续更新",
-          "author": "Matt Turck · FirstMark",
+          "author": "Matt Turck，FirstMark",
           "url": "https://www.mattturck.com/mad-landscapes",
           "summary": "历年数据、机器学习与 AI 产业地图索引。",
           "why": "比较几年间分类与公司分布的变化。",
@@ -2829,7 +2829,7 @@ const BUILDERS = [
   {
     "id": "zara",
     "name": "Zara Zhang",
-    "short": "公开构建 · 软件表达",
+    "short": "公开构建、软件表达",
     "category": "学习与创作",
     "origin": "仓库名单",
     "role": "独立 Builder 与作者；Follow Builders 项目维护者",
@@ -2982,7 +2982,7 @@ const BUILDERS = [
       {
         "title": "Code as a medium for storytelling",
         "url": "https://deck.zarazhang.com/",
-        "date": "2026 · 页面未标具体日期",
+        "date": "2026，页面未标具体日期",
         "summary": "本人演讲幻灯片把软件表达、小型制作、公开构建和 Agent 共创连在一起。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "第 23–29 页；七条 vibe coding 建议",
@@ -3062,7 +3062,7 @@ const BUILDERS = [
     "researchStatus": "reviewed",
     "research": {
       "status": "reviewed",
-      "label": "已复核 · 限定范围",
+      "label": "已复核、限定范围",
       "reviewedAt": "2026-10-04",
       "sourceCount": 7,
       "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
@@ -3075,7 +3075,7 @@ const BUILDERS = [
   {
     "id": "nikunj",
     "name": "Nikunj Kothari",
-    "short": "决策反馈 · 主动性与专长",
+    "short": "决策反馈、主动性与专长",
     "category": "产业与判断",
     "role": "产品、运营与投资背景的作者；本页引用其 2026 年本人文章",
     "home": "https://www.nikunjk.com",
@@ -3152,7 +3152,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3211,7 +3211,7 @@ const BUILDERS = [
   {
     "id": "steinberger",
     "name": "Peter Steinberger",
-    "short": "执行闭环 · 架构取舍",
+    "short": "执行闭环、架构取舍",
     "category": "Agent 与模型",
     "role": "软件与开源建设者；本页引用其 2025 年开发实践",
     "home": "https://steipete.me",
@@ -3291,7 +3291,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3350,7 +3350,7 @@ const BUILDERS = [
   {
     "id": "dan",
     "name": "Dan Shipper",
-    "short": "思考与责任 · Agent 协作",
+    "short": "思考与责任、Agent 协作",
     "category": "学习与创作",
     "role": "Every 联合创始人；AI & I 节目主持人和作者（按引用材料语境）",
     "home": "https://every.to",
@@ -3428,7 +3428,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3462,7 +3462,7 @@ const BUILDERS = [
           "title": "After automation: There will be more human work than ever",
           "type": "个人文章",
           "date": "页面未显示明确发布日期",
-          "author": "Dan Shipper · Every",
+          "author": "Dan Shipper，Every",
           "url": "https://every.to/thesis-statements/dan-shipper",
           "summary": "讨论自动化之后，人的理解、判断与整合工作如何改变。",
           "why": "思考 AI 能做更多之后，人应把注意力放在哪里。",
@@ -3487,7 +3487,7 @@ const BUILDERS = [
   {
     "id": "aditya",
     "name": "Aditya Agarwal",
-    "short": "新目标 · 持续适应",
+    "short": "新目标、持续适应",
     "category": "企业与组织",
     "role": "South Park Commons 建设者；长期工程与技术团队背景（按引用材料语境）",
     "home": "https://www.southparkcommons.com",
@@ -3551,7 +3551,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3596,7 +3596,7 @@ const BUILDERS = [
           "title": "Announcing SPC’s $575M Fund IV",
           "type": "署名机构文章",
           "date": "2026-08-05",
-          "author": "Aditya Agarwal · SPC",
+          "author": "Aditya Agarwal，SPC",
           "url": "https://www.southparkcommons.com/news/announcing-spc-575m-fund-iv/",
           "summary": "借机构发展说明社区、探索期和创始人选择方向的理念。",
           "why": "理解他为何重视探索与人才环境。",
@@ -3610,7 +3610,7 @@ const BUILDERS = [
   {
     "id": "sam",
     "name": "Sam Altman",
-    "short": "智能成本 · 能力分配",
+    "short": "智能成本、能力分配",
     "category": "产业与判断",
     "role": "OpenAI 联合创始人；个人博客作者（按引用材料语境）",
     "home": "https://blog.samaltman.com",
@@ -3690,7 +3690,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3749,7 +3749,7 @@ const BUILDERS = [
   {
     "id": "claude",
     "name": "Claude",
-    "short": "简单系统 · 上下文工程",
+    "short": "简单系统、上下文工程",
     "category": "官方信息源",
     "role": "Claude 产品与官方账号；本页展示 Anthropic 团队工程实践",
     "home": "https://claude.ai",
@@ -3839,7 +3839,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 2,
       "scope": "本轮依据 2 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3898,7 +3898,7 @@ const BUILDERS = [
   {
     "id": "christopher",
     "name": "Christopher Pedregal",
-    "short": "思考工具 · 默认与控制",
+    "short": "思考工具、默认与控制",
     "category": "产品与设计",
     "role": "Granola 联合创始人；关注 AI 与会议工作流（按引用材料语境）",
     "home": "https://www.granola.ai",
@@ -3962,7 +3962,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -3996,7 +3996,7 @@ const BUILDERS = [
           "title": "Granola: The Art of Invisible AI",
           "type": "访谈逐字稿",
           "date": "2025-01-24",
-          "author": "Hallway Chat · Christopher Pedregal",
+          "author": "Hallway Chat，Christopher Pedregal",
           "url": "https://www.hallwaychat.co/granola-the-art-of-invisible-ai-christopher-pedregal/",
           "summary": "讨论无感的 AI、增强用户与顺应已有习惯。",
           "why": "理解为什么低操作成本可以成为产品差异。",
@@ -4004,10 +4004,10 @@ const BUILDERS = [
           "evidence": ""
         },
         {
-          "title": "Granola · Christopher Pedregal",
+          "title": "Granola，Christopher Pedregal",
           "type": "访谈",
           "date": "2026-01-14",
-          "author": "EO Magazine · Hyeri Jo 访谈",
+          "author": "EO Magazine，Hyeri Jo 访谈",
           "url": "https://www.eomag.io/article/granola-christopher-pedregal",
           "summary": "讨论产品形状、快速反馈与探索之后的精细打磨。",
           "why": "适合研究早期产品怎样形成自己的体验。",
@@ -4021,7 +4021,7 @@ const BUILDERS = [
   {
     "id": "kevin",
     "name": "Kevin Weil",
-    "short": "小团队杠杆 · API 生态",
+    "short": "小团队杠杆、API 生态",
     "category": "产品与设计",
     "role": "AI 产品从业者；所引活动中的职务为 2025 年语境，不作为当前任职确认",
     "home": "https://forum.openai.com",
@@ -4074,7 +4074,7 @@ const BUILDERS = [
     "researchStatus": "partial",
     "research": {
       "status": "partial",
-      "label": "初步整理 · 待扩展复核",
+      "label": "初步整理、待扩展复核",
       "reviewedAt": "2026-10-04",
       "sourceCount": 1,
       "scope": "本轮依据 1 条来源材料建立初步主题。只阅读每份材料 access 字段注明的正文、章节或公开摘要；不是全作品普查。",
@@ -4108,7 +4108,7 @@ const BUILDERS = [
           "title": "Making AI Work for Everyone",
           "type": "公开论坛对话",
           "date": "2025-04-08",
-          "author": "Kevin Weil、Erik Brynjolfsson · OpenAI Forum",
+          "author": "Kevin Weil、Erik Brynjolfsson，OpenAI Forum",
           "url": "https://forum.openai.com/public/blogs/making-ai-work-for-everyone-2025",
           "summary": "从产品与经济研究的不同视角讨论 AI 采用、开发者与组织。",
           "why": "比较产品领导者和经济学家的问题意识。",
@@ -4133,7 +4133,7 @@ const BUILDERS = [
   {
     "id": "matt-pocock",
     "name": "Matt Pocock",
-    "short": "TypeScript · Agent 工程",
+    "short": "TypeScript、Agent 工程",
     "category": "Agent 与模型",
     "origin": "用户补充",
     "role": "AI Hero、Total TypeScript 作者；工程教育者；曾任 Vercel 开发者倡导者",
@@ -4298,7 +4298,7 @@ const BUILDERS = [
       {
         "title": "Skills For Real Engineers",
         "url": "https://github.com/mattpocock/skills",
-        "date": "仓库快照 · 2026-10-04",
+        "date": "仓库快照，2026-10-04",
         "summary": "用可组合技能处理需求对齐、共同语言、反馈循环和代码结构，保留人的控制。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "README：Why These Skills Exist，四类失败模式",
@@ -4311,7 +4311,7 @@ const BUILDERS = [
       {
         "title": "Should You Declare Return Types?",
         "url": "https://www.totaltypescript.com/should-you-declare-return-types",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "给模块顶层函数声明返回类型，使后续 AI 更容易理解函数用途；JSX 组件另有例外。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Return Types 规则与例外",
@@ -4324,7 +4324,7 @@ const BUILDERS = [
       {
         "title": "Total TypeScript：以练习建立理解",
         "url": "https://www.totaltypescript.com/",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "强调通过逐步练习理解 TypeScript 的原则、推断和抽象，再把理解用于真实应用。",
         "why": "本人长期教学实践，避免把近期 AI 编程内容当成他的全部主线。",
         "locator": "Become the TypeScript Wizard；An exercise-driven approach；Hi, I’m Matt Pocock",
@@ -4411,7 +4411,7 @@ const BUILDERS = [
     "researchStatus": "reviewed",
     "research": {
       "status": "reviewed",
-      "label": "已复核 · 限定范围",
+      "label": "已复核、限定范围",
       "reviewedAt": "2026-10-04",
       "sourceCount": 8,
       "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
@@ -4424,7 +4424,7 @@ const BUILDERS = [
   {
     "id": "emil-kowalski",
     "name": "Emil Kowalski",
-    "short": "设计判断 · 交互细节",
+    "short": "设计判断、交互细节",
     "category": "产品与设计",
     "origin": "用户补充",
     "role": "Linear Web 团队设计工程师；Sonner、Vaul 与 animations.dev 创建者；曾在 Vercel 设计团队工作",
@@ -4511,7 +4511,7 @@ const BUILDERS = [
       {
         "title": "Developing Taste",
         "url": "https://emilkowal.ski/ui/developing-taste",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "品味是训练出来的判断力：接触优秀作品、分析原因、制作并接受批评。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Surround yourself；Think about why；Practice",
@@ -4524,7 +4524,7 @@ const BUILDERS = [
       {
         "title": "Agents with Taste",
         "url": "https://emilkowal.ski/ui/agents-with-taste",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "把设计取舍的原因和适用场景写成规则，让 Agent 执行；创意判断仍需人负责。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Transferring taste；easing 与 duration 规则",
@@ -4537,7 +4537,7 @@ const BUILDERS = [
       {
         "title": "You Don't Need Animations",
         "url": "https://emilkowal.ski/ui/you-dont-need-animations",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "动效应服务理解、响应与空间关系；高频操作可能更适合无动画。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Purposeful animations；Frequency of use；Perception of speed",
@@ -4550,7 +4550,7 @@ const BUILDERS = [
       {
         "title": "7 Practical Animation Tips",
         "url": "https://emilkowal.ski/ui/7-practical-animation-tips",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "即时反馈、合理缩放起点、缓动和触发点等细节共同影响响应感。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "第 1、3、4、5、6 条建议",
@@ -4563,7 +4563,7 @@ const BUILDERS = [
       {
         "title": "Building a Toast Component",
         "url": "https://emilkowal.ski/ui/building-a-toast-component",
-        "date": "页面未标日期 · 回顾 2023 年项目",
+        "date": "页面未标日期，回顾 2023 年项目",
         "summary": "Sonner 的质量来自可中断运动、手势、计时、简洁 API 和交互文档的共同作用。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Animations；Developer experience；The big little details",
@@ -4576,7 +4576,7 @@ const BUILDERS = [
       {
         "title": "Building a Drawer Component",
         "url": "https://emilkowal.ski/ui/building-a-drawer-component",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "Vaul 把原生手势、滚动、键盘、焦点和真实性能问题带到 Web，重视真机调试。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Anatomy；Drag gesture；Inputs；Debugging",
@@ -4589,7 +4589,7 @@ const BUILDERS = [
       {
         "title": "Friction as a Feature",
         "url": "https://emilkowal.ski/ui/friction-as-a-feature",
-        "date": "页面未标日期 · 核验于 2026-10-04",
+        "date": "页面未标日期，核验于 2026-10-04",
         "summary": "AI 让制作变便宜，但仍需验证和筛选；原型只有经过判断才帮助思考。",
         "why": "与观点的具体章节对照阅读，区分作者主张与编辑归纳。",
         "locator": "Prototyping is thinking；validate the idea",
@@ -4630,7 +4630,7 @@ const BUILDERS = [
         {
           "title": "Agents with Taste",
           "type": "个人署名文章",
-          "date": "页面未标明确日期 · 核验于 2026-10-02",
+          "date": "页面未标明确日期，核验于 2026-10-02",
           "author": "Emil Kowalski",
           "url": "https://emilkowal.ski/ui/agents-with-taste",
           "summary": "演示如何把设计决定背后的理由、动效准则和排版经验封装成 Agent 可使用的规则。",
@@ -4641,7 +4641,7 @@ const BUILDERS = [
         {
           "title": "Developing Taste",
           "type": "个人署名文章",
-          "date": "页面未标明确日期 · 核验于 2026-10-02",
+          "date": "页面未标明确日期，核验于 2026-10-02",
           "author": "Emil Kowalski",
           "url": "https://emilkowal.ski/ui/developing-taste",
           "summary": "从优秀作品、分析选择、实践和批评讨论如何训练设计判断。",
@@ -4652,7 +4652,7 @@ const BUILDERS = [
         {
           "title": "You Don't Need Animations",
           "type": "个人署名文章",
-          "date": "页面未标明确日期 · 核验于 2026-10-02",
+          "date": "页面未标明确日期，核验于 2026-10-02",
           "author": "Emil Kowalski",
           "url": "https://emilkowal.ski/ui/you-dont-need-animations",
           "summary": "通过交互示例讨论动效目的、使用频率与速度，解释何时不加动画更合适。",
@@ -4663,7 +4663,7 @@ const BUILDERS = [
         {
           "title": "Building a Toast Component",
           "type": "个人署名文章",
-          "date": "页面未标明确日期 · 文中回顾 2023 年创建项目",
+          "date": "页面未标明确日期，文中回顾 2023 年创建项目",
           "author": "Emil Kowalski",
           "url": "https://emilkowal.ski/ui/building-a-toast-component",
           "summary": "拆解 Sonner 的堆叠、手势、计时、API 和文档，展示组件细节怎样形成整体体验。",
@@ -4676,7 +4676,7 @@ const BUILDERS = [
     "researchStatus": "reviewed",
     "research": {
       "status": "reviewed",
-      "label": "已复核 · 限定范围",
+      "label": "已复核、限定范围",
       "reviewedAt": "2026-10-04",
       "sourceCount": 7,
       "scope": "按主题选择本人文章、项目说明或原始访谈，对照观点与具体章节；不是全部作品普查。",
